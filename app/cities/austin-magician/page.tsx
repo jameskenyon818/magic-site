@@ -42,7 +42,7 @@ export default function AustinMagicianPage() {
               Austin's Premier Magician for Events & Trade Shows
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
-              James Kenyon brings high-energy magic to Austin corporate events, trade shows, weddings, and private parties. As Austin's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown Austin or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Austin's premier magician to make your next event truly magical.
+              James Kenyon brings high-energy magic to Austin corporate events, trade shows, weddings, and private parties. As Austin&apos;s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you&apos;re planning an event in downtown Austin or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Austin&apos;s premier magician to make your next event truly magical.
             </p>
             <div className="pt-8">
               <Link 
@@ -104,7 +104,7 @@ export default function AustinMagicianPage() {
                     <div className="text-gray-400 text-sm pl-7">Flexible set lengths</div>
                   </li>
                 </ul>
-                <a href="/close-up-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+                <Link href="/close-up-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
               </div>
             </div>
 
@@ -126,7 +126,7 @@ export default function AustinMagicianPage() {
                     <div className="text-gray-400 text-sm pl-7">Perfect for keynotes</div>
                   </li>
                 </ul>
-                <a href="/stage-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+                <Link href="/stage-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
               </div>
             </div>
 
@@ -148,7 +148,7 @@ export default function AustinMagicianPage() {
                     <div className="text-gray-400 text-sm pl-7">Quick, repeatable sets</div>
                   </li>
                 </ul>
-                <a href="/trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+                <Link href="/trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
               </div>
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function AustinMagicianPage() {
       {/* Seamless Booking Experience Section */}
       <section className="w-full bg-black py-20 px-4">
         <div className="max-w-5xl mx-auto text-center">
-          <a href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mb-8">Check Availability</a>
+          <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mb-8">Check Availability</Link>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">A seamless booking experience</h2>
           <p className="text-lg md:text-xl text-gray-300 mb-16 max-w-2xl mx-auto">From initial inquiry to post-event follow-up, we ensure a professional and straightforward process.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -178,7 +178,7 @@ export default function AustinMagicianPage() {
                 <span className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-black font-bold text-lg">01</span>
               </div>
               <div className="font-bold text-xl text-white mb-2">Consultation</div>
-              <div className="text-gray-300 text-base">We'll discuss your event objectives, audience, and specific requirements to determine the perfect magical experience.</div>
+              <div className="text-gray-300 text-base">We&apos;ll discuss your event objectives, audience, and specific requirements to determine the perfect magical experience.</div>
             </div>
             {/* Step 2: Customization */}
             <div className="flex flex-col items-center bg-[#181818] rounded-2xl p-8 shadow-lg">
@@ -223,9 +223,9 @@ export default function AustinMagicianPage() {
       <section id="clients" className="w-full bg-black py-20 px-4">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">Trusted by industry leaders</h2>
-          <p className="text-lg md:text-xl text-gray-300 text-center mb-10 max-w-2xl">James has performed for some of the world's most recognizable brands and at exclusive corporate events.</p>
+          <p className="text-lg md:text-xl text-gray-300 text-center mb-10 max-w-2xl">James has performed for some of the world&apos;s most recognizable brands and at exclusive corporate events.</p>
           <div className="flex flex-col items-center space-y-4 mb-10 w-full">
-            <a href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Contact / Check Availability</a>
+            <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Contact / Check Availability</Link>
           </div>
           {/* Past Clients Logo Grid */}
           <div className="bg-black p-6 rounded-xl max-w-5xl mx-auto">

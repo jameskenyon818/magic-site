@@ -103,7 +103,7 @@ export default function Home() {
                     <div className="text-gray-400 text-sm pl-7">Flexible set lengths</div>
                   </li>
                 </ul>
-                <a href="/close-up-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+                <Link href="/close-up-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
               </div>
               {/* Divider overlay right edge */}
               <div className="hidden md:block absolute top-0 right-0 h-full w-px bg-white/20 z-10" />
@@ -126,7 +126,7 @@ export default function Home() {
                     <div className="text-gray-400 text-sm pl-7">Full stage production</div>
                   </li>
                 </ul>
-                <a href="/stage-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+                <Link href="/stage-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
               </div>
               {/* Divider overlay right edge */}
               <div className="hidden md:block absolute top-0 right-0 h-full w-px bg-white/20 z-10" />
@@ -149,7 +149,7 @@ export default function Home() {
                     <div className="text-gray-400 text-sm pl-7">Quick, repeatable sets</div>
                   </li>
                 </ul>
-                <a href="/trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+                <Link href="/trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function Home() {
       {/* Seamless Booking Experience Section */}
       <section className="w-full bg-black py-20 px-4">
         <div className="max-w-5xl mx-auto text-center">
-          <a href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mb-8">Check Availability</a>
+          <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mb-8">Check Availability</Link>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">A seamless booking experience</h2>
           <p className="text-lg md:text-xl text-gray-300 mb-16 max-w-2xl mx-auto">From initial inquiry to post-event follow-up, we ensure a professional and straightforward process.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -179,7 +179,7 @@ export default function Home() {
                 <span className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-black font-bold text-lg">01</span>
               </div>
               <div className="font-bold text-xl text-white mb-2">Consultation</div>
-              <div className="text-gray-300 text-base">We'll discuss your event objectives, audience, and specific requirements to determine the perfect magical experience.</div>
+              <div className="text-gray-300 text-base">We&apos;ll discuss your event objectives, audience, and specific requirements to determine the perfect magical experience.</div>
             </div>
             {/* Step 2: Customization */}
             <div className="flex flex-col items-center bg-[#181818] rounded-2xl p-8 shadow-lg">
@@ -224,9 +224,9 @@ export default function Home() {
       <section className="w-full bg-black py-20 px-4">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">Trusted by industry leaders</h2>
-          <p className="text-lg md:text-xl text-gray-300 text-center mb-10 max-w-2xl">James has performed for some of the world's most recognizable brands and at exclusive corporate events.</p>
+          <p className="text-lg md:text-xl text-gray-300 text-center mb-10 max-w-2xl">James has performed for some of the world&apos;s most recognizable brands and at exclusive corporate events.</p>
           <div className="flex flex-col items-center space-y-4 mb-10 w-full">
-            <a href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Contact / Check Availability</a>
+            <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Contact / Check Availability</Link>
           </div>
           {/* Past Clients Logo Grid */}
           <div className="bg-black p-6 rounded-xl max-w-5xl mx-auto">
@@ -307,42 +307,42 @@ export default function Home() {
             {/* Testimonial 1 */}
             <div className="bg-black rounded-xl border border-gray-800 shadow-lg p-8 flex flex-col items-center text-center">
               <div className="flex mb-4">{Array(5).fill(0).map((_, i) => (<span key={i} className="text-white text-xl">★</span>))}</div>
-              <p className="italic text-white mb-6">“James's performance was the highlight of our annual conference. His ability to engage our audience and incorporate our brand messaging was exceptional.”</p>
+              <p className="italic text-white mb-6">"James's performance was the highlight of our annual conference. His ability to engage our audience and incorporate our brand messaging was exceptional."</p>
               <div className="font-bold text-white">Aiden Nakamura</div>
               <div className="text-gray-400 text-sm">Event Director, Pinnacle Solutions</div>
             </div>
             {/* Testimonial 2 */}
             <div className="bg-black rounded-xl border border-gray-800 shadow-lg p-8 flex flex-col items-center text-center">
               <div className="flex mb-4">{Array(5).fill(0).map((_, i) => (<span key={i} className="text-white text-xl">★</span>))}</div>
-              <p className="italic text-white mb-6">“We've hired many entertainers over the years, but none have delivered the level of sophistication and audience engagement that James provided.”</p>
+              <p className="italic text-white mb-6">"We've hired many entertainers over the years, but none have delivered the level of sophistication and audience engagement that James provided."</p>
               <div className="font-bold text-white">Leila Patel</div>
               <div className="text-gray-400 text-sm">Marketing Manager, Horizon Media Group</div>
             </div>
             {/* Testimonial 3 */}
             <div className="bg-black rounded-xl border border-gray-800 shadow-lg p-8 flex flex-col items-center text-center">
               <div className="flex mb-4">{Array(5).fill(0).map((_, i) => (<span key={i} className="text-white text-xl">★</span>))}</div>
-              <p className="italic text-white mb-6">“James seamlessly incorporated our product messaging into his performance, making it both entertaining and impactful for our sales conference.”</p>
+              <p className="italic text-white mb-6">"James seamlessly incorporated our product messaging into his performance, making it both entertaining and impactful for our sales conference."</p>
               <div className="font-bold text-white">Marcus Chen</div>
               <div className="text-gray-400 text-sm">Chief Marketing Officer, Lakefront Partners</div>
             </div>
             {/* Testimonial 4 */}
             <div className="bg-black rounded-xl border border-gray-800 shadow-lg p-8 flex flex-col items-center text-center">
               <div className="flex mb-4">{Array(5).fill(0).map((_, i) => (<span key={i} className="text-white text-xl">★</span>))}</div>
-              <p className="italic text-white mb-6">“Our trade show booth saw 45% more traffic when James was performing. His ability to attract and engage potential clients was remarkable.”</p>
+              <p className="italic text-white mb-6">"Our trade show booth saw 45% more traffic when James was performing. His ability to attract and engage potential clients was remarkable."</p>
               <div className="font-bold text-white">Sophia Rodriguez</div>
               <div className="text-gray-400 text-sm">Event Manager</div>
             </div>
             {/* Testimonial 5 */}
             <div className="bg-black rounded-xl border border-gray-800 shadow-lg p-8 flex flex-col items-center text-center">
               <div className="flex mb-4">{Array(5).fill(0).map((_, i) => (<span key={i} className="text-white text-xl">★</span>))}</div>
-              <p className="italic text-white mb-6">“James's virtual show for our remote team was exactly what we needed. Interactive, engaging, and it brought everyone together despite the distance.”</p>
+              <p className="italic text-white mb-6">"James's virtual show for our remote team was exactly what we needed. Interactive, engaging, and it brought everyone together despite the distance."</p>
               <div className="font-bold text-white">Jamal Washington</div>
               <div className="text-gray-400 text-sm">HR Director</div>
             </div>
             {/* Testimonial 6 */}
             <div className="bg-black rounded-xl border border-gray-800 shadow-lg p-8 flex flex-col items-center text-center">
               <div className="flex mb-4">{Array(5).fill(0).map((_, i) => (<span key={i} className="text-white text-xl">★</span>))}</div>
-              <p className="italic text-white mb-6">“The level of professionalism from initial contact to post-event follow-up was exceptional. James and his team are true professionals.”</p>
+              <p className="italic text-white mb-6">"The level of professionalism from initial contact to post-event follow-up was exceptional. James and his team are true professionals."</p>
               <div className="font-bold text-white">Olivia Nguyen</div>
               <div className="text-gray-400 text-sm">Events Coordinator</div>
             </div>
@@ -353,7 +353,7 @@ export default function Home() {
       {/* FAQ Section */}
       <section className="w-full bg-black py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <a href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mb-8">Contact / Check Availability</a>
+          <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mb-8">Contact / Check Availability</Link>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Common questions about booking</h2>
           <p className="text-lg md:text-xl text-gray-300 mb-12">Find answers to frequently asked questions about James's performances and booking process.</p>
           <div className="space-y-6">
