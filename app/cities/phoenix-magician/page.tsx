@@ -54,7 +54,7 @@ export default function PhoenixMagician() {
             </div>
             
             {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200">
+            <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200 mb-8">
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">✨</span>
                 <span>10+ Years Experience</span>
@@ -299,11 +299,11 @@ export default function PhoenixMagician() {
 
       {/* Contact Section (split screen) */}
       <section id="contact" className="w-full relative py-28 px-4 min-h-[1100px] flex items-center justify-center">
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
           <img 
             src="/images/IMG_5400.JPG" 
             alt="Contact" 
-            className="w-full h-full object-contain md:object-cover md:object-top object-center" 
+            className="w-full h-full object-contain md:object-cover md:object-top" 
           />
         </div>
         <div className="relative z-20 w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
@@ -312,7 +312,7 @@ export default function PhoenixMagician() {
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">Ready to amaze your guests?</h2>
             <p className="text-2xl md:text-3xl text-gray-200 mb-10">Contact us today to check availability for your upcoming corporate event and discover how James can create an unforgettable experience.</p>
             <div className="flex items-center justify-center md:justify-start text-white text-2xl font-bold gap-4 bg-black/50 rounded-full px-8 py-4">
-              <span role="img" aria-label="phone" className="text-3xl">📱</span>
+              <span className="text-3xl">📱</span>
               <span>737-235-4182</span>
             </div>
           </div>
