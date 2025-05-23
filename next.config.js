@@ -28,6 +28,16 @@ const nextConfig = {
         destination: '/cities/san-antonio-magician',
         permanent: true,
       },
+      {
+        source: '/phoenix-magician',
+        destination: '/cities/phoenix-magician',
+        permanent: true,
+      },
+      {
+        source: '/orlando-magician',
+        destination: '/cities/orlando-magician',
+        permanent: true,
+      },
     ]
   },
 }
