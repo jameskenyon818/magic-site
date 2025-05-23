@@ -54,7 +54,7 @@ export default function PhoenixMagician() {
             </div>
             
             {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200">
+            <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200 md:pt-8">
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">✨</span>
                 <span>10+ Years Experience</span>
@@ -302,7 +302,7 @@ export default function PhoenixMagician() {
         <img 
           src="/images/IMG_5400.JPG" 
           alt="Contact" 
-          className="absolute inset-0 w-full h-full object-cover md:object-top object-center z-0" 
+          className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-top object-center z-0" 
         />
         <div className="relative z-20 w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {/* Left: Prompt */}
@@ -310,10 +310,7 @@ export default function PhoenixMagician() {
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">Ready to amaze your guests?</h2>
             <p className="text-2xl md:text-3xl text-gray-200 mb-10">Contact us today to check availability for your upcoming corporate event and discover how James can create an unforgettable experience.</p>
             <div className="flex items-center justify-center md:justify-start text-white text-2xl font-bold gap-4 bg-black/50 rounded-full px-8 py-4">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h15a2.25 2.25 0 012.25 2.25v10.5a2.25 2.25 0 01-2.25 2.25h-15A2.25 2.25 0 012.25 17.25V6.75z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75l9.72 7.29a.75.75 0 00.86 0l9.72-7.29" />
-              </svg>
+              <span className="text-2xl">📱</span>
               737-235-4182
             </div>
           </div>
