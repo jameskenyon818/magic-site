@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jameskenyonmagic.com
+
+# Sitemaps
+Sitemap: https://jameskenyonmagic.com/sitemap.xml
