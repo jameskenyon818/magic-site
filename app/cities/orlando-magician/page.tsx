@@ -247,14 +247,14 @@ export default function OrlandoMagician() {
       </section>
 
       {/* About James Section */}
-      <section id="about" className="relative w-full min-h-[480px] bg-black py-20 flex items-center justify-center" style={{ backgroundImage: "url('/images/image about.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+      <section id="about" className="relative w-full min-h-[800px] bg-black py-20 flex items-center justify-center" style={{ backgroundImage: "url('/images/image about.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">About James Kenyon</h2>
-          <p className="text-lg md:text-xl text-gray-200 mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">About James Kenyon</h2>
+          <p className="text-xl md:text-2xl text-gray-200 mb-12 leading-relaxed">
             James Kenyon is a world-class corporate magician and mentalist who has performed for Fortune 500 companies and exclusive events across the globe. His unique blend of magic, mind-reading, and corporate messaging creates unforgettable experiences that leave lasting impressions.
           </p>
-          <Link href="/about" className="inline-block bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-md transition-colors shadow-lg text-lg">Learn More About James</Link>
+          <Link href="/about" className="inline-block bg-white hover:bg-gray-100 text-black font-semibold px-8 py-4 rounded-lg text-xl transition-colors shadow-lg">Learn More About James</Link>
         </div>
       </section>
 
