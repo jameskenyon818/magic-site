@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="local-business-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "James Kenyon Magic",
+              "description": "James Kenyon is a professional magician specializing in trade shows and corporate events across the U.S.",
+              "url": "https://www.jameskenyonmagic.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "US"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "United States"
+              },
+              "sameAs": [
+                "https://www.facebook.com/JamesKenyonMagic",
+                "https://www.instagram.com/jameskenyonmagic"
+              ]
+            })
+          }}
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
