@@ -260,7 +260,11 @@ export default function OrlandoMagician() {
 
       {/* Contact Section (split screen) */}
       <section id="contact" className="w-full relative py-28 px-4 min-h-[1100px] flex items-center justify-center">
-        <img src="/images/IMG_5400.JPG" alt="Contact" className="absolute inset-0 w-full h-full object-cover object-top z-0" />
+        <img 
+          src="/images/IMG_5400.JPG" 
+          alt="Contact" 
+          className="absolute inset-0 w-full h-full object-cover md:object-top object-center z-0" 
+        />
         <div className="relative z-20 w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {/* Left: Prompt */}
           <div className="flex flex-col items-center justify-center text-center md:text-left px-8 py-20">
@@ -282,7 +286,13 @@ export default function OrlandoMagician() {
                 <input type="text" name="company" placeholder="Company" className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 <input type="email" name="email" placeholder="Email *" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 <input type="tel" name="phone" placeholder="Phone *" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                <input type="date" name="eventDate" placeholder="Event Date" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input 
+                  type="date" 
+                  name="eventDate" 
+                  placeholder="Event Date" 
+                  required 
+                  className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500 [color-scheme:dark]" 
+                />
                 <select name="eventType" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
                   <option value="">Event Type</option>
                   <option>Trade Show</option>
