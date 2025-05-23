@@ -257,6 +257,89 @@ export default function PhoenixMagician() {
           <Link href="/about" className="inline-block bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-md transition-colors shadow-lg text-lg">Learn More About James</Link>
         </div>
       </section>
+
+      {/* Contact Section (split screen) */}
+      <section id="contact" className="w-full relative py-28 px-4 min-h-[1100px] flex items-center justify-center">
+        <img src="/images/IMG_5400.JPG" alt="Contact" className="absolute inset-0 w-full h-full object-cover object-top z-0" />
+        <div className="relative z-20 w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          {/* Left: Prompt */}
+          <div className="flex flex-col items-center justify-center text-center md:text-left px-8 py-20">
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">Ready to amaze your guests?</h2>
+            <p className="text-2xl md:text-3xl text-gray-200 mb-10">Contact us today to check availability for your upcoming corporate event and discover how James can create an unforgettable experience.</p>
+            <div className="flex items-center justify-center md:justify-start text-white text-2xl font-bold gap-4 bg-black/50 rounded-full px-8 py-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h15a2.25 2.25 0 012.25 2.25v10.5a2.25 2.25 0 01-2.25 2.25h-15A2.25 2.25 0 012.25 17.25V6.75z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75l9.72 7.29a.75.75 0 00.86 0l9.72-7.29" />
+              </svg>
+              737-235-4182
+            </div>
+          </div>
+          {/* Right: Contact Form */}
+          <div className="backdrop-blur-sm rounded-2xl p-8 md:p-12 flex flex-col justify-center">
+            <form action="https://formspree.io/f/xvgagbja" method="POST" className="space-y-6 border border-white/10 rounded-2xl p-10 w-full max-w-lg mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" name="name" placeholder="Name *" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input type="text" name="company" placeholder="Company" className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input type="email" name="email" placeholder="Email *" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input type="tel" name="phone" placeholder="Phone *" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input type="date" name="eventDate" placeholder="Event Date" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <select name="eventType" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="">Event Type</option>
+                  <option>Trade Show</option>
+                  <option>Corporate Function</option>
+                  <option>Gala</option>
+                  <option>Product Launch</option>
+                  <option>Conference</option>
+                  <option>Holiday Party</option>
+                  <option>VIP Dinner</option>
+                  <option>Fundraiser</option>
+                  <option>Employee Appreciation</option>
+                  <option>Private Party</option>
+                </select>
+                <select name="budget" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="">Budget Range</option>
+                  <option>$1,000–$2,500</option>
+                  <option>$2,500–$5,000</option>
+                  <option>$5,000–$7,500</option>
+                  <option>$7,500+</option>
+                </select>
+                <select name="guests" className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="">Number of Guests</option>
+                  <option>1-25</option>
+                  <option>26-50</option>
+                  <option>51-100</option>
+                  <option>101-250</option>
+                  <option>251-500</option>
+                  <option>500+</option>
+                </select>
+              </div>
+              <textarea name="message" placeholder="Additional Details" rows={4} className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"></textarea>
+              <button type="submit" className="w-full bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg border border-gray-700 text-lg">Check Availability</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Cities We Serve Footnote */}
+      <footer className="w-full py-8 bg-black text-center">
+        <div className="text-gray-400 text-sm">
+          <span className="font-semibold text-white">Now performing in:</span>{' '}
+          <Link href="/austin-magician" className="hover:underline hover:text-white transition">Austin</Link>{', '}
+          <Link href="/dallas-magician" className="hover:underline hover:text-white transition">Dallas</Link>{', '}
+          <Link href="/houston-magician" className="hover:underline hover:text-white transition">Houston</Link>{', '}
+          <Link href="/san-antonio-magician" className="hover:underline hover:text-white transition">San Antonio</Link>{', '}
+          <Link href="/cities/orlando-magician" className="hover:underline hover:text-white transition">Orlando</Link>{', '}
+          <Link href="/cities/miami-magician" className="hover:underline hover:text-white transition">Miami</Link>{', '}
+          <Link href="/cities/tampa-magician" className="hover:underline hover:text-white transition">Tampa</Link>{', '}
+          <Link href="/cities/los-angeles-magician" className="hover:underline hover:text-white transition">Los Angeles</Link>{', '}
+          <Link href="/cities/san-diego-magician" className="hover:underline hover:text-white transition">San Diego</Link>{', '}
+          <Link href="/cities/chicago-magician" className="hover:underline hover:text-white transition">Chicago</Link>{', '}
+          <Link href="/cities/new-york-magician" className="hover:underline hover:text-white transition">New York</Link>{', '}
+          <Link href="/cities/phoenix-magician" className="hover:underline hover:text-white transition">Phoenix</Link>{', '}
+          <Link href="/cities/atlanta-magician" className="hover:underline hover:text-white transition">Atlanta</Link>{', '}
+          <Link href="/cities/denver-magician" className="hover:underline hover:text-white transition">Denver</Link>
+        </div>
+      </footer>
     </main>
   );
 } 
