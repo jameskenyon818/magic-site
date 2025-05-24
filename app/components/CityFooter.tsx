@@ -19,14 +19,14 @@ const cities = [
 
 export default function CityFooter() {
   return (
-    <footer className="text-center text-sm text-white pb-4 pt-8">
+    <footer className="text-center text-sm bg-black text-gray-300 pb-4 pt-8">
       <p className="mb-2">
-        <strong>Now performing in:</strong>{' '}
+        <strong className="text-white">Now performing in:</strong>{' '}
         {cities.map((city, index) => (
           <span key={city.name}>
             <Link 
               href={city.path}
-              className="hover:text-gray-300 transition-colors"
+              className="text-gray-300 hover:text-white transition-colors"
             >
               {city.name}
             </Link>
