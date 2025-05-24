@@ -42,7 +42,7 @@ export default function PhoenixMagician() {
                 Elite Corporate Entertainment in Phoenix
               </div>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Captivate Your Phoenix Audience with Extraordinary Magic
+                Hire Magician in Phoenix for Events & Corporate Parties
               </h1>
               <p className="text-lg md:text-2xl text-gray-200 drop-shadow-md mt-8 md:mt-12">
                 Elevate your corporate events in Phoenix with world-class entertainment that leaves a lasting impression

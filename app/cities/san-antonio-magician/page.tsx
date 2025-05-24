@@ -39,7 +39,7 @@ export default function SanAntonioMagicianPage() {
               Elite Corporate Entertainment
             </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-              Hire a Corporate Magician in San Antonio for Events & Trade Shows
+              Hire Magician in San Antonio for Corporate Events & Parties
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
               James Kenyon brings high-energy magic to San Antonio corporate events, trade shows, weddings, and private parties. As San Antonio&apos;s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you&apos;re planning an event in downtown San Antonio, the River Walk, or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust San Antonio&apos;s premier magician to make your next event truly magical.

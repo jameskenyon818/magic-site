@@ -42,7 +42,7 @@ export default function OrlandoMagician() {
                 Elite Corporate Entertainment in Orlando
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire a Corporate Magician in Orlando for Events & Trade Shows
+                Hire Magician in Orlando for Corporate Events & Parties
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
                 Elevate your corporate events in Orlando with world-class entertainment that leaves a lasting impression
