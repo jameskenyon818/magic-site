@@ -6,12 +6,9 @@ import LogoCarousel from '../../components/LogoCarousel';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
 import CityHero from '@/app/components/CityHero';
-import QuoteForm from '../../components/QuoteForm';
 
 // Dynamically import components that are not needed for initial render
-const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
-  loading: () => <div className="min-h-[400px] bg-black" />
-});
+const QuoteForm = dynamic(() => import('../../components/QuoteForm'), { ssr: false });
 
 const AtlantaStructuredData = dynamic(() => import('../../components/AtlantaStructuredData'));
 
