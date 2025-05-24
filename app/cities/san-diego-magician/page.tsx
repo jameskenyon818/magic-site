@@ -75,10 +75,6 @@ export default function SanDiegoMagicianPage() {
           </div>
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          Hire a Magician in San Diego for Corporate & Trade Show Events
-        </h2>
-
         <QuoteForm />
 
         {/* Performances Section */}
