@@ -6,9 +6,10 @@ import LogoCarousel from '../../components/LogoCarousel';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
 import CityHero from '@/app/components/CityHero';
+import ClientQuoteForm from '@/app/components/ClientQuoteForm';
 
-// Dynamically import components that are not needed for initial render
-const QuoteForm = dynamic(() => import('../../components/QuoteForm'), { ssr: false });
+// Removed dynamic import of QuoteForm
+// const QuoteForm = dynamic(() => import('../../components/QuoteForm'), { ssr: false });
 
 const AtlantaStructuredData = dynamic(() => import('../../components/AtlantaStructuredData'));
 
@@ -26,7 +27,7 @@ export default function AtlantaMagicianPage() {
       <AtlantaStructuredData />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Atlanta" heroImage="/images/hero.webp" />
-        <QuoteForm />
+        <ClientQuoteForm />
         <CityFooter />
       </main>
     </>
