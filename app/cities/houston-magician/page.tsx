@@ -2,10 +2,14 @@ import Link from 'next/link';
 import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
-import HoustonStructuredData from '../../components/HoustonStructuredData';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
 import CityHero from '@/app/components/CityHero';
+import PerformancesSection from '@/app/components/PerformancesSection';
+import BookingExperienceSection from '@/app/components/BookingExperienceSection';
+import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection';
+import TestimonialsSection from '@/app/components/TestimonialsSection';
+import FAQSection from '@/app/components/FAQSection';
 
 export const metadata: Metadata = {
   title: 'Book a Magician Near Houston – Corporate Events',
@@ -15,10 +19,14 @@ export const metadata: Metadata = {
 export default function HoustonMagicianPage() {
   return (
     <>
-      <HoustonStructuredData />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Houston" heroImage="/images/hero.webp" />
         <QuoteForm />
+        <PerformancesSection />
+        <BookingExperienceSection />
+        <ExperienceCreatorSection />
+        <TestimonialsSection />
+        <FAQSection />
         <CityFooter />
       </main>
     </>

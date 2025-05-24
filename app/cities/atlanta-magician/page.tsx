@@ -7,6 +7,11 @@ import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
 import CityHero from '@/app/components/CityHero';
 import ClientQuoteForm from '@/app/components/ClientQuoteForm';
+import PerformancesSection from '@/app/components/PerformancesSection';
+import BookingExperienceSection from '@/app/components/BookingExperienceSection';
+import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection';
+import TestimonialsSection from '@/app/components/TestimonialsSection';
+import FAQSection from '@/app/components/FAQSection';
 
 // Removed dynamic import of QuoteForm
 // const QuoteForm = dynamic(() => import('../../components/QuoteForm'), { ssr: false });
@@ -28,6 +33,11 @@ export default function AtlantaMagicianPage() {
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Atlanta" heroImage="/images/hero.webp" />
         <ClientQuoteForm />
+        <PerformancesSection />
+        <BookingExperienceSection />
+        <ExperienceCreatorSection />
+        <TestimonialsSection />
+        <FAQSection />
         <CityFooter />
       </main>
     </>
