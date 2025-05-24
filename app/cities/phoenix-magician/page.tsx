@@ -3,14 +3,20 @@ import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
 import PhoenixStructuredData from '../../components/PhoenixStructuredData';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Hire a Magician in Phoenix – Corporate Parties',
+  description: 'Hire a top-rated magician in Phoenix for unforgettable corporate events, parties, and trade shows.'
+};
 
 export default function PhoenixMagician() {
   return (
     <>
       <PhoenixStructuredData />
-      <main className="min-h-screen">
+      <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
-        <div className="relative min-h-screen bg-black" style={{ 
+        <div className="relative h-screen bg-black" style={{ 
           backgroundImage: "url('/images/edit.png')",
           backgroundPosition: "center top",
           backgroundSize: "cover",
@@ -36,37 +42,37 @@ export default function PhoenixMagician() {
           </nav>
 
           {/* Hero Content */}
-          <div className="relative z-10 min-h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 pt-12 md:pt-24">
+          <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 pt-24">
             <div className="space-y-6 max-w-3xl">
               <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
-                Elite Corporate Entertainment in Phoenix
+                Elite Corporate Entertainment
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire Magician in Phoenix for Events & Corporate Parties
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+                Hire a Magician in Phoenix – Corporate Events
               </h1>
-              <p className="text-lg md:text-2xl text-gray-200 drop-shadow-md mt-8 md:mt-12">
-                Elevate your corporate events in Phoenix with world-class entertainment that leaves a lasting impression
+              <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
+                James Kenyon brings high-energy magic to Phoenix corporate events, trade shows, weddings, and private parties. As Phoenix's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown Phoenix or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Phoenix's premier magician to make your next event truly magical.
               </p>
-              <div className="pt-4 md:pt-8">
+              <div className="pt-8">
                 <Link 
                   href="#contact"
-                  className="inline-block bg-black hover:bg-gray-900 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg font-semibold transition-colors shadow-lg border border-gray-700"
+                  className="inline-block bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg border border-gray-700"
                 >
                   Check Availability
                 </Link>
               </div>
               
               {/* Stats */}
-              <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 pt-6 md:pt-8 text-gray-200">
-                <div className="flex items-center justify-center space-x-2">
+              <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200">
+                <div className="flex items-center space-x-2">
                   <span className="text-2xl">✨</span>
                   <span>10+ Years Experience</span>
                 </div>
-                <div className="flex items-center justify-center space-x-2">
+                <div className="flex items-center space-x-2">
                   <span className="text-2xl">🏢</span>
                   <span>Fortune 500 Clients</span>
                 </div>
-                <div className="flex items-center justify-center space-x-2">
+                <div className="flex items-center space-x-2">
                   <span className="text-2xl">🌍</span>
                   <span>International Performer</span>
                 </div>
@@ -233,6 +239,53 @@ export default function PhoenixMagician() {
                     </li>
                   </ul>
                   <Link href="/trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="w-full bg-black py-20 px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+              What our clients say
+            </h2>
+            <p className="text-lg md:text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto">
+              Don't just take our word for it. Here's what event planners and executives have to say about James's performances.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Testimonial 1 */}
+              <div className="bg-zinc-900 rounded-xl p-8 border border-zinc-700">
+                <div className="flex items-center mb-4">
+                  <div className="text-yellow-400 text-2xl">★★★★★</div>
+                </div>
+                <p className="text-gray-200 mb-6">"James was the highlight of our annual conference. His ability to engage the audience and incorporate our company's messaging into his performance was impressive."</p>
+                <div className="text-gray-400">
+                  <div className="font-semibold">Sarah Johnson</div>
+                  <div>Event Director, TechCorp</div>
+                </div>
+              </div>
+              {/* Testimonial 2 */}
+              <div className="bg-zinc-900 rounded-xl p-8 border border-zinc-700">
+                <div className="flex items-center mb-4">
+                  <div className="text-yellow-400 text-2xl">★★★★★</div>
+                </div>
+                <p className="text-gray-200 mb-6">"The close-up magic during our networking event created the perfect atmosphere for our guests to connect. James's professionalism and skill were outstanding."</p>
+                <div className="text-gray-400">
+                  <div className="font-semibold">Michael Chen</div>
+                  <div>Marketing Manager, Global Solutions</div>
+                </div>
+              </div>
+              {/* Testimonial 3 */}
+              <div className="bg-zinc-900 rounded-xl p-8 border border-zinc-700">
+                <div className="flex items-center mb-4">
+                  <div className="text-yellow-400 text-2xl">★★★★★</div>
+                </div>
+                <p className="text-gray-200 mb-6">"Our trade show booth traffic increased significantly thanks to James's engaging performances. He perfectly highlighted our product features through his magic."</p>
+                <div className="text-gray-400">
+                  <div className="font-semibold">Emily Rodriguez</div>
+                  <div>Sales Director, Innovate Inc.</div>
                 </div>
               </div>
             </div>

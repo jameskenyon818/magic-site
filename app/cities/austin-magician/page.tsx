@@ -3,12 +3,18 @@ import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
 import AustinStructuredData from '../../components/AustinStructuredData';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Book a Magician Near Austin – Corporate Events',
+  description: 'Hire a top-rated magician in Austin for unforgettable corporate events, parties, and trade shows.'
+};
 
 export default function AustinMagicianPage() {
   return (
     <>
       <AustinStructuredData />
-      <main className="min-h-screen">
+      <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <div className="relative h-screen bg-black" style={{ 
           backgroundImage: "url('/images/edit.png')",
@@ -42,10 +48,10 @@ export default function AustinMagicianPage() {
                 Elite Corporate Entertainment
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire Magician in Austin for Corporate Events & Parties
+                Hire a Magician in Austin – Corporate Events
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
-                James Kenyon brings high-energy magic to Austin corporate events, trade shows, weddings, and private parties. As Austin&apos;s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you&apos;re planning an event in downtown Austin or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Austin&apos;s premier magician to make your next event truly magical.
+                James Kenyon brings high-energy magic to Austin corporate events, trade shows, weddings, and private parties. As Austin's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown Austin or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Austin's premier magician to make your next event truly magical.
               </p>
               <div className="pt-8">
                 <Link 

@@ -3,6 +3,12 @@ import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
 import SDStructuredData from '../../components/SDStructuredData';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Hire a Magician in San Diego – Corporate Parties',
+  description: 'Hire a top-rated magician in San Diego for unforgettable corporate events, parties, and trade shows.'
+};
 
 export default function SanDiegoMagicianPage() {
   return (
@@ -42,10 +48,10 @@ export default function SanDiegoMagicianPage() {
                 Elite Corporate Entertainment
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                San Diego Magician for Hire — Events, Parties, Trade Shows
+                Hire a Magician in San Diego – Corporate Events
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
-                James Kenyon brings high-energy magic to San Diego corporate events, trade shows, weddings, and private parties. As San Diego's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown San Diego, La Jolla, or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust San Diego's premier magician to make your next event truly magical.
+                James Kenyon brings high-energy magic to San Diego corporate events, trade shows, weddings, and private parties. As San Diego's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown San Diego or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust San Diego's premier magician to make your next event truly magical.
               </p>
               <div className="pt-8">
                 <Link 

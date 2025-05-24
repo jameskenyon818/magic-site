@@ -1,25 +1,25 @@
 import { Metadata } from 'next';
 
-export default function DallasStructuredData() {
+export default function SanAntonioStructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "James Kenyon - Corporate Magician in Dallas",
-    "image": "https://www.jameskenyon.com/images/edit.png",
-    "description": "Hire James Kenyon, Dallas's premier corporate magician for corporate events, trade shows, and private parties. World-class entertainment that elevates any occasion.",
+    "name": "James Kenyon - Corporate Magician in San Antonio",
+    "image": "https://jameskenyon.com/images/james-kenyon.jpg",
+    "description": "Professional corporate magician in San Antonio, Texas. Available for corporate events, trade shows, and private parties. World-class entertainment that leaves a lasting impression.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Dallas",
+      "addressLocality": "San Antonio",
       "addressRegion": "TX",
       "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 32.7767,
-      "longitude": -96.7970
+      "latitude": 29.4241,
+      "longitude": -98.4936
     },
-    "url": "https://www.jameskenyon.com/dallas-magician",
-    "telephone": "+17372354182",
+    "url": "https://jameskenyon.com/cities/san-antonio-magician",
+    "telephone": "+1-512-555-0123",
     "priceRange": "$$$",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -32,8 +32,8 @@ export default function DallasStructuredData() {
         "Saturday",
         "Sunday"
       ],
-      "opens": "00:00",
-      "closes": "23:59"
+      "opens": "09:00",
+      "closes": "17:00"
     },
     "sameAs": [
       "https://www.facebook.com/jameskenyonmagic",

@@ -3,6 +3,7 @@ import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
 import HoustonStructuredData from '../../components/HoustonStructuredData';
+import { Metadata } from 'next';
 
 export default function HoustonMagicianPage() {
   return (
@@ -42,10 +43,10 @@ export default function HoustonMagicianPage() {
                 Elite Corporate Entertainment
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire Magician in Houston for Corporate Events & Parties
+                Book a Magician Near Houston – Corporate Events
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
-                James Kenyon brings high-energy magic to Houston corporate events, trade shows, weddings, and private parties. As Houston&apos;s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you&apos;re planning an event in downtown Houston, the Galleria area, or the surrounding communities, James delivers world-class entertainment that elevates any occasion. Trust Houston&apos;s premier magician to make your next event truly magical.
+                James Kenyon brings high-energy magic to Houston corporate events, trade shows, weddings, and private parties. As Houston's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown Houston or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Houston's premier magician to make your next event truly magical.
               </p>
               <div className="pt-8">
                 <Link 
@@ -468,4 +469,9 @@ export default function HoustonMagicianPage() {
       </main>
     </>
   );
-} 
+}
+
+export const metadata: Metadata = {
+  title: 'Hire a Magician in Houston – Corporate Parties',
+  description: 'Hire a top-rated magician in Houston for unforgettable corporate events, parties, and trade shows.'
+}; 

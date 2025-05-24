@@ -1,4 +1,4 @@
-export default function MiamiStructuredData() {
+export default function NewYorkStructuredData() {
   return (
     <script
       type="application/ld+json"
@@ -6,23 +6,23 @@ export default function MiamiStructuredData() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "James Kenyon | Corporate Magician in Miami",
-          "image": "https://jameskenyonmagic.com/images/edit.png",
-          "description": "Hire James Kenyon, Miami's premier corporate magician, for unforgettable entertainment at your next event. Specializing in close-up magic, stage shows, and trade show performances.",
+          "name": "James Kenyon Magic",
+          "image": "https://www.jameskenyonmagic.com/images/edit.png",
+          "description": "James Kenyon is a professional magician specializing in trade shows and corporate events in New York City.",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Miami",
-            "addressLocality": "Miami",
-            "addressRegion": "FL",
-            "postalCode": "33101",
+            "streetAddress": "New York",
+            "addressLocality": "New York",
+            "addressRegion": "NY",
+            "postalCode": "10001",
             "addressCountry": "US"
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "25.7617",
-            "longitude": "-80.1918"
+            "latitude": "40.7128",
+            "longitude": "-74.0060"
           },
-          "url": "https://jameskenyonmagic.com/cities/miami-magician",
+          "url": "https://www.jameskenyonmagic.com/cities/new-york-magician",
           "telephone": "737-235-4182",
           "priceRange": "$$$",
           "openingHoursSpecification": {
@@ -40,8 +40,8 @@ export default function MiamiStructuredData() {
             "closes": "23:59"
           },
           "sameAs": [
-            "https://www.instagram.com/jameskenyonmagic/",
-            "https://www.linkedin.com/in/jameskenyonmagic/",
+            "https://www.instagram.com/jameskenyonmagic",
+            "https://www.linkedin.com/in/jameskenyonmagic",
             "https://www.youtube.com/@jameskenyonmagic"
           ]
         })

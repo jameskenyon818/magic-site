@@ -3,12 +3,18 @@ import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
 import LAStructuredData from '../../components/LAStructuredData';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Book a Magician Near Los Angeles – Corporate Events',
+  description: 'Hire a top-rated magician in Los Angeles for unforgettable corporate events, parties, and trade shows.'
+};
 
 export default function LosAngelesMagicianPage() {
   return (
     <>
       <LAStructuredData />
-      <main className="min-h-screen">
+      <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <div className="relative h-screen bg-black" style={{ 
           backgroundImage: "url('/images/edit.png')",
@@ -42,10 +48,10 @@ export default function LosAngelesMagicianPage() {
                 Elite Corporate Entertainment
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire Magician in Los Angeles for Corporate Events & Parties
+                Book a Magician Near Los Angeles – Corporate Events
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
-                James Kenyon brings high-energy magic to Los Angeles corporate events, trade shows, weddings, and private parties. As Los Angeles&apos;s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you&apos;re planning an event in downtown LA, Hollywood, or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Los Angeles&apos;s premier magician to make your next event truly magical.
+                James Kenyon brings high-energy magic to Los Angeles corporate events, trade shows, weddings, and private parties. As Los Angeles's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown Los Angeles or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Los Angeles's premier magician to make your next event truly magical.
               </p>
               <div className="pt-8">
                 <Link 

@@ -3,12 +3,18 @@ import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
 import OrlandoStructuredData from '../../components/OrlandoStructuredData';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Book a Magician Near Orlando – Corporate Events',
+  description: 'Hire a top-rated magician in Orlando for unforgettable corporate events, parties, and trade shows.'
+};
 
 export default function OrlandoMagician() {
   return (
     <>
       <OrlandoStructuredData />
-      <main className="min-h-screen">
+      <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <div className="relative h-screen bg-black" style={{ 
           backgroundImage: "url('/images/edit.png')",
@@ -39,13 +45,13 @@ export default function OrlandoMagician() {
           <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 pt-24">
             <div className="space-y-6 max-w-3xl">
               <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
-                Elite Corporate Entertainment in Orlando
+                Elite Corporate Entertainment
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire Magician in Orlando for Corporate Events & Parties
+                Book a Magician Near Orlando – Corporate Events
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
-                Elevate your corporate events in Orlando with world-class entertainment that leaves a lasting impression
+                James Kenyon brings high-energy magic to Orlando corporate events, trade shows, weddings, and private parties. As Orlando's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown Orlando or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Orlando's premier magician to make your next event truly magical.
               </p>
               <div className="pt-8">
                 <Link 
