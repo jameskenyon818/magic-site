@@ -33,15 +33,15 @@ export default function Home() {
         </nav>
 
         {/* Hero Content */}
-        <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 sm:px-6 pt-16 sm:pt-24">
+        <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 sm:px-6 pt-12 sm:pt-24">
           <div className="space-y-4 sm:space-y-6 max-w-3xl">
             <div className="inline-block bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
               Elite Corporate Entertainment
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+            <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
               Hire a Corporate Magician for Events & Trade Shows
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 drop-shadow-md mt-8 sm:mt-12">
+            <p className="text-base sm:text-xl md:text-2xl text-gray-200 drop-shadow-md mt-4 sm:mt-12">
               Elevate your corporate events with world-class entertainment that leaves a lasting impression
             </p>
             <div className="pt-6 sm:pt-8">
@@ -75,23 +75,23 @@ export default function Home() {
       <QuoteForm />
 
       {/* Performances Section */}
-      <section id="performances" className="w-full bg-black py-12 sm:py-20 px-4">
+      <section id="performances" className="w-full bg-black py-8 sm:py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-3 sm:mb-4">
+          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-3 sm:mb-4">
             Tailored magical experiences for every corporate occasion
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-400 text-center mb-8 sm:mb-12 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-lg md:text-xl text-gray-400 text-center mb-6 sm:mb-12 max-w-3xl mx-auto">
             From intimate executive dinners to large-scale conferences, James offers customized performances to suit your specific event needs.
           </p>
           {/* Images Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-0 relative">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-0 relative">
             {/* Close-Up Magic Image */}
             <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
               <img src="/images/edit5.png" alt="Close-Up Magic" className="w-full aspect-square object-cover" />
               <div className="flex-1 flex flex-col items-center p-4 sm:p-8 text-center h-full">
                 <div className="flex-1 flex flex-col justify-start">
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 mt-4">Close-Up Magic</h3>
-                  <p className="text-base sm:text-lg text-gray-200 mb-4">Interactive magic performed up-close at tables during dinners, receptions, or networking events. Perfect for creating conversation and breaking the ice.</p>
+                  <h3 className="text-lg sm:text-2xl font-bold text-white mb-2 mt-4">Close-Up Magic</h3>
+                  <p className="text-sm sm:text-lg text-gray-200 mb-4">Interactive magic performed up-close at tables during dinners, receptions, or networking events. Perfect for creating conversation and breaking the ice.</p>
                 </div>
                 <ul className="text-left space-y-4 sm:space-y-6 w-full max-w-xs mx-auto mt-auto mb-4 sm:mb-6">
                   <li className="flex flex-col">
@@ -157,12 +157,12 @@ export default function Home() {
       </section>
 
       {/* Seamless Booking Experience Section */}
-      <section className="w-full bg-black py-20 px-4">
+      <section className="w-full bg-black py-12 sm:py-20 px-4">
         <div className="max-w-5xl mx-auto text-center">
-          <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mb-8">Check Availability</Link>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">A seamless booking experience</h2>
-          <p className="text-lg md:text-xl text-gray-300 mb-16 max-w-2xl mx-auto">From initial inquiry to post-event follow-up, we ensure a professional and straightforward process.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-base sm:text-lg mb-6 sm:mb-8">Check Availability</Link>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">A seamless booking experience</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-16 max-w-2xl mx-auto">From initial inquiry to post-event follow-up, we ensure a professional and straightforward process.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {/* Step 1: Consultation */}
             <div className="flex flex-col items-center bg-[#181818] rounded-2xl p-8 shadow-lg">
               {/* Icon */}
@@ -221,16 +221,16 @@ export default function Home() {
       </section>
 
       {/* Trusted by Industry Leaders Section */}
-      <section className="w-full bg-black py-20 px-4">
+      <section className="w-full bg-black py-12 sm:py-20 px-4">
         <div className="max-w-6xl mx-auto flex flex-col items-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">Trusted by industry leaders</h2>
-          <p className="text-lg md:text-xl text-gray-300 text-center mb-10 max-w-2xl">James has performed for some of the world&apos;s most recognizable brands and at exclusive corporate events.</p>
-          <div className="flex flex-col items-center space-y-4 mb-10 w-full">
-            <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Contact / Check Availability</Link>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-3 sm:mb-4">Trusted by industry leaders</h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 text-center mb-6 sm:mb-10 max-w-2xl">James has performed for some of the world&apos;s most recognizable brands and at exclusive corporate events.</p>
+          <div className="flex flex-col items-center space-y-4 mb-6 sm:mb-10 w-full">
+            <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-base sm:text-lg">Contact / Check Availability</Link>
           </div>
           {/* Past Clients Logo Grid */}
-          <div className="bg-black p-6 rounded-xl max-w-5xl mx-auto">
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-0 items-center justify-center">
+          <div className="bg-black p-4 sm:p-6 rounded-xl max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4 sm:gap-0 items-center justify-center">
               <Image src="/logos/hermes-1.svg" alt="Hermes Logo" width={160} height={80} className="h-20 w-auto object-contain mx-auto" />
               <Image src="/logos/nike-11.svg" alt="Nike Logo" width={160} height={80} className="h-20 w-auto object-contain mx-auto" />
               <Image src="/logos/nissan-6.svg" alt="Nissan Logo" width={160} height={80} className="h-20 w-auto object-contain mx-auto" />
