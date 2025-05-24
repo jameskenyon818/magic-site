@@ -22,20 +22,30 @@ export default function NewYorkMagicianPage() {
       <NewYorkStructuredData />
       <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
-        <div className="relative h-screen bg-black">
-          <div className="relative w-full h-[50vh] md:h-[60vh]">
-            <Image
-              src="/images/edit.png"
-              alt="New York Magician"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-              quality={85}
-            />
-          </div>
+        <div className="relative h-screen bg-black" style={{ 
+          backgroundImage: "url('/images/edit.png')",
+          backgroundPosition: "center top",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat"
+        }}>
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/50" />
+
+          {/* Navigation */}
+          <nav className="relative z-10 bg-black/30 backdrop-blur-sm shadow-md text-white py-4">
+            <div className="container mx-auto px-4 flex justify-between items-center">
+              <div className="text-xl font-semibold">
+                James Kenyon | Corporate Illusionist
+              </div>
+              <div className="hidden md:flex space-x-6">
+                <Link href="/about" className="hover:text-gray-300 transition">About</Link>
+                <Link href="#performances" className="hover:text-gray-300 transition">Performances</Link>
+                <Link href="#clients" className="hover:text-gray-300 transition">Clients</Link>
+                <Link href="#testimonials" className="hover:text-gray-300 transition">Testimonials</Link>
+                <Link href="#contact" className="hover:text-gray-300 transition">Contact</Link>
+              </div>
+            </div>
+          </nav>
 
           {/* Hero Content */}
           <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 sm:px-6 pt-12 sm:pt-24">
