@@ -42,7 +42,7 @@ export default function LosAngelesMagicianPage() {
                 Elite Corporate Entertainment
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Los Angeles's Premier Magician for Events & Trade Shows
+                Hire a Corporate Magician in Los Angeles for Events & Trade Shows
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
                 James Kenyon brings high-energy magic to Los Angeles corporate events, trade shows, weddings, and private parties. As Los Angeles&apos;s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you&apos;re planning an event in downtown LA, Hollywood, or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Los Angeles&apos;s premier magician to make your next event truly magical.

@@ -39,7 +39,7 @@ export default function Home() {
               Elite Corporate Entertainment
             </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-              Captivate Your Audience with Extraordinary Magic
+              Hire a Corporate Magician for Events & Trade Shows
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
               Elevate your corporate events with world-class entertainment that leaves a lasting impression

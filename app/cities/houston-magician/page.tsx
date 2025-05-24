@@ -42,7 +42,7 @@ export default function HoustonMagicianPage() {
                 Elite Corporate Entertainment
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Houston's Premier Magician for Events & Trade Shows
+                Hire a Corporate Magician in Houston for Events & Trade Shows
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
                 James Kenyon brings high-energy magic to Houston corporate events, trade shows, weddings, and private parties. As Houston&apos;s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you&apos;re planning an event in downtown Houston, the Galleria area, or the surrounding communities, James delivers world-class entertainment that elevates any occasion. Trust Houston&apos;s premier magician to make your next event truly magical.

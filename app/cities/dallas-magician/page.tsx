@@ -76,7 +76,7 @@ export default function DallasMagicianPage() {
                 Elite Corporate Entertainment
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Dallas's Premier Magician for Events & Trade Shows
+                Hire a Corporate Magician in Dallas for Events & Trade Shows
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
                 James Kenyon brings high-energy magic to Dallas corporate events, trade shows, weddings, and private parties. As Dallas&apos;s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you&apos;re planning an event in downtown Dallas or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Dallas&apos;s premier magician to make your next event truly magical.
