@@ -18,11 +18,13 @@ export default function MiamiMagicianPage() {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/miami-skyline.jpg"
+              src="/images/miami-skyline.webp"
               alt="Miami Skyline"
               fill
               className="object-cover"
               priority
+              sizes="100vw"
+              quality={90}
             />
             <div className="absolute inset-0 bg-black/50" />
           </div>
@@ -80,7 +82,16 @@ export default function MiamiMagicianPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
               {/* Close-Up Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/edit5.png" alt="Close-Up Magic" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/edit5.webp"
+                    alt="Close-Up Magic"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-2xl font-bold text-white mb-2 mt-4">Close-Up Magic</h3>
@@ -103,7 +114,16 @@ export default function MiamiMagicianPage() {
               </div>
               {/* Stage Show Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/thumbtack 2.jpg" alt="Stage Show" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/thumbtack-2.webp"
+                    alt="Stage Show"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-2xl font-bold text-white mb-2 mt-4">Stage Show</h3>
@@ -126,7 +146,16 @@ export default function MiamiMagicianPage() {
               </div>
               {/* Trade Show Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/IMG_5401.JPG" alt="Trade Show Magic" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/IMG_5401.webp"
+                    alt="Trade Show Magic"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-2xl font-bold text-white mb-2 mt-4">Trade Show Magic</h3>

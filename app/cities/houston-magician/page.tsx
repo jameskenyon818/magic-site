@@ -5,18 +5,27 @@ import LogoCarousel from '../../components/LogoCarousel';
 import HoustonStructuredData from '../../components/HoustonStructuredData';
 import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Hire a Magician in Houston – Corporate Events',
+  description: 'Hire a top-rated magician in Houston for unforgettable corporate events, parties, and trade shows.'
+};
+
 export default function HoustonMagicianPage() {
   return (
     <>
       <HoustonStructuredData />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <div className="relative h-screen bg-black" style={{ 
-          backgroundImage: "url('/images/edit.png')",
-          backgroundPosition: "center top",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
-        }}>
+        <div className="relative h-screen bg-black">
+          <Image
+            src="/images/edit.webp"
+            alt="Houston Magician Hero"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+            quality={90}
+          />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/50" />
 
@@ -119,7 +128,6 @@ export default function HoustonMagicianPage() {
 
         <QuoteForm />
 
-        {/* Rest of the sections remain the same as Dallas page */}
         {/* Performances Section */}
         <section id="performances" className="w-full bg-black py-20 px-4">
           <div className="max-w-6xl mx-auto">
@@ -133,7 +141,16 @@ export default function HoustonMagicianPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
               {/* Close-Up Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/edit5.png" alt="Close-Up Magic" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/edit5.webp"
+                    alt="Close-Up Magic"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-2xl font-bold text-white mb-2 mt-4">Close-Up Magic</h3>
@@ -155,7 +172,16 @@ export default function HoustonMagicianPage() {
 
               {/* Stage Show Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/edit.png" alt="Stage Show Magic" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/edit.webp"
+                    alt="Stage Show Magic"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-2xl font-bold text-white mb-2 mt-4">Stage Show Magic</h3>
@@ -177,7 +203,16 @@ export default function HoustonMagicianPage() {
 
               {/* Trade Show Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/IMG_5401.JPG" alt="Trade Show Magic" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/IMG_5401.webp"
+                    alt="Trade Show Magic"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-2xl font-bold text-white mb-2 mt-4">Trade Show Magic</h3>
@@ -469,9 +504,4 @@ export default function HoustonMagicianPage() {
       </main>
     </>
   );
-}
-
-export const metadata: Metadata = {
-  title: 'Hire a Magician in Houston – Corporate Parties',
-  description: 'Hire a top-rated magician in Houston for unforgettable corporate events, parties, and trade shows.'
-}; 
+} 
