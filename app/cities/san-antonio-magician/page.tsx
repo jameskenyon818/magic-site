@@ -5,6 +5,7 @@ import LogoCarousel from '../../components/LogoCarousel';
 import SanAntonioStructuredData from '../../components/SanAntonioStructuredData';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
+import CityHero from '@/app/components/CityHero';
 
 export const metadata: Metadata = {
   title: 'Book a Magician Near San Antonio – Corporate Events',
@@ -16,6 +17,7 @@ export default function SanAntonioMagicianPage() {
     <>
       <SanAntonioStructuredData />
       <main className="min-h-screen bg-black text-white">
+        <CityHero cityName="San Antonio" heroImage="/images/hero.webp" />
         {/* Hero Section */}
         <div className="relative h-screen bg-black">
           <Image

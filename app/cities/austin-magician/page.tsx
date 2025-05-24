@@ -5,6 +5,7 @@ import LogoCarousel from '../../components/LogoCarousel';
 import AustinStructuredData from '../../components/AustinStructuredData';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
+import CityHero from '@/app/components/CityHero';
 
 export const metadata: Metadata = {
   title: 'Book a Magician Near Austin – Corporate Events',
@@ -16,6 +17,7 @@ export default function AustinMagicianPage() {
     <>
       <AustinStructuredData />
       <main className="min-h-screen bg-black text-white">
+        <CityHero cityName="Austin" heroImage="/images/hero.webp" />
         {/* Hero Section */}
         <div className="relative h-screen bg-black">
           <Image

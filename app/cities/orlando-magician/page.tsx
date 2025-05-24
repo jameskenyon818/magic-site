@@ -5,6 +5,7 @@ import Head from 'next/head';
 import LogoCarousel from '../../components/LogoCarousel';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
+import CityHero from '@/app/components/CityHero';
 
 // Dynamically import components that are not needed for initial render
 const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
@@ -26,6 +27,7 @@ export default function OrlandoMagician() {
       </Head>
       <OrlandoStructuredData />
       <main className="min-h-screen bg-black text-white">
+        <CityHero cityName="Orlando" heroImage="/images/hero.webp" />
         {/* Hero Section */}
         <div className="relative h-screen bg-black">
           <Image

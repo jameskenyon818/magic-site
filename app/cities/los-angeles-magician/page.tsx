@@ -5,6 +5,7 @@ import LogoCarousel from '../../components/LogoCarousel';
 import LAStructuredData from '../../components/LAStructuredData';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
+import CityHero from '@/app/components/CityHero';
 
 export const metadata: Metadata = {
   title: 'Hire a Magician in Los Angeles – Corporate Events',
@@ -16,6 +17,7 @@ export default function LosAngelesMagicianPage() {
     <>
       <LAStructuredData />
       <main className="min-h-screen bg-black text-white">
+        <CityHero cityName="Los Angeles" heroImage="/images/hero.webp" />
         {/* Hero Section */}
         <div className="relative h-screen bg-black">
           <Image
