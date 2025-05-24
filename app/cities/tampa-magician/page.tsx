@@ -1,12 +1,18 @@
 import Link from 'next/link';
-import QuoteForm from '../../components/QuoteForm';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
-import TampaStructuredData from '../../components/TampaStructuredData';
 import { Metadata } from 'next';
 
+// Dynamically import components that are not needed for initial render
+const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
+  loading: () => <div className="min-h-[400px] bg-black" />
+});
+
+const TampaStructuredData = dynamic(() => import('../../components/TampaStructuredData'));
+
 export const metadata: Metadata = {
-  title: 'Book a Magician Near Tampa – Corporate Events',
+  title: 'Hire a Magician in Tampa – Corporate Events',
   description: 'Hire a top-rated magician in Tampa for unforgettable corporate events, parties, and trade shows.'
 };
 
@@ -17,15 +23,17 @@ export default function TampaMagicianPage() {
       <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <div className="relative h-screen bg-black">
-          <Image
-            src="/images/edit.png"
-            alt="Tampa Magician Hero"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-            quality={90}
-          />
+          <div className="relative w-full h-[50vh] md:h-[60vh]">
+            <Image
+              src="/images/edit.png"
+              alt="Tampa Magician"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+              quality={85}
+            />
+          </div>
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/50" />
 
@@ -100,14 +108,15 @@ export default function TampaMagicianPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
               {/* Close-Up Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <div className="relative w-full aspect-square">
+                <div className="relative w-full h-[300px] md:h-[400px]">
                   <Image
                     src="/images/edit5.png"
                     alt="Close-Up Magic"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                     loading="lazy"
+                    quality={85}
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
@@ -132,14 +141,15 @@ export default function TampaMagicianPage() {
               </div>
               {/* Stage Show Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <div className="relative w-full aspect-square">
+                <div className="relative w-full h-[300px] md:h-[400px]">
                   <Image
                     src="/images/thumbtack 2.jpg"
                     alt="Stage Show"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                     loading="lazy"
+                    quality={85}
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
@@ -164,14 +174,15 @@ export default function TampaMagicianPage() {
               </div>
               {/* Trade Show Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <div className="relative w-full aspect-square">
+                <div className="relative w-full h-[300px] md:h-[400px]">
                   <Image
                     src="/images/IMG_5401.JPG"
                     alt="Trade Show Magic"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                     loading="lazy"
+                    quality={85}
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">

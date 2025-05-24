@@ -1,12 +1,18 @@
 import Link from 'next/link';
-import QuoteForm from '../../components/QuoteForm';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
-import DenverStructuredData from '../../components/DenverStructuredData';
 import { Metadata } from 'next';
 
+// Dynamically import components that are not needed for initial render
+const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
+  loading: () => <div className="min-h-[400px] bg-black" />
+});
+
+const DenverStructuredData = dynamic(() => import('../../components/DenverStructuredData'));
+
 export const metadata: Metadata = {
-  title: 'Book a Magician Near Denver – Corporate Events',
+  title: 'Hire a Magician in Denver – Corporate Events',
   description: 'Hire a top-rated magician in Denver for unforgettable corporate events, parties, and trade shows.'
 };
 
@@ -17,15 +23,17 @@ export default function DenverMagicianPage() {
       <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <div className="relative h-screen bg-black">
-          <Image
-            src="/images/edit.png"
-            alt="Denver Magician Hero"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-            quality={90}
-          />
+          <div className="relative w-full h-[50vh] md:h-[60vh]">
+            <Image
+              src="/images/edit.png"
+              alt="Denver Magician"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+              quality={85}
+            />
+          </div>
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/50" />
 

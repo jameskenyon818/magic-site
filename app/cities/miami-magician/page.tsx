@@ -1,12 +1,18 @@
 import Link from 'next/link';
-import QuoteForm from '../../components/QuoteForm';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
-import MiamiStructuredData from '../../components/MiamiStructuredData';
 import { Metadata } from 'next';
 
+// Dynamically import components that are not needed for initial render
+const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
+  loading: () => <div className="min-h-[400px] bg-black" />
+});
+
+const MiamiStructuredData = dynamic(() => import('../../components/MiamiStructuredData'));
+
 export const metadata: Metadata = {
-  title: 'Hire a Magician in Miami – Corporate Parties',
+  title: 'Hire a Magician in Miami – Corporate Events',
   description: 'Hire a top-rated magician in Miami for unforgettable corporate events, parties, and trade shows.'
 };
 
@@ -17,15 +23,17 @@ export default function MiamiMagicianPage() {
       <main className="min-h-screen bg-black text-white">
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center">
           <div className="absolute inset-0 z-0">
-            <Image
-              src="/images/miami-skyline.webp"
-              alt="Miami Skyline"
-              fill
-              className="object-cover"
-              priority
-              sizes="100vw"
-              quality={90}
-            />
+            <div className="relative w-full h-[50vh] md:h-[60vh]">
+              <Image
+                src="/images/miami-skyline.webp"
+                alt="Miami Skyline"
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover"
+                quality={85}
+              />
+            </div>
             <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 pt-24">
@@ -82,15 +90,15 @@ export default function MiamiMagicianPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
               {/* Close-Up Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <div className="relative w-full aspect-square">
+                <div className="relative w-full h-[300px] md:h-[400px]">
                   <Image
                     src="/images/edit.png"
-                    alt="Miami Magician Hero"
+                    alt="Close-Up Magic"
                     fill
-                    priority
-                    sizes="100vw"
-                    className="object-cover object-center"
-                    quality={90}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                    loading="lazy"
+                    quality={85}
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
@@ -115,14 +123,15 @@ export default function MiamiMagicianPage() {
               </div>
               {/* Stage Show Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <div className="relative w-full aspect-square">
+                <div className="relative w-full h-[300px] md:h-[400px]">
                   <Image
                     src="/images/thumbtack 2.jpg"
                     alt="Stage Show"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                     loading="lazy"
+                    quality={85}
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
@@ -147,14 +156,15 @@ export default function MiamiMagicianPage() {
               </div>
               {/* Trade Show Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <div className="relative w-full aspect-square">
+                <div className="relative w-full h-[300px] md:h-[400px]">
                   <Image
                     src="/images/IMG_5401.JPG"
                     alt="Trade Show Magic"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                     loading="lazy"
+                    quality={85}
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
