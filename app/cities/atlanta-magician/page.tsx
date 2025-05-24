@@ -12,6 +12,7 @@ import BookingExperienceSection from '@/app/components/BookingExperienceSection'
 import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 import FAQSection from '@/app/components/FAQSection';
+import BottomContactSection from '@/app/components/BottomContactSection';
 
 // Removed dynamic import of QuoteForm
 // const QuoteForm = dynamic(() => import('../../components/QuoteForm'), { ssr: false });
@@ -38,6 +39,7 @@ export default function AtlantaMagicianPage() {
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
+        <BottomContactSection />
         <CityFooter />
       </main>
     </>

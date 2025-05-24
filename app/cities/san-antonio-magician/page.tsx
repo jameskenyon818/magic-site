@@ -11,6 +11,7 @@ import BookingExperienceSection from '@/app/components/BookingExperienceSection'
 import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 import FAQSection from '@/app/components/FAQSection';
+import BottomContactSection from '@/app/components/BottomContactSection';
 
 export const metadata: Metadata = {
   title: 'Book a Magician Near San Antonio – Corporate Events',
@@ -29,6 +30,7 @@ export default function SanAntonioMagicianPage() {
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
+        <BottomContactSection />
         <CityFooter />
       </main>
     </>

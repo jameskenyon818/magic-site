@@ -11,6 +11,7 @@ import BookingExperienceSection from '@/app/components/BookingExperienceSection'
 import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 import FAQSection from '@/app/components/FAQSection';
+import BottomContactSection from '@/app/components/BottomContactSection';
 
 // Dynamically import components that are not needed for initial render
 const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
@@ -39,8 +40,9 @@ export default function MiamiMagicianPage() {
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
+        <BottomContactSection />
+        <CityFooter />
       </main>
-      <CityFooter />
     </>
   );
 } 
