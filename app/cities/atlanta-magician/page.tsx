@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+import Head from 'next/head';
 import LogoCarousel from '../../components/LogoCarousel';
 import { Metadata } from 'next';
+import CityFooter from '@/app/components/CityFooter';
 
 // Dynamically import components that are not needed for initial render
 const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
@@ -19,6 +21,9 @@ export const metadata: Metadata = {
 export default function AtlantaMagicianPage() {
   return (
     <>
+      <Head>
+        <link rel="preload" as="image" href="/images/hero.webp" type="image/webp" />
+      </Head>
       <AtlantaStructuredData />
       <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
@@ -33,6 +38,8 @@ export default function AtlantaMagicianPage() {
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
               quality={90}
+              width={1920}
+              height={1080}
             />
           </div>
           {/* Dark overlay */}
@@ -504,28 +511,8 @@ export default function AtlantaMagicianPage() {
             </div>
           </div>
         </section>
-
-        {/* Cities We Serve Footnote */}
-        <footer className="w-full py-8 bg-black text-center">
-          <div className="text-gray-400 text-sm">
-            <span className="font-semibold text-white">Now performing in:</span>{' '}
-            <Link href="/austin-magician" className="hover:underline hover:text-white transition">Austin</Link>{', '}
-            <Link href="/dallas-magician" className="hover:underline hover:text-white transition">Dallas</Link>{', '}
-            <Link href="/houston-magician" className="hover:underline hover:text-white transition">Houston</Link>{', '}
-            <Link href="/san-antonio-magician" className="hover:underline hover:text-white transition">San Antonio</Link>{', '}
-            <Link href="/cities/orlando-magician" className="hover:underline hover:text-white transition">Orlando</Link>{', '}
-            <Link href="/cities/miami-magician" className="hover:underline hover:text-white transition">Miami</Link>{', '}
-            <Link href="/cities/tampa-magician" className="hover:underline hover:text-white transition">Tampa</Link>{', '}
-            <Link href="/cities/los-angeles-magician" className="hover:underline hover:text-white transition">Los Angeles</Link>{', '}
-            <Link href="/cities/san-diego-magician" className="hover:underline hover:text-white transition">San Diego</Link>{', '}
-            <Link href="/cities/chicago-magician" className="hover:underline hover:text-white transition">Chicago</Link>{', '}
-            <Link href="/cities/new-york-magician" className="hover:underline hover:text-white transition">New York</Link>{', '}
-            <Link href="/cities/phoenix-magician" className="hover:underline hover:text-white transition">Phoenix</Link>{', '}
-            <Link href="/cities/atlanta-magician" className="hover:underline hover:text-white transition">Atlanta</Link>{', '}
-            <Link href="/cities/denver-magician" className="hover:underline hover:text-white transition">Denver</Link>
-          </div>
-        </footer>
       </main>
+      <CityFooter />
     </>
   );
 } 

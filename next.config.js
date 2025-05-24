@@ -6,6 +6,10 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  images: {
+    formats: ['image/webp'],
+    minimumCacheTTL: 2592000, // 30 days in seconds
+  },
   async redirects() {
     return [
       {

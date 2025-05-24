@@ -4,6 +4,7 @@ import Image from 'next/image';
 import LogoCarousel from '../../components/LogoCarousel';
 import HoustonStructuredData from '../../components/HoustonStructuredData';
 import { Metadata } from 'next';
+import CityFooter from '@/app/components/CityFooter';
 
 export const metadata: Metadata = {
   title: 'Hire a Magician in Houston – Corporate Events',
@@ -481,27 +482,8 @@ export default function HoustonMagicianPage() {
             </div>
           </div>
         </section>
-
-        {/* Cities We Serve Footnote */}
-        <footer className="w-full py-8 bg-black text-center">
-          <div className="text-gray-400 text-sm">
-            <span className="font-semibold text-white">Cities We Serve:</span>
-            {' '}
-            <Link href="/cities/austin-magician" className="hover:underline hover:text-white transition">Austin</Link>{' | '}
-            <Link href="/cities/dallas-magician" className="hover:underline hover:text-white transition">Dallas</Link>{' | '}
-            <Link href="/cities/houston-magician" className="hover:underline hover:text-white transition">Houston</Link>{' | '}
-            <Link href="/cities/san-antonio-magician" className="hover:underline hover:text-white transition">San Antonio</Link>{' | '}
-            <Link href="/cities/atlanta-magician" className="hover:underline hover:text-white transition">Atlanta</Link>{' | '}
-            <Link href="/cities/chicago-magician" className="hover:underline hover:text-white transition">Chicago</Link>{' | '}
-            <Link href="/cities/los-angeles-magician" className="hover:underline hover:text-white transition">Los Angeles</Link>{' | '}
-            <Link href="/cities/new-york-magician" className="hover:underline hover:text-white transition">New York</Link>{' | '}
-            <Link href="/cities/phoenix-magician" className="hover:underline hover:text-white transition">Phoenix</Link>{' | '}
-            <Link href="/cities/san-diego-magician" className="hover:underline hover:text-white transition">San Diego</Link>
-            <span className="mx-2">|</span>
-            <Link href="/" className="hover:underline hover:text-white transition">Back to Home</Link>
-          </div>
-        </footer>
       </main>
+      <CityFooter />
     </>
   );
 } 
