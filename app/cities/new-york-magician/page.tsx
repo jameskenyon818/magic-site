@@ -18,7 +18,7 @@ export default function NewYorkMagicianPage() {
         {/* Hero Section */}
         <div className="relative h-screen bg-black">
           <Image
-            src="/images/edit.webp"
+            src="/images/edit.png"
             alt="New York Magician Hero"
             fill
             priority
@@ -86,7 +86,7 @@ export default function NewYorkMagicianPage() {
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
                 <div className="relative w-full aspect-square">
                   <Image
-                    src="/images/edit5.webp"
+                    src="/images/edit5.png"
                     alt="Close-Up Magic"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -118,7 +118,7 @@ export default function NewYorkMagicianPage() {
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
                 <div className="relative w-full aspect-square">
                   <Image
-                    src="/images/thumbtack-2.webp"
+                    src="/images/thumbtack 2.jpg"
                     alt="Stage Show"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -150,7 +150,7 @@ export default function NewYorkMagicianPage() {
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
                 <div className="relative w-full aspect-square">
                   <Image
-                    src="/images/IMG_5401.webp"
+                    src="/images/IMG_5401.JPG"
                     alt="Trade Show Magic"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"

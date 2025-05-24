@@ -84,12 +84,13 @@ export default function MiamiMagicianPage() {
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
                 <div className="relative w-full aspect-square">
                   <Image
-                    src="/images/edit5.webp"
-                    alt="Close-Up Magic"
+                    src="/images/edit.png"
+                    alt="Miami Magician Hero"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                    loading="lazy"
+                    priority
+                    sizes="100vw"
+                    className="object-cover object-center"
+                    quality={90}
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
@@ -116,7 +117,7 @@ export default function MiamiMagicianPage() {
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
                 <div className="relative w-full aspect-square">
                   <Image
-                    src="/images/thumbtack-2.webp"
+                    src="/images/thumbtack 2.jpg"
                     alt="Stage Show"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -148,7 +149,7 @@ export default function MiamiMagicianPage() {
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
                 <div className="relative w-full aspect-square">
                   <Image
-                    src="/images/IMG_5401.webp"
+                    src="/images/IMG_5401.JPG"
                     alt="Trade Show Magic"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
