@@ -38,6 +38,11 @@ const nextConfig = {
         destination: '/cities/orlando-magician',
         permanent: true,
       },
+      {
+        source: '/texas/dallas',
+        destination: '/cities/dallas-magician',
+        permanent: true,
+      },
     ]
   },
 }

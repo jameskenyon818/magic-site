@@ -6,7 +6,7 @@ import NewYorkStructuredData from '../../components/NewYorkStructuredData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hire a Magician in New York – Corporate Parties',
+  title: 'Hire a Magician in New York – Corporate Events',
   description: 'Hire a top-rated magician in New York for unforgettable corporate events, parties, and trade shows.'
 };
 
@@ -17,7 +17,7 @@ export default function NewYorkMagicianPage() {
       <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <div className="relative h-screen bg-black" style={{ 
-          backgroundImage: "url('/images/new-york-skyline.jpg')",
+          backgroundImage: "url('/images/edit.png')",
           backgroundPosition: "center top",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat"
@@ -25,56 +25,40 @@ export default function NewYorkMagicianPage() {
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/50" />
 
-          {/* Navigation */}
-          <nav className="relative z-10 bg-black/30 backdrop-blur-sm shadow-md text-white py-4">
-            <div className="container mx-auto px-4 flex justify-between items-center">
-              <div className="text-xl font-semibold">
-                James Kenyon | Corporate Illusionist
-              </div>
-              <div className="hidden md:flex space-x-6">
-                <Link href="/about" className="hover:text-gray-300 transition">About</Link>
-                <Link href="#performances" className="hover:text-gray-300 transition">Performances</Link>
-                <Link href="#clients" className="hover:text-gray-300 transition">Clients</Link>
-                <Link href="#testimonials" className="hover:text-gray-300 transition">Testimonials</Link>
-                <Link href="#contact" className="hover:text-gray-300 transition">Contact</Link>
-              </div>
-            </div>
-          </nav>
-
           {/* Hero Content */}
-          <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 pt-24">
-            <div className="space-y-6 max-w-3xl">
-              <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
+          <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 sm:px-6 pt-16 sm:pt-24">
+            <div className="space-y-4 sm:space-y-6 max-w-3xl">
+              <div className="inline-block bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
                 Elite Corporate Entertainment
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire a Magician in New York – Corporate Parties
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+                Hire a Magician in New York – Corporate Events
               </h1>
-              <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
-                James Kenyon brings high-energy magic to New York corporate events, trade shows, weddings, and private parties. As New York's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in Manhattan or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust New York's premier magician to make your next event truly magical.
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-200 drop-shadow-md mt-8 sm:mt-12">
+                Elevate your corporate events with world-class entertainment that leaves a lasting impression
               </p>
-              <div className="pt-8">
+              <div className="pt-6 sm:pt-8">
                 <Link 
                   href="#contact"
-                  className="inline-block bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg border border-gray-700"
+                  className="inline-block bg-black hover:bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors shadow-lg border border-gray-700"
                 >
                   Check Availability
                 </Link>
               </div>
               
               {/* Stats */}
-              <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200">
+              <div className="flex flex-wrap justify-center gap-4 sm:gap-8 pt-6 sm:pt-8 text-gray-200">
                 <div className="flex items-center space-x-2">
-                  <span className="text-2xl">✨</span>
-                  <span>10+ Years Experience</span>
+                  <span className="text-xl sm:text-2xl">✨</span>
+                  <span className="text-sm sm:text-base">10+ Years Experience</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="text-2xl">🏢</span>
-                  <span>Fortune 500 Clients</span>
+                  <span className="text-xl sm:text-2xl">🏢</span>
+                  <span className="text-sm sm:text-base">Fortune 500 Clients</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="text-2xl">🌍</span>
-                  <span>International Performer</span>
+                  <span className="text-xl sm:text-2xl">🌍</span>
+                  <span className="text-sm sm:text-base">International Performer</span>
                 </div>
               </div>
             </div>
@@ -84,35 +68,35 @@ export default function NewYorkMagicianPage() {
         <QuoteForm />
 
         {/* Performances Section */}
-        <section id="performances" className="w-full bg-black py-20 px-4">
+        <section id="performances" className="w-full bg-black py-12 sm:py-20 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-              Tailored magical experiences for every corporate occasion in New York
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-3 sm:mb-4">
+              Tailored magical experiences for every corporate occasion
             </h2>
-            <p className="text-lg md:text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto">
-              From intimate executive dinners to large-scale conferences, James offers customized performances to suit your specific event needs in New York.
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 text-center mb-8 sm:mb-12 max-w-3xl mx-auto">
+              From intimate executive dinners to large-scale conferences, James offers customized performances to suit your specific event needs.
             </p>
             {/* Images Row */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-0 relative">
               {/* Close-Up Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
                 <img src="/images/edit5.png" alt="Close-Up Magic" className="w-full aspect-square object-cover" />
-                <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
+                <div className="flex-1 flex flex-col items-center p-4 sm:p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
-                    <h3 className="text-2xl font-bold text-white mb-2 mt-4">Close-Up Magic</h3>
-                    <p className="text-gray-200 mb-4 text-lg">Interactive magic performed up-close at tables during dinners, receptions, or networking events. Perfect for creating conversation and breaking the ice.</p>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 mt-4">Close-Up Magic</h3>
+                    <p className="text-base sm:text-lg text-gray-200 mb-4">Interactive magic performed up-close at tables during dinners, receptions, or networking events. Perfect for creating conversation and breaking the ice.</p>
                   </div>
-                  <ul className="text-left space-y-6 w-full max-w-xs mx-auto mt-auto mb-6">
+                  <ul className="text-left space-y-4 sm:space-y-6 w-full max-w-xs mx-auto mt-auto mb-4 sm:mb-6">
                     <li className="flex flex-col">
-                      <div className="flex items-center text-gray-100"><span className="mr-2 text-lg">👥</span> Ideal for groups of 10–300</div>
-                      <div className="text-gray-400 text-sm pl-7">Small to medium events</div>
+                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">👥</span> Ideal for groups of 10–300</div>
+                      <div className="text-gray-400 text-xs sm:text-sm pl-7">Small to medium events</div>
                     </li>
                     <li className="flex flex-col">
-                      <div className="flex items-center text-gray-100"><span className="mr-2 text-lg">⏱️</span> 30–2 hour+ minute performances</div>
-                      <div className="text-gray-400 text-sm pl-7">Flexible set lengths</div>
+                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> 30–2 hour+ minute performances</div>
+                      <div className="text-gray-400 text-xs sm:text-sm pl-7">Flexible set lengths</div>
                     </li>
                   </ul>
-                  <Link href="/close-up-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
+                  <Link href="/close-up-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-base sm:text-lg">Learn More</Link>
                 </div>
                 {/* Divider overlay right edge */}
                 <div className="hidden md:block absolute top-0 right-0 h-full w-px bg-white/20 z-10" />
