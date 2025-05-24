@@ -28,20 +28,15 @@ export default function MiamiMagicianPage() {
       <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
         <div className="relative h-screen bg-black">
-          {/* Hero Image */}
-          <div className="absolute inset-0">
-            <Image
-              src="/images/hero.webp"
-              alt="Corporate Magician in Miami"
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-              quality={90}
-              width={1920}
-              height={1080}
-            />
-          </div>
+          <Image
+            src="/images/edit.webp"
+            alt="Miami Magician Hero"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+            quality={90}
+          />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/50" />
 
@@ -62,39 +57,39 @@ export default function MiamiMagicianPage() {
           </nav>
 
           {/* Hero Content */}
-          <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 sm:px-6 pt-12 sm:pt-24">
-            <div className="space-y-4 sm:space-y-6 max-w-3xl">
-              <div className="inline-block bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
-                Corporate Entertainment in Miami
+          <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 pt-24">
+            <div className="space-y-6 max-w-3xl">
+              <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
+                Elite Corporate Entertainment
               </div>
-              <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire a Corporate Magician in Miami
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
+                Hire a Magician in Miami – Corporate Events
               </h1>
-              <p className="text-base sm:text-xl md:text-2xl text-gray-200 drop-shadow-md mt-4 sm:mt-12">
-                Elevate your Miami corporate events with world-class entertainment that leaves a lasting impression
+              <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
+                James Kenyon brings high-energy magic to Miami corporate events, trade shows, weddings, and private parties. As Miami's most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown Miami or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust Miami's premier magician to make your next event truly magical.
               </p>
-              <div className="pt-6 sm:pt-8">
+              <div className="pt-8">
                 <Link 
                   href="#contact"
-                  className="inline-block bg-black hover:bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors shadow-lg border border-gray-700"
+                  className="inline-block bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg border border-gray-700"
                 >
                   Check Availability
                 </Link>
               </div>
               
               {/* Stats */}
-              <div className="flex flex-wrap justify-center gap-4 sm:gap-8 pt-6 sm:pt-8 text-gray-200">
+              <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200">
                 <div className="flex items-center space-x-2">
-                  <span className="text-xl sm:text-2xl">✨</span>
-                  <span className="text-sm sm:text-base">10+ Years Experience</span>
+                  <span className="text-2xl">✨</span>
+                  <span>10+ Years Experience</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="text-xl sm:text-2xl">🏢</span>
-                  <span className="text-sm sm:text-base">Fortune 500 Clients</span>
+                  <span className="text-2xl">🏢</span>
+                  <span>Fortune 500 Clients</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="text-xl sm:text-2xl">🌍</span>
-                  <span className="text-sm sm:text-base">International Performer</span>
+                  <span className="text-2xl">🌍</span>
+                  <span>International Performer</span>
                 </div>
               </div>
             </div>
