@@ -12,7 +12,10 @@ export default function SanDiegoMagicianPage() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat"
       }}>
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/50" />
+
+        {/* Navigation */}
         <nav className="relative z-10 bg-black/30 backdrop-blur-sm shadow-md text-white py-4">
           <div className="container mx-auto px-4 flex justify-between items-center">
             <div className="text-xl font-semibold">
@@ -27,18 +30,20 @@ export default function SanDiegoMagicianPage() {
             </div>
           </div>
         </nav>
-        <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 pt-24">
-          <div className="space-y-6 max-w-3xl">
+
+        {/* Hero Content */}
+        <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-white text-center px-4">
+          <div className="space-y-8 max-w-3xl">
             <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
-              Elite Corporate Entertainment
+              Elite Corporate Entertainment in San Diego
             </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-              San Diego's Premier Magician for Events & Trade Shows
+              San Diego's Premier Corporate Magician
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
-              San Diego is known for its beautiful beaches and vibrant business community. James Kenyon brings world-class magic to the city's most exclusive venues, from downtown to La Jolla. Experience a show that will leave your guests talking long after your San Diego event ends.
+            <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md">
+              Elevate your San Diego corporate events with world-class entertainment that leaves a lasting impression
             </p>
-            <div className="pt-8">
+            <div>
               <Link 
                 href="#contact"
                 className="inline-block bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg border border-gray-700"
@@ -46,7 +51,9 @@ export default function SanDiegoMagicianPage() {
                 Check Availability
               </Link>
             </div>
-            <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200">
+            
+            {/* Stats */}
+            <div className="flex flex-wrap justify-center gap-8 text-gray-200">
               <div className="flex items-center space-x-2">
                 <span className="text-2xl">✨</span>
                 <span>10+ Years Experience</span>

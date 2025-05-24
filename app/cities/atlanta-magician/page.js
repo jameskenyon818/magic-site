@@ -36,18 +36,18 @@ export default function AtlantaMagicianPage() {
           </nav>
 
           {/* Hero Content */}
-          <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 pt-24">
-            <div className="space-y-6 max-w-3xl">
+          <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-white text-center px-4">
+            <div className="space-y-8 max-w-3xl">
               <div className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
                 Elite Corporate Entertainment in Atlanta
               </div>
               <h1 className="text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg">
                 Atlanta's Premier Corporate Magician
               </h1>
-              <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md mt-12">
+              <p className="text-xl md:text-2xl text-gray-200 drop-shadow-md">
                 Elevate your Atlanta corporate events with world-class entertainment that leaves a lasting impression
               </p>
-              <div className="pt-8">
+              <div>
                 <Link 
                   href="#contact"
                   className="inline-block bg-black hover:bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg border border-gray-700"
@@ -57,7 +57,7 @@ export default function AtlantaMagicianPage() {
               </div>
               
               {/* Stats */}
-              <div className="flex flex-wrap justify-center gap-8 pt-8 text-gray-200">
+              <div className="flex flex-wrap justify-center gap-8 text-gray-200">
                 <div className="flex items-center space-x-2">
                   <span className="text-2xl">✨</span>
                   <span>10+ Years Experience</span>
