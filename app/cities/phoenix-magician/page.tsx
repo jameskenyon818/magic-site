@@ -22,12 +22,19 @@ export default function PhoenixMagician() {
       <PhoenixStructuredData />
       <main className="min-h-screen bg-black text-white">
         {/* Hero Section */}
-        <div className="relative h-screen bg-black" style={{ 
-          backgroundImage: "url('/images/edit.png')",
-          backgroundPosition: "center top",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
-        }}>
+        <div className="relative h-screen bg-black">
+          {/* Hero Image */}
+          <div className="absolute inset-0">
+            <Image
+              src="/images/hero.webp"
+              alt="Corporate Magician in Phoenix"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+              quality={90}
+            />
+          </div>
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/50" />
 
