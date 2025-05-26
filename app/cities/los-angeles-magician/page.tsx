@@ -13,8 +13,8 @@ import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 
 export const metadata: Metadata = {
-  title: 'Book a Magician Near Los Angeles – Corporate Events',
-  description: 'Hire a top-rated magician in Los Angeles for unforgettable corporate events, parties, and trade shows.'
+  title: 'Hire a Magician in Los Angeles — Corporate Events, Private Parties & More',
+  description: 'Looking to hire a magician in Los Angeles? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
 };
 
 export default function LosAngelesMagicianPage() {
@@ -22,14 +22,14 @@ export default function LosAngelesMagicianPage() {
     <>
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Los Angeles" heroImage="/images/hero.webp" />
-        <QuoteForm />
+        <QuoteForm city="Los Angeles" />
         <PerformancesSection />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
-        <CityFooter />
+        <CityFooter city="Los Angeles" />
       </main>
     </>
   );

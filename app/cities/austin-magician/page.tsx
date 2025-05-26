@@ -13,8 +13,8 @@ import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 
 export const metadata: Metadata = {
-  title: 'Book a Magician Near Austin – Corporate Events',
-  description: 'Hire a top-rated magician in Austin for unforgettable corporate events, parties, and trade shows.'
+  title: 'Hire a Magician in Austin — Corporate Events, Private Parties & More',
+  description: 'Looking to hire a magician in Austin? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
 };
 
 export default function AustinMagicianPage() {
@@ -22,14 +22,14 @@ export default function AustinMagicianPage() {
     <>
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Austin" heroImage="/images/hero.webp" />
-        <QuoteForm />
+        <QuoteForm city="Austin" />
         <PerformancesSection />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
-        <CityFooter />
+        <CityFooter city="Austin" />
       </main>
     </>
   );

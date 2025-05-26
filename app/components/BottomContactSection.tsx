@@ -1,9 +1,41 @@
 'use client';
 
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
 export default function BottomContactSection() {
+  const router = useRouter();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+
+    // Validate required fields
+    if (!data.get('name') || !data.get('email') || !data.get('phone')) {
+      alert('Please fill in all required fields: Name, Email, and Phone');
+      return;
+    }
+
+    try {
+      const response = await fetch('https://formspree.io/f/xvgagbja', {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        router.push('/thank-you');
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    } catch {
+      alert('Something went wrong. Please try again.');
+    }
+  };
+
   return (
     <section className="w-full bg-black py-12 sm:py-20 px-4">
       <div className="max-w-5xl mx-auto text-center">
@@ -15,7 +47,7 @@ export default function BottomContactSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="relative aspect-square">
             <Image
-              src="/images/contact-image.jpg"
+              src="/images/IMG_5400.JPG"
               alt="James Kenyon performing magic"
               fill
               className="object-cover rounded-2xl"
@@ -23,51 +55,131 @@ export default function BottomContactSection() {
             />
           </div>
           <div className="bg-[#181818] rounded-2xl p-8 shadow-lg">
-            <form className="space-y-6">
+            <form 
+              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+              onSubmit={handleSubmit}
+            >
               <div>
-                <label htmlFor="eventType" className="block text-white mb-2">Event Type</label>
-                <select id="eventType" className="w-full bg-black text-white border border-gray-700 rounded-md p-3">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-200 mb-1">Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="company" className="block text-sm font-medium text-gray-200 mb-1">Company</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-1">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-200 mb-1">Phone *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="eventDate" className="block text-sm font-medium text-gray-200 mb-1">Event Date</label>
+                <input
+                  type="date"
+                  id="eventDate"
+                  name="eventDate"
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="eventType" className="block text-sm font-medium text-gray-200 mb-1">Event Type</label>
+                <select
+                  id="eventType"
+                  name="eventType"
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                >
                   <option value="">Select an event type</option>
-                  <option value="trade-show">Trade Show</option>
-                  <option value="corporate-function">Corporate Function</option>
-                  <option value="gala">Gala</option>
-                  <option value="product-launch">Product Launch</option>
-                  <option value="conference">Conference</option>
-                  <option value="holiday-party">Holiday Party</option>
-                  <option value="vip-dinner">VIP Dinner</option>
-                  <option value="fundraiser">Fundraiser</option>
-                  <option value="employee-appreciation">Employee Appreciation</option>
-                  <option value="private-party">Private Party</option>
+                  <option value="Trade Show">Trade Show</option>
+                  <option value="Corporate Function">Corporate Function</option>
+                  <option value="Gala">Gala</option>
+                  <option value="Company Party">Company Party</option>
+                  <option value="Private Dinner">Private Dinner</option>
+                  <option value="Holiday Event">Holiday Event</option>
+                  <option value="Awards Ceremony">Awards Ceremony</option>
+                  <option value="Team-Building Event">Team-Building Event</option>
+                  <option value="VIP Client Event">VIP Client Event</option>
+                  <option value="Conference Afterparty">Conference Afterparty</option>
                 </select>
               </div>
+
               <div>
-                <label htmlFor="budgetRange" className="block text-white mb-2">Budget Range</label>
-                <select id="budgetRange" className="w-full bg-black text-white border border-gray-700 rounded-md p-3">
+                <label htmlFor="budgetRange" className="block text-sm font-medium text-gray-200 mb-1">Budget Range</label>
+                <select
+                  id="budgetRange"
+                  name="budgetRange"
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                >
                   <option value="">Select a budget range</option>
-                  <option value="1000-2500">$1,000–$2,500</option>
-                  <option value="2500-5000">$2,500–$5,000</option>
-                  <option value="5000-7500">$5,000–$7,500</option>
-                  <option value="7500+">$7,500+</option>
+                  <option value="$1,000 – $2,500">$1,000 – $2,500</option>
+                  <option value="$2,500 – $5,000">$2,500 – $5,000</option>
+                  <option value="$5,000 – $7,500">$5,000 – $7,500</option>
                 </select>
               </div>
+
               <div>
-                <label htmlFor="guests" className="block text-white mb-2">Number of Guests</label>
-                <select id="guests" className="w-full bg-black text-white border border-gray-700 rounded-md p-3">
+                <label htmlFor="guestCount" className="block text-sm font-medium text-gray-200 mb-1">Number of Guests</label>
+                <select
+                  id="guestCount"
+                  name="guestCount"
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                >
                   <option value="">Select number of guests</option>
-                  <option value="1-25">1-25</option>
-                  <option value="26-50">26-50</option>
-                  <option value="51-100">51-100</option>
-                  <option value="101-250">101-250</option>
-                  <option value="251-500">251-500</option>
-                  <option value="500+">500+</option>
+                  <option value="1–25">1–25</option>
+                  <option value="26–50">26–50</option>
+                  <option value="51–100">51–100</option>
+                  <option value="100+">100+</option>
                 </select>
               </div>
-              <button
-                type="submit"
-                className="w-full bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg"
-              >
-                Check Availability
-              </button>
+
+              <div className="md:col-span-2">
+                <label htmlFor="additionalDetails" className="block text-sm font-medium text-gray-200 mb-1">Additional Details</label>
+                <textarea
+                  id="additionalDetails"
+                  name="additionalDetails"
+                  rows={4}
+                  className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
+                ></textarea>
+              </div>
+
+              <div className="md:col-span-2 text-center">
+                <button
+                  type="submit"
+                  className="px-8 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors border border-gray-700"
+                >
+                  Request Your Custom Quote
+                </button>
+              </div>
             </form>
           </div>
         </div>

@@ -14,8 +14,8 @@ import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 
 export const metadata: Metadata = {
-  title: 'Book a Magician Near Dallas – Corporate Events',
-  description: 'Hire a top-rated magician in Dallas for unforgettable corporate events, parties, and trade shows.'
+  title: 'Hire a Magician in Dallas — Corporate Events, Private Parties & More',
+  description: 'Looking to hire a magician in Dallas? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
 };
 
 export default function DallasMagicianPage() {
@@ -24,14 +24,16 @@ export default function DallasMagicianPage() {
       <DallasStructuredData />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Dallas" heroImage="/images/hero.webp" />
-        <QuoteForm />
+        <QuoteForm city="Dallas" />
         <PerformancesSection />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
-        <CityFooter />
+        <Link href="/cities/dallas-magician/close-up" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
+        <Link href="/cities/dallas-magician/trade-show" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
+        <CityFooter city="Dallas" />
       </main>
     </>
   );

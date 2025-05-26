@@ -13,8 +13,8 @@ import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 
 export const metadata: Metadata = {
-  title: 'Book a Magician Near San Diego – Corporate Events',
-  description: 'Hire a top-rated magician in San Diego for unforgettable corporate events, parties, and trade shows.'
+  title: 'Hire a Magician in San Diego — Corporate Events, Private Parties & More',
+  description: 'Looking to hire a magician in San Diego? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
 };
 
 export default function SanDiegoMagicianPage() {
@@ -22,14 +22,14 @@ export default function SanDiegoMagicianPage() {
     <>
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="San Diego" heroImage="/images/hero.webp" />
-        <QuoteForm />
+        <QuoteForm city="San Diego" />
         <PerformancesSection />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
-        <CityFooter />
+        <CityFooter city="San Diego" />
       </main>
     </>
   );

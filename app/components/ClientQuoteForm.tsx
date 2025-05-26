@@ -4,6 +4,10 @@ import dynamic from 'next/dynamic';
 
 const QuoteForm = dynamic(() => import('./QuoteForm'), { ssr: false });
 
-export default function ClientQuoteForm() {
-  return <QuoteForm />;
+interface ClientQuoteFormProps {
+  city: string;
+}
+
+export default function ClientQuoteForm({ city }: ClientQuoteFormProps) {
+  return <QuoteForm city={city} />;
 } 

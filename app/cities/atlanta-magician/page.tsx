@@ -20,8 +20,8 @@ import BottomContactSection from '@/app/components/BottomContactSection';
 const AtlantaStructuredData = dynamic(() => import('../../components/AtlantaStructuredData'));
 
 export const metadata: Metadata = {
-  title: 'Book a Magician Near Atlanta – Corporate Events',
-  description: 'Hire a top-rated magician in Atlanta for unforgettable corporate events, parties, and trade shows.'
+  title: 'Hire a Magician in Atlanta — Corporate Events, Private Parties & More',
+  description: 'Looking to hire a magician in Atlanta? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
 };
 
 export default function AtlantaMagicianPage() {
@@ -33,14 +33,14 @@ export default function AtlantaMagicianPage() {
       <AtlantaStructuredData />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Atlanta" heroImage="/images/hero.webp" />
-        <ClientQuoteForm />
+        <ClientQuoteForm city="Atlanta" />
         <PerformancesSection />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
-        <CityFooter />
+        <CityFooter city="Atlanta" />
       </main>
     </>
   );

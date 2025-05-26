@@ -13,8 +13,8 @@ import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 
 export const metadata: Metadata = {
-  title: 'Book a Magician Near Phoenix – Corporate Events',
-  description: 'Hire a top-rated magician in Phoenix for unforgettable corporate events, parties, and trade shows.'
+  title: 'Hire a Magician in Phoenix — Corporate Events, Private Parties & More',
+  description: 'Looking to hire a magician in Phoenix? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
 };
 
 export default function PhoenixMagicianPage() {
@@ -22,14 +22,14 @@ export default function PhoenixMagicianPage() {
     <>
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Phoenix" heroImage="/images/hero.webp" />
-        <QuoteForm />
+        <QuoteForm city="Phoenix" />
         <PerformancesSection />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
-        <CityFooter />
+        <CityFooter city="Phoenix" />
       </main>
     </>
   );

@@ -21,8 +21,8 @@ const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
 const DenverStructuredData = dynamic(() => import('../../components/DenverStructuredData'));
 
 export const metadata: Metadata = {
-  title: 'Book a Magician Near Denver – Corporate Events',
-  description: 'Hire a top-rated magician in Denver for unforgettable corporate events, parties, and trade shows.'
+  title: 'Hire a Magician in Denver — Corporate Events, Private Parties & More',
+  description: 'Looking to hire a magician in Denver? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
 };
 
 export default function DenverMagicianPage() {
@@ -34,14 +34,14 @@ export default function DenverMagicianPage() {
       <DenverStructuredData />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Denver" heroImage="/images/hero.webp" />
-        <QuoteForm />
+        <QuoteForm city="Denver" />
         <PerformancesSection />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
-        <CityFooter />
+        <CityFooter city="Denver" />
       </main>
     </>
   );

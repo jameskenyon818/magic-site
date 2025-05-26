@@ -2,13 +2,20 @@
 
 import { useRouter } from 'next/navigation';
 
-export default function QuoteForm() {
+interface QuoteFormProps {
+  city: string;
+}
+
+export default function QuoteForm({ city }: QuoteFormProps) {
   const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     const data = new FormData(form);
+
+    // Add city to form data
+    data.append('city', city);
 
     // Validate required fields
     if (!data.get('name') || !data.get('email') || !data.get('phone')) {

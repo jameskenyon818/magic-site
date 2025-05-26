@@ -40,10 +40,10 @@ export default function CityHero({ cityName, heroImage }: CityHeroProps) {
             Elite Corporate Entertainment
           </div>
           <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-            Hire a Magician in {cityName} – Corporate Events
+            Book {cityName}'s Top Magician for Events, Trade Shows & Parties
           </h1>
           <p className="text-base sm:text-xl md:text-2xl text-gray-200 drop-shadow-md mt-4 sm:mt-12">
-            James Kenyon brings high-energy magic to {cityName} corporate events, trade shows, weddings, and private parties. As {cityName}'s most sought-after corporate magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown {cityName} or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust {cityName}'s premier magician to make your next event truly magical.
+            James Kenyon brings high-energy magic to {cityName} corporate events, private parties, weddings, and trade shows. As {cityName}'s most sought-after magician, he creates unforgettable experiences that leave lasting impressions. Whether you're planning an event in downtown {cityName} or the surrounding areas, James delivers world-class entertainment that elevates any occasion. Trust {cityName}'s premier magician to make your next event truly magical.
           </p>
           <div className="pt-6 sm:pt-8">
             <Link 
