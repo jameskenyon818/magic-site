@@ -16,8 +16,8 @@ export default function CityLogo({ city, position = 'top' }: CityLogoProps) {
         <Image
           src="/images/logo.webp"
           alt="James Kenyon Magic Logo"
-          width={48}
-          height={48}
+          width={96}
+          height={96}
           className="hover:scale-105 transition-transform"
           priority
         />

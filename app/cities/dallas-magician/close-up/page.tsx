@@ -12,6 +12,7 @@ import TestimonialsSection from '@/app/components/TestimonialsSection';
 import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import ClientQuoteForm from '@/app/components/ClientQuoteForm';
+import CityLogo from '@/app/components/CityLogo';
 
 export const metadata: Metadata = {
   title: 'Hire a Close-Up Magician in Dallas — Perfect for Parties & Corporate Events',
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function DallasCloseUpPage() {
   return (
     <>
+      <CityLogo city="Dallas" position="top" />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Dallas" heroImage="/images/hero.webp" />
         <ClientQuoteForm city="Dallas" />
@@ -118,6 +120,7 @@ export default function DallasCloseUpPage() {
 
         <CityFooter city="Dallas" />
       </main>
+      <CityLogo city="Dallas" position="bottom" />
     </>
   );
 } 
