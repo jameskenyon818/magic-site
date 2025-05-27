@@ -13,6 +13,7 @@ import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection'
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
+import ClientQuoteForm from '../../components/ClientQuoteForm';
 
 export const metadata: Metadata = {
   title: 'Hire a Magician in Orlando — Corporate Events, Private Parties & More',
@@ -28,8 +29,8 @@ export default function OrlandoMagicianPage() {
       <OrlandoStructuredData />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Orlando" heroImage="/images/hero.webp" />
-        <QuoteForm city="Orlando" />
-        <PerformancesSection />
+        <ClientQuoteForm city="Orlando" />
+        <PerformancesSection city="Orlando" />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />

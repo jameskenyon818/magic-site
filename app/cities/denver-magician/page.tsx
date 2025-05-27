@@ -12,6 +12,7 @@ import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection'
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
+import ClientQuoteForm from '@/app/components/ClientQuoteForm';
 
 // Dynamically import components that are not needed for initial render
 const QuoteForm = dynamic(() => import('../../components/QuoteForm'), {
@@ -34,8 +35,8 @@ export default function DenverMagicianPage() {
       <DenverStructuredData />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Denver" heroImage="/images/hero.webp" />
-        <QuoteForm city="Denver" />
-        <PerformancesSection />
+        <ClientQuoteForm city="Denver" />
+        <PerformancesSection city="Denver" />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />

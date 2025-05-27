@@ -34,7 +34,7 @@ export default function AtlantaMagicianPage() {
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Atlanta" heroImage="/images/hero.webp" />
         <ClientQuoteForm city="Atlanta" />
-        <PerformancesSection />
+        <PerformancesSection city="Atlanta" />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
