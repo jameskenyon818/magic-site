@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import Image from "next/image";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,7 +56,21 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="fixed top-4 left-4 z-50">
+          <Link href="/">
+            <Image
+              src="/images/logo.webp"
+              alt="James Kenyon Magic Logo"
+              width={96}
+              height={96}
+              className="hover:scale-105 transition-transform"
+              priority
+            />
+          </Link>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
