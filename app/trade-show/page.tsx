@@ -6,34 +6,17 @@ import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 
 export const metadata: Metadata = {
-  title: 'Trade Show Magic — Perfect for Exhibitions & Conferences',
-  description: 'Looking for a trade show magician? James Kenyon delivers engaging performances that attract crowds and boost engagement at your exhibition or conference. Available in multiple cities across the US.'
+  title: 'Trade Show Magic — Boost Your Booth Traffic & Engagement',
+  description: 'Looking for a trade show magician? James Kenyon delivers engaging performances that draw crowds, create memorable interactions, and help you stand out at your next trade show. Available in multiple cities across the US.'
 };
 
-const cities = [
-  { name: 'Austin', path: '/cities/austin-magician/trade-show' },
-  { name: 'Chicago', path: '/cities/chicago-magician/trade-show' },
-  { name: 'New York', path: '/cities/new-york-magician/trade-show' },
-  { name: 'Orlando', path: '/cities/orlando-magician/trade-show' },
-  { name: 'San Diego', path: '/cities/san-diego-magician/trade-show' },
-  { name: 'Atlanta', path: '/cities/atlanta-magician/trade-show' },
-  { name: 'Denver', path: '/cities/denver-magician/trade-show' },
-  { name: 'Los Angeles', path: '/cities/los-angeles-magician/trade-show' },
-  { name: 'Phoenix', path: '/cities/phoenix-magician/trade-show' },
-  { name: 'Tampa', path: '/cities/tampa-magician/trade-show' },
-  { name: 'San Antonio', path: '/cities/san-antonio-magician/trade-show' },
-  { name: 'Houston', path: '/cities/houston-magician/trade-show' },
-  { name: 'Dallas', path: '/cities/dallas-magician/trade-show' },
-  { name: 'Miami', path: '/cities/miami-magician/trade-show' }
-];
-
-export default function TradeShowMagicPage() {
+export default function TradeShowPage() {
   return (
     <main className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center">
         <Image
-          src="/images/IMG_5401.JPG"
+          src="/images/image about.jpg"
           alt="Trade show magic performance"
           fill
           className="object-contain"
@@ -50,7 +33,7 @@ export default function TradeShowMagicPage() {
       <section className="py-16 px-4 bg-black">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Make Your Trade Show Stand Out
+            Make Your Trade Show Booth Unforgettable
           </h2>
           <div className="space-y-12">
             <div className="flex items-start space-x-6">
@@ -59,7 +42,7 @@ export default function TradeShowMagicPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-xl text-gray-200">Captivate large crowds at your booth with interactive, customized magic tailored to your brand and audience. Each performance is designed to creatively highlight your products or services in a way that's not only memorable but genuinely engaging.</p>
+              <p className="text-xl text-gray-200">Draw crowds to your booth with engaging magic performances that create natural gathering points. Perfect for breaking the ice and starting conversations with potential clients in a memorable way.</p>
             </div>
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0 w-8 h-8 mt-1">
@@ -67,7 +50,7 @@ export default function TradeShowMagicPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-xl text-gray-200">By drawing consistent attention to your space, the magic naturally creates openings for your sales team to connect with attendees, start conversations, and build relationships. This results in significantly higher booth engagement and stronger lead generation throughout the event.</p>
+              <p className="text-xl text-gray-200">Each performance is tailored to your brand and products, seamlessly incorporating your key messages into the magic. This creates a unique way to showcase your offerings while entertaining visitors.</p>
             </div>
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0 w-8 h-8 mt-1">
@@ -75,7 +58,7 @@ export default function TradeShowMagicPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-xl text-gray-200">From setup to performance, everything is handled with professionalism and precision, ensuring a seamless experience that enhances your brand's presence and leaves a lasting impression on potential clients.</p>
+              <p className="text-xl text-gray-200">From card tricks to mind-reading, each effect is carefully selected to amaze and entertain while maintaining a professional atmosphere. The performance flows naturally through your booth, creating a dynamic environment that keeps visitors engaged.</p>
             </div>
           </div>
         </div>
@@ -104,19 +87,19 @@ export default function TradeShowMagicPage() {
           <div className="space-y-8">
             <div className="bg-black p-8 rounded-lg border border-gray-800">
               <h3 className="text-xl font-semibold mb-4 text-blue-400">How does trade show magic work?</h3>
-              <p className="text-gray-300 text-lg">I perform interactive magic that naturally incorporates your products or services, creating engaging demonstrations that attract visitors to your booth while highlighting your key messages.</p>
+              <p className="text-gray-300 text-lg">I perform close-up magic at your booth, drawing crowds and creating natural gathering points. The magic serves as an icebreaker, making it easy to start conversations with potential clients while showcasing your products or services.</p>
             </div>
             <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">What's the typical duration for trade show performances?</h3>
-              <p className="text-gray-300 text-lg">I can perform in shifts throughout the day, typically 2-3 hours at a time, with breaks in between to maintain energy and engagement levels.</p>
+              <h3 className="text-xl font-semibold mb-4 text-blue-400">How long do you perform at trade shows?</h3>
+              <p className="text-gray-300 text-lg">I typically perform in 2-3 hour blocks throughout the day, with breaks in between to allow for booth staff to engage with visitors. This schedule can be customized based on your show hours and specific needs.</p>
             </div>
             <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">How do you customize the magic for our specific industry?</h3>
-              <p className="text-gray-300 text-lg">I'll work with your team before the event to understand your products, services, and key messages, then create custom routines that naturally incorporate these elements into the performance.</p>
+              <h3 className="text-xl font-semibold mb-4 text-blue-400">Can you incorporate our products into the magic?</h3>
+              <p className="text-gray-300 text-lg">Absolutely! I can customize the performance to highlight your products or services, creating memorable demonstrations that showcase your offerings in a unique and engaging way.</p>
             </div>
             <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">What kind of space do you need in the booth?</h3>
-              <p className="text-gray-300 text-lg">I can work in any booth size, from intimate 10x10 spaces to larger exhibition areas. I'll adapt my performance style to fit your available space.</p>
+              <h3 className="text-xl font-semibold mb-4 text-blue-400">What kind of trade shows do you perform at?</h3>
+              <p className="text-gray-300 text-lg">I've performed at a wide range of trade shows, from technology and healthcare to automotive and retail. The magic is adaptable to any industry and can be tailored to match your specific audience and goals.</p>
             </div>
           </div>
         </div>
@@ -126,35 +109,35 @@ export default function TradeShowMagicPage() {
       <section className="py-16 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            What Trade Show Organizers Say
+            What Our Clients Say
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <p className="text-gray-300 mb-6 text-lg">"James transformed our booth traffic. We saw a 40% increase in visitor engagement and generated more leads than any previous show. His ability to engage with our target audience was remarkable."</p>
+              <p className="text-gray-300 mb-6 text-lg">"James's performance at our tech trade show was incredible. He drew more traffic to our booth than any other attraction, and the way he incorporated our product features into his magic was brilliant."</p>
+              <div>
+                <p className="font-semibold text-xl">David Wilson</p>
+                <p className="text-gray-400">Marketing Director, TechInnovate</p>
+              </div>
+            </div>
+            <div className="bg-black p-8 rounded-lg border border-gray-800">
+              <p className="text-gray-300 mb-6 text-lg">"The engagement at our booth increased significantly with James's magic. He created the perfect atmosphere for our sales team to connect with potential clients in a natural, memorable way."</p>
+              <div>
+                <p className="font-semibold text-xl">Lisa Rodriguez</p>
+                <p className="text-gray-400">Event Manager, Global Solutions</p>
+              </div>
+            </div>
+            <div className="bg-black p-8 rounded-lg border border-gray-800">
+              <p className="text-gray-300 mb-6 text-lg">"Our trade show ROI improved dramatically after adding James's magic to our booth. The crowds he drew and the conversations he started led to more qualified leads than we've ever had before."</p>
+              <div>
+                <p className="font-semibold text-xl">Michael Chang</p>
+                <p className="text-gray-400">Sales Director, Innovation Corp</p>
+              </div>
+            </div>
+            <div className="bg-black p-8 rounded-lg border border-gray-800">
+              <p className="text-gray-300 mb-6 text-lg">"James's ability to adapt his performance to our industry and products was impressive. He created a unique experience that made our booth stand out from the competition."</p>
               <div>
                 <p className="font-semibold text-xl">Sarah Johnson</p>
-                <p className="text-gray-400">Director of Marketing, TechExpo International</p>
-              </div>
-            </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <p className="text-gray-300 mb-6 text-lg">"His ability to incorporate our product features into his magic was incredible. Visitors stayed longer and remembered our key messages. It was the perfect blend of entertainment and marketing."</p>
-              <div>
-                <p className="font-semibold text-xl">Michael Rodriguez</p>
-                <p className="text-gray-400">Product Marketing Manager, Salesforce</p>
-              </div>
-            </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <p className="text-gray-300 mb-6 text-lg">"The perfect blend of entertainment and marketing. James created natural opportunities for our sales team to engage with prospects. Our booth was consistently the most visited at the conference."</p>
-              <div>
-                <p className="font-semibold text-xl">Emily Chen</p>
-                <p className="text-gray-400">Trade Show Coordinator, Oracle</p>
-              </div>
-            </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <p className="text-gray-300 mb-6 text-lg">"Professional, punctual, and perfectly tailored to our brand. Our booth was the talk of the show. James's ability to adapt his performance to our specific industry needs was impressive."</p>
-              <div>
-                <p className="font-semibold text-xl">David Thompson</p>
-                <p className="text-gray-400">Exhibition Manager, AWS</p>
+                <p className="text-gray-400">Trade Show Coordinator, HealthTech</p>
               </div>
             </div>
           </div>
@@ -165,7 +148,7 @@ export default function TradeShowMagicPage() {
       <section className="relative min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/images/IMG_5400.JPG"
+            src="/images/JamesKenyon_Mag-ic_0092.jpg"
             alt="Trade show magic performance"
             fill
             className="object-cover"
