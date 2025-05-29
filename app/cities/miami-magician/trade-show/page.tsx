@@ -145,19 +145,19 @@ export default function MiamiTradeShowPage() {
       </section>
 
       {/* Bottom Contact Section with Full Image Background */}
-      <section className="relative min-h-[600px]">
+      <section className="relative min-h-screen">
         <div className="absolute inset-0">
           <Image
             src="/images/IMG_5400.JPG"
             alt="Trade show magic performance"
             fill
-            className="object-cover"
+            className="object-cover w-full h-full"
             priority
           />
-          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-black/10" />
         </div>
-        <div className="relative z-20 py-16">
-          <div className="max-w-4xl mx-auto px-4">
+        <div className="relative z-20 min-h-screen flex items-center justify-center">
+          <div className="max-w-4xl mx-auto px-4 w-full">
             <div className="backdrop-blur-sm">
               <BottomContactSection />
             </div>
