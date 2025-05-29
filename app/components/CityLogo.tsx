@@ -3,15 +3,14 @@ import Link from 'next/link';
 
 interface CityLogoProps {
   city?: string;
-  position?: 'top' | 'bottom';
 }
 
-export default function CityLogo({ city, position = 'top' }: CityLogoProps) {
+export default function CityLogo({ city }: CityLogoProps) {
   // If city is provided, link to that city's homepage; otherwise, link to root
   const href = city ? `/cities/${city.toLowerCase().replace(/ /g, '-')}-magician` : '/';
   
   return (
-    <div className={`fixed ${position === 'top' ? 'top-4' : 'bottom-4'} right-4 z-50`}>
+    <div className="fixed top-4 right-4 z-50">
       <Link href={href}>
         <Image
           src="/images/logo.webp"
