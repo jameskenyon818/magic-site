@@ -161,6 +161,27 @@ export default function MiamiTradeShowPage() {
           </div>
         </div>
       </section>
+
+      {/* Other Magic Types */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+            Explore Other Magic Types in Miami
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Stage Magic</h3>
+              <p className="text-gray-300 mb-4">Perfect for larger events and audiences in Miami</p>
+              <Link href="/cities/miami-magician/stage-magic" className="text-blue-400 hover:text-blue-300">Learn More →</Link>
+            </div>
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Close-Up Magic</h3>
+              <p className="text-gray-300 mb-4">Intimate magic for smaller gatherings in Miami</p>
+              <Link href="/cities/miami-magician/close-up" className="text-blue-400 hover:text-blue-300">Learn More →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 } 
