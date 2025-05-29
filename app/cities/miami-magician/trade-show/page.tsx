@@ -164,7 +164,7 @@ export default function MiamiTradeShowPage() {
       <section className="relative min-h-[600px]">
         <div className="absolute inset-0">
           <Image
-            src="/images/IMG_5403.JPG"
+            src="/images/IMG_5402.JPG"
             alt="Trade show magic performance"
             fill
             className="object-cover"
