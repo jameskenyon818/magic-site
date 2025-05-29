@@ -31,8 +31,8 @@ export default function DallasMagicianPage() {
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
-        <Link href="/cities/dallas-magician/close-up" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
-        <Link href="/cities/dallas-magician/trade-show" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
+        <a href="#close-up-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+        <a href="#trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
         <CityFooter city="Dallas" />
       </main>
     </>
