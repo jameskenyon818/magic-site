@@ -56,21 +56,6 @@ export default function MiamiMagicianPage() {
           </div>
         </section>
 
-        {/* Trade Show Magic Section */}
-        <section id="trade-show-magic" className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Trade Show Magic in Miami</h2>
-            <div className="prose prose-invert max-w-none">
-              <p className="text-lg text-gray-300 mb-6">
-                Trade show magic is the perfect way to stand out at your next Miami conference or exhibition. James's interactive performances draw crowds to your booth and create memorable experiences that help you connect with potential clients.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-                Perfect for trade shows and conferences across Miami, James adapts his performance to highlight your products or services, making your booth the most engaging destination on the show floor.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
