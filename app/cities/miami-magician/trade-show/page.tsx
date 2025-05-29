@@ -94,6 +94,33 @@ export default function MiamiTradeShowPage() {
         </div>
       </section>
 
+      {/* Trade Show Specific FAQ Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Frequently Asked Questions About Trade Show Magic
+          </h2>
+          <div className="space-y-8">
+            <div className="bg-black p-8 rounded-lg border border-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-blue-400">How does trade show magic work?</h3>
+              <p className="text-gray-300 text-lg">I perform interactive magic that naturally incorporates your products or services, creating engaging demonstrations that attract visitors to your booth while highlighting your key messages.</p>
+            </div>
+            <div className="bg-black p-8 rounded-lg border border-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-blue-400">What's the typical duration for trade show performances?</h3>
+              <p className="text-gray-300 text-lg">I can perform in shifts throughout the day, typically 2-3 hours at a time, with breaks in between to maintain energy and engagement levels.</p>
+            </div>
+            <div className="bg-black p-8 rounded-lg border border-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-blue-400">How do you customize the magic for our specific industry?</h3>
+              <p className="text-gray-300 text-lg">I'll work with your team before the event to understand your products, services, and key messages, then create custom routines that naturally incorporate these elements into the performance.</p>
+            </div>
+            <div className="bg-black p-8 rounded-lg border border-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-blue-400">What kind of space do you need in the booth?</h3>
+              <p className="text-gray-300 text-lg">I can work in any booth size, from intimate 10x10 spaces to larger exhibition areas. I'll adapt my performance style to fit your available space.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Trade Show Specific Testimonials */}
       <section className="py-16 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto">
@@ -133,33 +160,6 @@ export default function MiamiTradeShowPage() {
         </div>
       </section>
 
-      {/* Trade Show Specific FAQ Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Frequently Asked Questions About Trade Show Magic
-          </h2>
-          <div className="space-y-8">
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">How does trade show magic work?</h3>
-              <p className="text-gray-300 text-lg">I perform interactive magic that naturally incorporates your products or services, creating engaging demonstrations that attract visitors to your booth while highlighting your key messages.</p>
-            </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">What's the typical duration for trade show performances?</h3>
-              <p className="text-gray-300 text-lg">I can perform in shifts throughout the day, typically 2-3 hours at a time, with breaks in between to maintain energy and engagement levels.</p>
-            </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">How do you customize the magic for our specific industry?</h3>
-              <p className="text-gray-300 text-lg">I'll work with your team before the event to understand your products, services, and key messages, then create custom routines that naturally incorporate these elements into the performance.</p>
-            </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">What kind of space do you need in the booth?</h3>
-              <p className="text-gray-300 text-lg">I can work in any booth size, from intimate 10x10 spaces to larger exhibition areas. I'll adapt my performance style to fit your available space.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Bottom Contact Section with Full Image Background */}
       <section className="relative min-h-[600px]">
         <div className="absolute inset-0">
@@ -170,11 +170,13 @@ export default function MiamiTradeShowPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative z-20 py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <BottomContactSection />
+            <div className="bg-black/50 backdrop-blur-sm p-8 rounded-lg">
+              <BottomContactSection />
+            </div>
           </div>
         </div>
       </section>
