@@ -151,16 +151,13 @@ export default function MiamiTradeShowPage() {
             src="/images/IMG_5400.JPG"
             alt="Trade show magic performance"
             fill
-            className="object-cover w-full h-full"
+            className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/10" />
         </div>
         <div className="relative z-20 min-h-screen flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 w-full">
-            <div className="backdrop-blur-sm">
-              <BottomContactSection />
-            </div>
+            <BottomContactSection />
           </div>
         </div>
       </section>
