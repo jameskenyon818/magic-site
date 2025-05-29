@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from 'next/navigation';
+import ClientLogo from "./components/ClientLogo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,6 +56,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        <ClientLogo />
         {children}
       </body>
     </html>
