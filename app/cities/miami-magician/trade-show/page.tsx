@@ -35,46 +35,30 @@ export default function MiamiTradeShowPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Make Your Miami Trade Show Stand Out
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-6 h-6 mt-1">
-                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+          <div className="space-y-12">
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0 w-8 h-8 mt-1">
+                <svg className="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-lg text-gray-200">Attracts large crowds to your booth with interactive, customized magic</p>
+              <p className="text-xl text-gray-200">Captivate large crowds at your booth with interactive, customized magic tailored to your brand and audience. Each performance is designed to creatively highlight your products or services in a way that's not only memorable but genuinely engaging.</p>
             </div>
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-6 h-6 mt-1">
-                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0 w-8 h-8 mt-1">
+                <svg className="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-lg text-gray-200">Highlights your products or services in a memorable, engaging way</p>
+              <p className="text-xl text-gray-200">By drawing consistent attention to your space, the magic naturally creates openings for your sales team to connect with attendees, start conversations, and build relationships. This results in significantly higher booth engagement and stronger lead generation throughout the event.</p>
             </div>
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-6 h-6 mt-1">
-                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex items-start space-x-6">
+              <div className="flex-shrink-0 w-8 h-8 mt-1">
+                <svg className="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-lg text-gray-200">Creates natural opportunities for your team to connect with potential clients</p>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-6 h-6 mt-1">
-                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <p className="text-lg text-gray-200">Boosts booth engagement and lead generation at trade shows and conferences</p>
-            </div>
-            <div className="flex items-start space-x-4 md:col-span-2">
-              <div className="flex-shrink-0 w-6 h-6 mt-1">
-                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <p className="text-lg text-gray-200">Professional, seamless experience from setup to performance</p>
+              <p className="text-xl text-gray-200">From setup to performance, everything is handled with professionalism and precision, ensuring a seamless experience that enhances your brand's presence and leaves a lasting impression on potential clients.</p>
             </div>
           </div>
         </div>
@@ -170,11 +154,11 @@ export default function MiamiTradeShowPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/30" />
         </div>
         <div className="relative z-20 py-16">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-black/50 backdrop-blur-sm p-8 rounded-lg">
+            <div className="backdrop-blur-sm">
               <BottomContactSection />
             </div>
           </div>
