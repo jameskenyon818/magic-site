@@ -154,7 +154,7 @@ export default function MiamiTradeShowPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
         <div className="relative z-20 py-16">
           <div className="max-w-4xl mx-auto px-4">
