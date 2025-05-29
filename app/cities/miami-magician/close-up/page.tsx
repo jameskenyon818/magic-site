@@ -50,7 +50,7 @@ export default function MiamiCloseUpPage() {
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="/images/close-up-performance.jpg"
+              src="/images/edit6.png"
               alt="Close-up magic performance in Miami"
               fill
               className="object-cover"
@@ -81,7 +81,7 @@ export default function MiamiCloseUpPage() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="/images/edit5.png"
+              src="/images/edit4.png"
               alt="Close-up magic performance in Miami"
               fill
               className="object-cover"

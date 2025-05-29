@@ -50,7 +50,7 @@ export default function MiamiStagePage() {
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="/images/stage-performance.jpg"
+              src="/images/thumbtack.jpg"
               alt="Stage magic performance in Miami"
               fill
               className="object-cover"
@@ -81,7 +81,7 @@ export default function MiamiStagePage() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="/images/thumbtack 2.jpg"
+              src="/images/IMG_5401.JPG"
               alt="Stage magic performance in Miami"
               fill
               className="object-cover"
