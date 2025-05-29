@@ -150,7 +150,7 @@ export default function Home() {
                       <div className="text-gray-400 text-sm pl-7">Quick, repeatable sets</div>
                     </li>
                   </ul>
-                  <a href="#trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+                  <Link href="/trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
                 </div>
               </div>
             </div>
