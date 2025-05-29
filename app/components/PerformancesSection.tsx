@@ -37,7 +37,7 @@ export default function PerformancesSection({ city }: PerformancesSectionProps) 
                   <div className="text-gray-400 text-xs sm:text-sm pl-7">Flexible set lengths</div>
                 </li>
               </ul>
-              <a href="#close-up-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-base sm:text-lg">Learn More</a>
+              <Link href={`/cities/${city.toLowerCase()}-magician/close-up`} className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-base sm:text-lg">Learn More</Link>
             </div>
             {/* Divider overlay right edge */}
             <div className="hidden md:block absolute top-0 right-0 h-full w-px bg-white/20 z-10" />
@@ -60,7 +60,7 @@ export default function PerformancesSection({ city }: PerformancesSectionProps) 
                   <div className="text-gray-400 text-sm pl-7">Full stage production</div>
                 </li>
               </ul>
-              <a href="#stage-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+              <Link href={`/cities/${city.toLowerCase()}-magician/stage-magic`} className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
             </div>
             {/* Divider overlay right edge */}
             <div className="hidden md:block absolute top-0 right-0 h-full w-px bg-white/20 z-10" />
@@ -83,7 +83,7 @@ export default function PerformancesSection({ city }: PerformancesSectionProps) 
                   <div className="text-gray-400 text-sm pl-7">Quick, repeatable sets</div>
                 </li>
               </ul>
-              <a href="#trade-show-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</a>
+              <Link href={`/cities/${city.toLowerCase()}-magician/trade-show`} className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
             </div>
           </div>
         </div>
