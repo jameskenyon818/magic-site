@@ -150,7 +150,7 @@ export default function MiamiCloseUpPage() {
               <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-4 text-white">Stage Magic</h3>
                 <p className="text-gray-300 mb-4">Captivating stage shows for large audiences at weddings, galas, and corporate events.</p>
-                <Link href="/cities/miami-magician/stage" className="text-blue-400 hover:text-blue-300">Learn More →</Link>
+                <Link href="/cities/miami-magician/stage-magic" className="text-blue-400 hover:text-blue-300">Learn More →</Link>
               </div>
               <div className="bg-zinc-900 p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-4 text-white">Trade Show Magic</h3>
