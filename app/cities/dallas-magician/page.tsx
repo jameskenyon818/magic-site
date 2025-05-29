@@ -12,7 +12,6 @@ import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection'
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
-import CityLogo from '@/app/components/CityLogo';
 
 export const metadata: Metadata = {
   title: 'Hire a Magician in Dallas — Corporate Events, Private Parties & More',
@@ -22,7 +21,6 @@ export const metadata: Metadata = {
 export default function DallasMagicianPage() {
   return (
     <>
-      <CityLogo city="Dallas" position="top" />
       <DallasStructuredData />
       <main className="min-h-screen bg-black text-white">
         <CityHero cityName="Dallas" heroImage="/images/hero.webp" />
@@ -37,7 +35,6 @@ export default function DallasMagicianPage() {
         <Link href="/cities/dallas-magician/trade-show" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
         <CityFooter city="Dallas" />
       </main>
-      <CityLogo city="Dallas" position="bottom" />
     </>
   );
 } 

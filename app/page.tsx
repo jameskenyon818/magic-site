@@ -2,12 +2,10 @@ import Link from 'next/link';
 import QuoteForm from './components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from './components/LogoCarousel';
-import CityLogo from './components/CityLogo';
 
 export default function Home() {
   return (
     <>
-      <CityLogo position="top" />
       <main className="min-h-screen">
         {/* Hero Section */}
         <div className="relative h-screen bg-black" style={{ 
@@ -477,7 +475,6 @@ export default function Home() {
           </div>
         </footer>
       </main>
-      <CityLogo position="bottom" />
     </>
   );
 }
