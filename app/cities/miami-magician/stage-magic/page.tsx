@@ -3,6 +3,9 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
 import ClientQuoteForm from '@/app/components/ClientQuoteForm';
+import FAQSection from '@/app/components/FAQSection';
+import TestimonialsSection from '@/app/components/TestimonialsSection';
+import BottomContactSection from '@/app/components/BottomContactSection';
 
 export const metadata: Metadata = {
   title: 'Hire a Stage Magician in Miami — Perfect for Large Events & Conferences',
@@ -34,8 +37,30 @@ export default function MiamiStagePage() {
 
       <ClientQuoteForm city="Miami" />
 
-      {/* Main Content */}
+      {/* Two Pictures Section */}
       <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <Image
+              src="/images/thumbtack 2.jpg"
+              alt="Stage magic performance in Miami"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <Image
+              src="/images/stage-performance.jpg"
+              alt="Stage magic performance in Miami"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-16 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             Create Unforgettable Moments in Miami
@@ -51,10 +76,10 @@ export default function MiamiStagePage() {
         </div>
       </section>
 
-      {/* Image Section */}
-      <section className="py-16 px-4 bg-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
+      {/* Picture and Video Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
               src="/images/thumbtack 2.jpg"
               alt="Stage magic performance in Miami"
@@ -62,54 +87,26 @@ export default function MiamiStagePage() {
               className="object-cover"
             />
           </div>
-        </div>
-      </section>
-
-      {/* Why Choose Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            Why Choose James for Your Miami Stage Magic
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Captivating Performance</h3>
-              <p className="text-gray-300">James creates moments of wonder that captivate your entire audience, making your Miami event truly memorable.</p>
-            </div>
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Professional Production</h3>
-              <p className="text-gray-300">From sound to lighting, every aspect of the show is professionally produced to ensure a seamless experience.</p>
-            </div>
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Audience Engagement</h3>
-              <p className="text-gray-300">The show includes interactive elements that bring audience members on stage, creating memorable moments for everyone.</p>
-            </div>
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Customized Content</h3>
-              <p className="text-gray-300">The performance can be tailored to include your company's messaging or event theme, making it uniquely relevant to your audience.</p>
-            </div>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              src="https://www.youtube.com/embed/your-video-id"
+              title="Stage Magic Performance"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-lg"
+            />
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Testimonials */}
-      <section className="py-16 px-4 bg-gray-900">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Stage Magic Success Stories in Miami
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-black p-6 rounded-lg">
-              <p className="text-gray-300 italic mb-4">"James's stage show was the highlight of our corporate event in Miami. The entire audience was captivated."</p>
-              <p className="text-white font-semibold">- Corporate Event Director</p>
-            </div>
-            <div className="bg-black p-6 rounded-lg">
-              <p className="text-gray-300 italic mb-4">"The stage magic was the perfect entertainment for our wedding reception at the Miami venue. Everyone loved it!"</p>
-              <p className="text-white font-semibold">- Wedding Couple</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+
+      {/* Bottom Contact Section */}
+      <BottomContactSection />
 
       {/* Other Magic Types */}
       <section className="py-16 px-4">
@@ -132,7 +129,6 @@ export default function MiamiStagePage() {
         </div>
       </section>
 
-      <ClientQuoteForm city="Miami" />
       <CityFooter city="Miami" />
     </main>
   );
