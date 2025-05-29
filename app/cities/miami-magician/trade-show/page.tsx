@@ -31,17 +31,52 @@ export default function MiamiTradeShowPage() {
 
       {/* Bullet Points Section */}
       <section className="py-16 px-4 bg-black">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Make Your Miami Trade Show Stand Out
           </h2>
-          <ul className="list-disc text-lg text-gray-200 space-y-6 pl-6">
-            <li>Attracts large crowds to your booth with interactive, customized magic</li>
-            <li>Highlights your products or services in a memorable, engaging way</li>
-            <li>Creates natural opportunities for your team to connect with potential clients</li>
-            <li>Boosts booth engagement and lead generation at trade shows and conferences</li>
-            <li>Professional, seamless experience from setup to performance</li>
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-6 h-6 mt-1">
+                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="text-lg text-gray-200">Attracts large crowds to your booth with interactive, customized magic</p>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-6 h-6 mt-1">
+                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="text-lg text-gray-200">Highlights your products or services in a memorable, engaging way</p>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-6 h-6 mt-1">
+                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="text-lg text-gray-200">Creates natural opportunities for your team to connect with potential clients</p>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-6 h-6 mt-1">
+                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="text-lg text-gray-200">Boosts booth engagement and lead generation at trade shows and conferences</p>
+            </div>
+            <div className="flex items-start space-x-4 md:col-span-2">
+              <div className="flex-shrink-0 w-6 h-6 mt-1">
+                <svg className="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="text-lg text-gray-200">Professional, seamless experience from setup to performance</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -125,8 +160,21 @@ export default function MiamiTradeShowPage() {
         </div>
       </section>
 
-      {/* Bottom Contact Section */}
-      <BottomContactSection />
+      {/* Bottom Contact Section with Full Image Background */}
+      <section className="relative">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/IMG_5403.JPG"
+            alt="Trade show magic performance"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/70" />
+        </div>
+        <div className="relative z-10">
+          <BottomContactSection />
+        </div>
+      </section>
     </main>
   );
 } 
