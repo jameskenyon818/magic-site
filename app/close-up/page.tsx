@@ -79,27 +79,36 @@ export default function CloseUpMagicPage() {
       </section>
 
       {/* Close-Up Magic Specific FAQ Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+      <section className="py-16 px-4 relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/edit6.png"
+            alt="Close-up magic background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
             Frequently Asked Questions About Close-Up Magic
           </h2>
           <div className="space-y-8">
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
+            <div className="bg-black/80 p-8 rounded-lg border border-gray-800">
               <h3 className="text-xl font-semibold mb-4 text-blue-400">What is close-up magic?</h3>
-              <p className="text-gray-300 text-lg">Close-up magic is performed right in front of your guests, often using everyday objects like cards, coins, and borrowed items. It creates an intimate, interactive experience where magic happens literally in the palm of your hand.</p>
+              <p className="text-gray-300 text-lg">Close-up magic is performed right in front of your guests, often using everyday objects like cards, coins, or borrowed items. It creates a personal and interactive experience where the magic happens literally in the palm of your hand, leaving guests amazed and engaged. As your magician, I specialize in making these moments unforgettable.</p>
             </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
+            <div className="bg-black/80 p-8 rounded-lg border border-gray-800">
               <h3 className="text-xl font-semibold mb-4 text-blue-400">How long does a close-up magic performance last?</h3>
-              <p className="text-gray-300 text-lg">I typically perform for 2-3 hours at events, moving naturally between groups of guests. This ensures everyone gets to experience the magic while maintaining a relaxed, social atmosphere.</p>
+              <p className="text-gray-300 text-lg">I typically perform for 2–3 hours, moving seamlessly among your guests or tables. This ensures that everyone enjoys the magic while maintaining the natural flow of the event. For events with more than 300 guests, I may need additional time to ensure everyone has the opportunity to experience the magic.</p>
             </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
+            <div className="bg-black/80 p-8 rounded-lg border border-gray-800">
               <h3 className="text-xl font-semibold mb-4 text-blue-400">What kind of events is close-up magic suitable for?</h3>
-              <p className="text-gray-300 text-lg">Close-up magic is perfect for cocktail hours, dinner parties, corporate networking events, and private celebrations. It works well in both formal and casual settings, creating natural conversation starters.</p>
+              <p className="text-gray-300 text-lg">My close-up magic is perfect for cocktail hours, dinner parties, corporate networking events, and private celebrations. It enhances both formal and casual gatherings by sparking conversation and delighting guests.</p>
             </div>
-            <div className="bg-black p-8 rounded-lg border border-gray-800">
+            <div className="bg-black/80 p-8 rounded-lg border border-gray-800">
               <h3 className="text-xl font-semibold mb-4 text-blue-400">How many guests can you entertain?</h3>
-              <p className="text-gray-300 text-lg">I can comfortably entertain groups of 10-300 guests, moving between tables or clusters of people. For larger events, I can bring additional performers to ensure everyone experiences the magic.</p>
+              <p className="text-gray-300 text-lg">I can comfortably entertain groups ranging from 10 to 300 guests. For larger events (over 300), I may recommend extending my time at your event to ensure every guest experiences the magic firsthand. I move naturally between tables or clusters of people, making sure the magic reaches everyone.</p>
             </div>
           </div>
         </div>
@@ -148,7 +157,7 @@ export default function CloseUpMagicPage() {
       <section className="relative min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/images/JamesKenyon_Mag-ic_0092.jpg"
+            src="/images/IMG_5400.JPG"
             alt="Close-up magic performance"
             fill
             className="object-cover"
@@ -157,7 +166,9 @@ export default function CloseUpMagicPage() {
         </div>
         <div className="relative z-20 min-h-screen flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 w-full">
-            <BottomContactSection />
+            <div className="bg-black/50 backdrop-blur-sm p-8 rounded-lg">
+              <BottomContactSection />
+            </div>
           </div>
         </div>
       </section>

@@ -92,20 +92,16 @@ export default function Home() {
                 <div className="flex-1 flex flex-col items-center p-4 sm:p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-lg sm:text-2xl font-bold text-white mb-2 mt-4">Close-Up Magic</h3>
-                    <p className="text-sm sm:text-lg text-gray-200 mb-4">Close-up magic is performed right in front of your guests, often using everyday objects like cards, coins, or borrowed items. It creates a personal and interactive experience where the magic happens literally in the palm of your hand, leaving guests amazed and engaged. As your magician, I specialize in making these moments unforgettable.</p>
+                    <p className="text-sm sm:text-lg text-gray-200 mb-4">Interactive magic performed up-close at tables during dinners, receptions, or networking events. Perfect for creating conversation and breaking the ice.</p>
                   </div>
                   <ul className="text-left space-y-4 sm:space-y-6 w-full max-w-xs mx-auto mt-auto mb-4 sm:mb-6">
                     <li className="flex flex-col">
-                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> How long does a close-up magic performance last?</div>
-                      <div className="text-gray-400 text-xs sm:text-sm pl-7">I typically perform for 2–3 hours, moving seamlessly among your guests or tables. This ensures that everyone enjoys the magic while maintaining the natural flow of the event. For events with more than 300 guests, I may need additional time to ensure everyone has the opportunity to experience the magic.</div>
+                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">👥</span> Ideal for groups of 10–300</div>
+                      <div className="text-gray-400 text-xs sm:text-sm pl-7">Small to medium events</div>
                     </li>
                     <li className="flex flex-col">
-                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">🎉</span> What kind of events is close-up magic suitable for?</div>
-                      <div className="text-gray-400 text-xs sm:text-sm pl-7">My close-up magic is perfect for cocktail hours, dinner parties, corporate networking events, and private celebrations. It enhances both formal and casual gatherings by sparking conversation and delighting guests.</div>
-                    </li>
-                    <li className="flex flex-col">
-                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">👥</span> How many guests can you entertain?</div>
-                      <div className="text-gray-400 text-xs sm:text-sm pl-7">I can comfortably entertain groups ranging from 10 to 300 guests. For larger events (over 300), I may recommend extending my time at your event to ensure every guest experiences the magic firsthand. I move naturally between tables or clusters of people, making sure the magic reaches everyone.</div>
+                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> 30–2 hour+ minute performances</div>
+                      <div className="text-gray-400 text-xs sm:text-sm pl-7">Flexible set lengths</div>
                     </li>
                   </ul>
                   <Link href="/close-up" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-base sm:text-lg">Learn More</Link>
@@ -226,11 +222,8 @@ export default function Home() {
         </section>
 
         {/* Trusted by Industry Leaders Section */}
-        <section className="w-full bg-black py-12 sm:py-20 px-4 relative">
-          <div className="absolute inset-0 z-0">
-            <img src="/images/edit1.png" alt="Background" className="w-full h-full object-cover" />
-          </div>
-          <div className="max-w-6xl mx-auto flex flex-col items-center relative z-10">
+        <section className="w-full bg-black py-12 sm:py-20 px-4">
+          <div className="max-w-6xl mx-auto flex flex-col items-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-3 sm:mb-4">Trusted by industry leaders</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 text-center mb-6 sm:mb-10 max-w-2xl">James has performed for some of the world&apos;s most recognizable brands and at exclusive corporate events.</p>
             <div className="flex flex-col items-center space-y-4 mb-6 sm:mb-10 w-full">
@@ -416,8 +409,8 @@ export default function Home() {
               </div>
             </div>
             {/* Right: Contact Form */}
-            <div className="bg-black/50 rounded-2xl p-8 md:p-12 flex flex-col justify-center">
-              <form action="https://formspree.io/f/xvgagbja" method="POST" className="space-y-6 w-full max-w-lg mx-auto">
+            <div className="backdrop-blur-sm rounded-2xl p-8 md:p-12 flex flex-col justify-center">
+              <form action="https://formspree.io/f/xvgagbja" method="POST" className="space-y-6 border border-white/10 rounded-2xl p-10 w-full max-w-lg mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input type="text" name="name" placeholder="Name *" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                   <input type="text" name="company" placeholder="Company" className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
