@@ -28,10 +28,13 @@ export default function MiamiCloseUpPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Create Unforgettable Moments in Miami</h2>
           <div className="prose prose-invert max-w-none">
             <p className="text-lg text-gray-300 mb-6">
-              Close-up magic is perfect for creating intimate, engaging experiences at your Miami event. Whether you're hosting a corporate gathering, private party, or special occasion, James brings his unique brand of sleight-of-hand magic directly to your guests.
+              Experience magic up close and personal in Miami, where every trick happens right in front of your eyes. Perfect for cocktail hours, dinner parties, and corporate networking events in Miami, creating natural conversation starters and memorable interactions.
             </p>
             <p className="text-lg text-gray-300 mb-6">
-              In Miami, James adapts his performance to match your event's atmosphere and goals. From cocktail hours to dinner parties, his interactive magic creates natural conversation starters and helps guests connect in a fun, memorable way.
+              Each performance in Miami is tailored to your event's atmosphere and audience, whether it's sophisticated corporate entertainment or engaging party magic. The intimate nature of close-up magic creates a unique connection with your guests.
+            </p>
+            <p className="text-lg text-gray-300 mb-6">
+              From elegant card tricks to mind-bending mentalism, each effect is carefully selected to amaze and entertain your Miami audience. The performance flows naturally through your event, creating a sophisticated atmosphere that enhances the overall experience.
             </p>
           </div>
         </div>
@@ -90,7 +93,7 @@ export default function MiamiCloseUpPage() {
 
             <div className="bg-gray-900 p-6 rounded-lg">
               <p className="text-gray-300 mb-4">
-                "The way James engaged with our guests was remarkable. His close-up magic created the perfect atmosphere for our networking event, making it easy for people to connect and share their amazement."
+                "The way James engaged with our guests was remarkable. His close-up magic created the perfect atmosphere for our networking event in Miami, making it easy for people to connect and share their amazement."
               </p>
               <p className="font-semibold">Robert Chen</p>
               <p className="text-gray-400">Event Coordinator, Global Finance</p>
