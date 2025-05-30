@@ -90,23 +90,23 @@ export default function CloseUpMagicPage() {
           />
         </div>
         <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black bg-blue-100/80 p-4 rounded-lg">
             Frequently Asked Questions About Close-Up Magic
           </h2>
           <div className="space-y-8">
-            <div className="p-8 rounded-lg">
+            <div className="p-8 rounded-lg bg-blue-100/80">
               <h3 className="text-xl font-bold mb-4 text-black">What is close-up magic?</h3>
               <p className="text-black text-lg">Close-up magic is performed right in front of your guests, often using everyday objects like cards, coins, or borrowed items. It creates a personal and interactive experience where the magic happens literally in the palm of your hand, leaving guests amazed and engaged. As your magician, I specialize in making these moments unforgettable.</p>
             </div>
-            <div className="p-8 rounded-lg">
+            <div className="p-8 rounded-lg bg-blue-100/80">
               <h3 className="text-xl font-bold mb-4 text-black">How long does a close-up magic performance last?</h3>
               <p className="text-black text-lg">I typically perform for 2–3 hours, moving seamlessly among your guests or tables. This ensures that everyone enjoys the magic while maintaining the natural flow of the event. For events with more than 300 guests, I may need additional time to ensure everyone has the opportunity to experience the magic.</p>
             </div>
-            <div className="p-8 rounded-lg">
+            <div className="p-8 rounded-lg bg-blue-100/80">
               <h3 className="text-xl font-bold mb-4 text-black">What kind of events is close-up magic suitable for?</h3>
               <p className="text-black text-lg">My close-up magic is perfect for cocktail hours, dinner parties, corporate networking events, and private celebrations. It enhances both formal and casual gatherings by sparking conversation and delighting guests.</p>
             </div>
-            <div className="p-8 rounded-lg">
+            <div className="p-8 rounded-lg bg-blue-100/80">
               <h3 className="text-xl font-bold mb-4 text-black">How many guests can you entertain?</h3>
               <p className="text-black text-lg">I can comfortably entertain groups ranging from 10 to 300 guests. For larger events (over 300), I may recommend extending my time at your event to ensure every guest experiences the magic firsthand. I move naturally between tables or clusters of people, making sure the magic reaches everyone.</p>
             </div>
