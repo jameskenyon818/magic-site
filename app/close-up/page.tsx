@@ -82,7 +82,7 @@ export default function CloseUpMagicPage() {
       <section className="py-16 px-4 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/JamesKenyon_Mag-ic_0092.jpg"
+            src="/images/JamesKenyon_Magic_0092.jpg"
             alt="Close-up magic background"
             fill
             className="object-contain"
