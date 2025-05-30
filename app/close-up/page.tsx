@@ -82,10 +82,10 @@ export default function CloseUpMagicPage() {
       <section className="py-16 px-4 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/edit6.png"
+            src="/images/JamesKenyon_Mag-ic_0092.jpg"
             alt="Close-up magic background"
             fill
-            className="object-cover"
+            className="object-contain"
             priority
           />
         </div>
@@ -166,9 +166,7 @@ export default function CloseUpMagicPage() {
         </div>
         <div className="relative z-20 min-h-screen flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 w-full">
-            <div className="bg-black/50 backdrop-blur-sm p-8 rounded-lg">
-              <BottomContactSection />
-            </div>
+            <BottomContactSection />
           </div>
         </div>
       </section>
