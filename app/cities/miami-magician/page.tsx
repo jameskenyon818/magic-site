@@ -46,6 +46,14 @@ export default function MiamiMagicianPage() {
               In Miami, James adapts his performance to match your event's atmosphere and goals. From cocktail hours to dinner parties, his interactive magic creates natural conversation starters and helps guests connect in a fun, memorable way.
             </p>
           </div>
+          <div className="text-center">
+            <Link
+              href="/cities/miami-magician/close-up"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors"
+            >
+              Learn More About Close-Up Magic
+            </Link>
+          </div>
         </div>
       </section>
 
