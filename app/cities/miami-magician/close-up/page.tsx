@@ -16,7 +16,7 @@ export default function MiamiCloseUpPage() {
     <main className="min-h-screen bg-black text-white">
       <HeroSection
         title="Close-Up Magic in Miami"
-        subtitle="Intimate, interactive magic that creates unforgettable moments at your event"
+        subtitle="Experience magic up close and personal in Miami"
         backgroundImage="/images/JamesKenyon_Magic_0092.jpg"
         ctaText="Book Now"
         ctaLink="#contact"
