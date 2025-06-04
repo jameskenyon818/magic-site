@@ -26,57 +26,36 @@ export default function DallasMagicianPage() {
         <CityHero cityName="Dallas" heroImage="/images/hero.webp" />
         <QuoteForm city="Dallas" />
         <PerformancesSection city="Dallas" />
-        
+        <BookingExperienceSection />
+        <ExperienceCreatorSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <BottomContactSection />
         {/* Close-Up Magic Section */}
         <section id="close-up-magic" className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Close-Up Magic in Dallas</h2>
-            <div className="prose prose-invert max-w-none">
+            <div className="prose prose-invert max-w-none mb-8">
               <p className="text-lg text-gray-300 mb-6">
                 Close-up magic is perfect for creating intimate, engaging experiences at your Dallas event. Whether you're hosting a corporate gathering, private party, or special occasion, James brings his unique brand of sleight-of-hand magic directly to your guests.
               </p>
               <p className="text-lg text-gray-300 mb-6">
                 In Dallas, James adapts his performance to match your event's atmosphere and goals. From cocktail hours to dinner parties, his interactive magic creates natural conversation starters and helps guests connect in a fun, memorable way.
               </p>
+              <p className="text-lg text-gray-300 mb-6">
+                From elegant card tricks to mind-bending mentalism, each effect is carefully selected to amaze and entertain your Dallas audience. The performance flows naturally through your event, creating a sophisticated atmosphere that enhances the overall experience.
+              </p>
+            </div>
+            <div className="text-center">
+              <Link
+                href="/cities/dallas-magician/close-up"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors"
+              >
+                Learn More About Close-Up Magic
+              </Link>
             </div>
           </div>
         </section>
-
-        {/* Stage Magic Section */}
-        <section id="stage-magic" className="py-16 px-4 bg-gray-900">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Stage Magic in Dallas</h2>
-            <div className="prose prose-invert max-w-none">
-              <p className="text-lg text-gray-300 mb-6">
-                Stage magic is perfect for creating a shared experience that brings your entire audience together. Whether you're hosting a corporate event, wedding, or special occasion, James delivers a performance that will be remembered long after the event ends.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-                Perfect for large corporate events, weddings, and special occasions across Dallas, James's stage show combines mind-reading, illusions, and audience participation to create an unforgettable experience.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Trade Show Magic Section */}
-        <section id="trade-show-magic" className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Trade Show Magic in Dallas</h2>
-            <div className="prose prose-invert max-w-none">
-              <p className="text-lg text-gray-300 mb-6">
-                Trade show magic is the perfect way to stand out at your next Dallas conference or exhibition. James's interactive performances draw crowds to your booth and create memorable experiences that help you connect with potential clients.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-                Perfect for trade shows and conferences across Dallas, James adapts his performance to highlight your products or services, making your booth the most engaging destination on the show floor.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <BookingExperienceSection />
-        <ExperienceCreatorSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <BottomContactSection />
         <CityFooter city="Dallas" />
       </main>
     </>
