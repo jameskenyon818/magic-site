@@ -100,7 +100,7 @@ export default function Home() {
                       <div className="text-gray-400 text-xs sm:text-sm pl-7">Small to medium events</div>
                     </li>
                     <li className="flex flex-col">
-                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> 30–2 hour+ minute performances</div>
+                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> 30 minutes to 2+ hours</div>
                       <div className="text-gray-400 text-xs sm:text-sm pl-7">Flexible set lengths</div>
                     </li>
                   </ul>
