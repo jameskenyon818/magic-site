@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
@@ -5,55 +6,83 @@ import LogoCarousel from '../../components/LogoCarousel';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
 import CityHero from '@/app/components/CityHero';
-import PerformancesSection from '@/app/components/PerformancesSection';
+import PhoenixPerformancesSection from '@/app/components/PhoenixPerformancesSection';
 import BookingExperienceSection from '@/app/components/BookingExperienceSection';
 import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection';
-import TestimonialsSection from '@/app/components/TestimonialsSection';
-import FAQSection from '@/app/components/FAQSection';
+import PhoenixTestimonialsSection from '@/app/components/PhoenixTestimonialsSection';
+import PhoenixFAQSection from '@/app/components/PhoenixFAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import ClientQuoteForm from '../../components/ClientQuoteForm';
 
+const siteUrl = SITE_URL;
+
 export const metadata: Metadata = {
-  title: 'Hire a Magician in Phoenix — Corporate Events, Private Parties & More',
-  description: 'Looking to hire a magician in Phoenix? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
+  title: 'Phoenix Magician Near Me | Corporate Events & Private Parties | James Kenyon Magic',
+  description: "Looking for a Phoenix magician near me? James Kenyon Magic is your top choice for corporate events, private parties, and trade shows in Phoenix. Professional magician available for hire.",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: `${siteUrl}/cities/phoenix-magician`,
+  },
 };
 
 export default function PhoenixMagicianPage() {
   return (
     <>
-      <main className="min-h-screen bg-black text-white">
+      <main className="min-h-screen text-white">
         <CityHero cityName="Phoenix" heroImage="/images/hero.webp" />
         <ClientQuoteForm city="Phoenix" />
-        <PerformancesSection city="Phoenix" />
-        <BookingExperienceSection />
-        <ExperienceCreatorSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <BottomContactSection />
-        <section id="close-up-magic" className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Close-Up Magic in Phoenix</h2>
-            <div className="prose prose-invert max-w-none mb-8">
-              <p className="text-lg text-gray-300 mb-6">
-                Close-up magic is perfect for creating intimate, engaging experiences at your Phoenix event. Whether you're hosting a corporate gathering, private party, or special occasion, James brings his unique brand of sleight-of-hand magic directly to your guests.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-                In Phoenix, James adapts his performance to match your event's atmosphere and goals. From cocktail hours to dinner parties, his interactive magic creates natural conversation starters and helps guests connect in a fun, memorable way.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-                From elegant card tricks to mind-bending mentalism, each effect is carefully selected to amaze and entertain your Phoenix audience. The performance flows naturally through your event, creating a sophisticated atmosphere that enhances the overall experience.
-              </p>
-            </div>
-            <div className="text-center">
-              <Link
-                href="/cities/phoenix-magician/close-up"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors"
-              >
-                Learn More About Close-Up Magic
-              </Link>
-            </div>
+        
+        {/* Video Section */}
+        <section className="py-16 px-4">
+          <div className="max-w-6xl mx-auto">
+            <video
+              src="/videos/websitie - Made with Clipchamp.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls={false}
+              preload="auto"
+              className="w-full h-full rounded-lg shadow-lg"
+              style={{ 
+                objectFit: 'cover',
+                minHeight: '300px'
+              }}
+            >
+              <source src="/videos/websitie - Made with Clipchamp.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </section>
+        
+        {/* Phoenix-Specific Intro Section */}
+        <section className="w-full bg-black py-8 sm:py-16 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg sm:text-xl text-gray-300 mb-6">
+              James has performed for corporate groups at the Phoenix Convention Center, 
+              events at Talking Stick Resort, and private functions throughout Phoenix. 
+              From tech startup conferences to healthcare industry events, 
+              James brings world-class entertainment to every Phoenix event.
+            </p>
+          </div>
+        </section>
+        
+        <PhoenixPerformancesSection />
+        <BookingExperienceSection />
+        <ExperienceCreatorSection />
+        <PhoenixTestimonialsSection />
+        <PhoenixFAQSection />
+        <BottomContactSection />
+        
+        {/* Nearby Cities Section */}
+        <section className="w-full bg-gray-900 py-8 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-gray-300 text-lg">
+              Also performing in <Link href="/cities/los-angeles-magician" className="text-blue-400 hover:text-blue-300">Los Angeles corporate magician</Link> and <Link href="/cities/denver-magician" className="text-blue-400 hover:text-blue-300">Denver trade show entertainer</Link> events.
+            </p>
+          </div>
+        </section>
+        
         <CityFooter city="Phoenix" />
       </main>
     </>

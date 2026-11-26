@@ -1,13 +1,32 @@
 "use client";
 
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import ThankYouModal from './ThankYouModal';
 
 interface QuoteFormProps {
   city: string;
 }
 
 export default function QuoteForm({ city }: QuoteFormProps) {
-  const router = useRouter();
+  const pathname = usePathname();
+  const [isThankYouOpen, setIsThankYouOpen] = useState(false);
+  const [sourcePage, setSourcePage] = useState('');
+
+  useEffect(() => {
+    // Capture the page where the form is being viewed
+    setSourcePage(window.location.href);
+    
+    // Store the landing page in session storage if not already stored
+    if (!sessionStorage.getItem('landingPage')) {
+      sessionStorage.setItem('landingPage', window.location.href);
+    }
+    
+    // Store referrer if it exists and is from the same domain
+    if (document.referrer && document.referrer.includes(window.location.hostname)) {
+      sessionStorage.setItem('referrerPage', document.referrer);
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -16,6 +35,16 @@ export default function QuoteForm({ city }: QuoteFormProps) {
 
     // Add city to form data
     data.append('city', city);
+    
+    // Add landing page and referrer if available
+    const landingPage = sessionStorage.getItem('landingPage');
+    const referrerPage = sessionStorage.getItem('referrerPage');
+    if (landingPage) {
+      data.append('Landing Page', landingPage);
+    }
+    if (referrerPage && referrerPage !== sourcePage) {
+      data.append('Referrer Page', referrerPage);
+    }
 
     // Validate required fields
     if (!data.get('name') || !data.get('email') || !data.get('phone')) {
@@ -33,7 +62,8 @@ export default function QuoteForm({ city }: QuoteFormProps) {
       });
 
       if (response.ok) {
-        router.push('/thank-you');
+        setIsThankYouOpen(true);
+        form.reset();
       } else {
         alert('Something went wrong. Please try again.');
       }
@@ -160,8 +190,12 @@ export default function QuoteForm({ city }: QuoteFormProps) {
               name="additionalDetails"
               rows={4}
               className="w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-800 text-white"
-            ></textarea>
+            >            </textarea>
           </div>
+
+          {/* Hidden fields to track which page the lead came from */}
+          <input type="hidden" name="Source Page" value={sourcePage} />
+          <input type="hidden" name="Page Path" value={pathname} />
 
           <div className="md:col-span-2 text-center">
             <button
@@ -173,6 +207,7 @@ export default function QuoteForm({ city }: QuoteFormProps) {
           </div>
         </form>
       </div>
+      <ThankYouModal isOpen={isThankYouOpen} onClose={() => setIsThankYouOpen(false)} />
     </section>
   );
 } 

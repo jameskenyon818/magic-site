@@ -1,0 +1,472 @@
+{
+  "version": 2,
+  "framework": "nextjs",
+  "crons": [],
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "redirects": [
+    {
+      "source": "/bio",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/lander",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/wyoming",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/texas/dallas",
+      "destination": "/cities/dallas-magician",
+      "permanent": true
+    },
+    {
+      "source": "/newyork",
+      "destination": "/cities/new-york-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/north-carolina",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/georgia/savannah",
+      "destination": "/cities/atlanta-magician",
+      "permanent": true
+    },
+    {
+      "source": "/california/san-francisco",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ohio/cincinnati",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california",
+      "destination": "/cities/los-angeles-magician",
+      "permanent": true
+    },
+    {
+      "source": "/close-up-magic",
+      "destination": "/close-up",
+      "permanent": true
+    },
+    {
+      "source": "/san-diego-magician",
+      "destination": "/cities/san-diego-magician",
+      "permanent": true
+    },
+    {
+      "source": "/miami-magician",
+      "destination": "/cities/miami-magician",
+      "permanent": true
+    },
+    {
+      "source": "/tampa-magician",
+      "destination": "/cities/tampa-magician",
+      "permanent": true
+    },
+    {
+      "source": "/stage-show-magic",
+      "destination": "/stage-magic",
+      "permanent": true
+    },
+    {
+      "source": "/new-york-magician",
+      "destination": "/cities/new-york-magician",
+      "permanent": true
+    },
+    {
+      "source": "/denver-magician",
+      "destination": "/cities/denver-magician",
+      "permanent": true
+    },
+    {
+      "source": "/los-angeles-magician",
+      "destination": "/cities/los-angeles-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/minnesota/rochester",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/minnesota/duluth",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ohio/cleveland",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/trade-show-magic",
+      "destination": "/trade-show",
+      "permanent": true
+    },
+    {
+      "source": "/m/create",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/california/los-angeles",
+      "destination": "/cities/los-angeles-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/illinois/chicago",
+      "destination": "/cities/chicago-magician",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-magician-dallas",
+      "destination": "/cities/dallas-magician",
+      "permanent": true
+    },
+    {
+      "source": "/texas",
+      "destination": "/cities/austin-magician",
+      "permanent": true
+    },
+    {
+      "source": "/texas/austin",
+      "destination": "/cities/austin-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/illinois",
+      "destination": "/cities/chicago-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/utah",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/maryland",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas",
+      "destination": "/cities/austin-magician",
+      "permanent": true
+    },
+    {
+      "source": "/performances/stage-show",
+      "destination": "/stage-magic",
+      "permanent": true
+    },
+    {
+      "source": "/performances/trade-show-magic",
+      "destination": "/cities/austin-magician/trade-show",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-magician-houston",
+      "destination": "/cities/houston-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/vermont",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alabama",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-magician-austin",
+      "destination": "/cities/austin-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/louisiana",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/miami",
+      "destination": "/cities/miami-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/austin",
+      "destination": "/cities/austin-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/michigan",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/tennessee",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/california/san-francisco",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/west-virginia",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/texas/houston",
+      "destination": "/cities/houston-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/nevada",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/minnesota",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/alaska",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/new-york",
+      "destination": "/cities/new-york-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/florida",
+      "destination": "/cities/orlando-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/delaware",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/san-francisco",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/kansas",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/maine",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/georgia",
+      "destination": "/cities/atlanta-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/montana",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/missouri",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/south-carolina",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ohio",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/phoenix",
+      "destination": "/cities/phoenix-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/washington",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/north-dakota",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/seattle",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/san-diego",
+      "destination": "/cities/san-diego-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/arkansas",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/wisconsin",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/los-angeles",
+      "destination": "/cities/los-angeles-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/arizona",
+      "destination": "/cities/phoenix-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/chicago",
+      "destination": "/cities/chicago-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/philadelphia",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/dallas",
+      "destination": "/cities/dallas-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/san-antonio",
+      "destination": "/cities/san-antonio-magician",
+      "permanent": true
+    },
+    {
+      "source": "/locations/denver",
+      "destination": "/cities/denver-magician",
+      "permanent": true
+    },
+    {
+      "source": "/m/login",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews",
+      "destination": "/testimonials",
+      "permanent": true
+    },
+    {
+      "source": "/about-james",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/m/bookings",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/m/account",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/m/reset",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/m/create-account",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact/ola/services/magic-event-discovery-session",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/performances/vip-experience",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-magician-san-antonio",
+      "destination": "/cities/san-antonio-magician",
+      "permanent": true
+    },
+    {
+      "source": "/performances/mc-entertainment",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/showreel",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/nevada/reno",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/maryland/germantown",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/locations/ohio/toledo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/california/san-diego",
+      "destination": "/cities/san-diego-magician",
+      "permanent": true
+    },
+    {
+      "source": "/cities/corporate-magician",
+      "destination": "/corporate-magician",
+      "permanent": true
+    }
+  ]
+}

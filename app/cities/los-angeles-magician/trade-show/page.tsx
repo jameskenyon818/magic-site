@@ -1,18 +1,28 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import Navigation from '@/app/components/Navigation';
+import LogoCarousel from '@/app/components/LogoCarousel';
+
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   title: 'Hire a Trade Show Magician in Los Angeles — Perfect for Exhibitions & Conferences',
-  description: 'Looking for a trade show magician in Los Angeles? James Kenyon delivers engaging performances that attract crowds and boost engagement at your exhibition or conference. Book now for a memorable trade show experience.'
+  description: "Los Angeles Trade Show Magician | Corporate Events & Exhibitions | Crowd-Drawing Entertainment",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: `${siteUrl}/cities/los-angeles-magician/trade-show`,
+  },
 };
 
 export default function LosAngelesTradeShowPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <Navigation />
       {/* Hero Section - fully visible image, no overlay */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center">
         <Image
@@ -159,6 +169,21 @@ export default function LosAngelesTradeShowPage() {
           <div className="max-w-4xl mx-auto px-4 w-full">
             <BottomContactSection />
           </div>
+        </div>
+      </section>
+
+      <section id="testimonials" className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">What Our Clients Say</h2>
+          <TestimonialsSection />
+        </div>
+      </section>
+      <FAQSection />
+      <BottomContactSection />
+      <section id="clients" className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Clients</h2>
+          <LogoCarousel />
         </div>
       </section>
     </main>

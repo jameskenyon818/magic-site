@@ -4,8 +4,8 @@ export default function ChicagoStructuredData() {
     "@type": "LocalBusiness",
     "name": "James Kenyon - Chicago Corporate Magician",
     "description": "Professional corporate magician and entertainer in Chicago, specializing in corporate events, trade shows, and private parties.",
-    "image": "https://jameskenyonmagic.com/images/edit.png",
-    "url": "https://jameskenyonmagic.com/cities/chicago-magician",
+    "image": "https://www.jameskenyonmagic.com/images/edit.png",
+    "url": "https://www.jameskenyonmagic.com/cities/chicago-magician",
     "telephone": "+1-512-555-0123",
     "address": {
       "@type": "PostalAddress",

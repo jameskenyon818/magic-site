@@ -16,7 +16,7 @@ export default function AtlantaStructuredData() {
       "latitude": "33.7490",
       "longitude": "-84.3880"
     },
-    "url": "https://www.jameskenyonmagic.com/atlanta-magician",
+    "url": "https://www.jameskenyonmagic.com/cities/atlanta-magician",
     "telephone": "+1-555-555-5555",
     "priceRange": "$$$",
     "openingHoursSpecification": {

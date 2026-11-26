@@ -68,8 +68,17 @@ export default function CloseUpMagicSection({ city }: CloseUpMagicSectionProps) 
                 loop
                 muted
                 playsInline
-                className="w-full h-full rounded-lg"
-              />
+                controls={false}
+                preload="auto"
+                className="w-full h-full rounded-lg shadow-lg"
+                style={{ 
+                  objectFit: 'cover',
+                  minHeight: '300px'
+                }}
+              >
+                <source src="/videos/websitie - Made with Clipchamp.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
 
             {/* FAQ Section */}

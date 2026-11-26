@@ -4,24 +4,35 @@ import { Metadata } from 'next';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import Navigation from '@/app/components/Navigation';
+import CityFooter from '@/app/components/CityFooter';
 
 export const metadata: Metadata = {
   title: 'Close-Up Magic — Perfect for Corporate Events & Private Parties',
-  description: 'Looking for a close-up magician? James Kenyon delivers intimate, interactive performances that create unforgettable moments at your corporate event or private party. Available in multiple cities across the US.'
+  description: "Close-Up Magician | Corporate Events & Private Parties | Interactive Magic Entertainment",
+  metadataBase: new URL('https://www.jameskenyonmagic.com'),
+  alternates: {
+    canonical: 'https://www.jameskenyonmagic.com/close-up',
+  },
 };
 
 export default function CloseUpMagicPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white pt-16">
+      <Navigation />
       {/* Hero Section */}
-      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center">
+      <section className="relative h-screen bg-black md:h-[80vh] md:min-h-[600px] md:flex md:items-center md:justify-center">
         <Image
           src="/images/image about.jpg"
           alt="Close-up magic performance"
           fill
-          className="object-contain"
+          className="object-cover md:object-contain"
           priority
+          quality={100}
+          style={{ objectPosition: 'center 30%' }}
         />
+        {/* Dark overlay only on mobile */}
+        <div className="absolute inset-0 bg-black/30 md:hidden" />
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-center px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
             Close-Up Magic
@@ -64,6 +75,59 @@ export default function CloseUpMagicPage() {
         </div>
       </section>
 
+      {/* Available Cities Section */}
+      <section className="py-16 px-4 bg-gray-900">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Available in Major Cities Across the US
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <Link href="/cities/atlanta-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Atlanta
+            </Link>
+            <Link href="/cities/austin-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Austin
+            </Link>
+            <Link href="/cities/chicago-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Chicago
+            </Link>
+            <Link href="/cities/dallas-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Dallas
+            </Link>
+            <Link href="/cities/denver-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Denver
+            </Link>
+            <Link href="/cities/houston-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Houston
+            </Link>
+            <Link href="/cities/los-angeles-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Los Angeles
+            </Link>
+            <Link href="/cities/miami-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Miami
+            </Link>
+            <Link href="/cities/new-york-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              New York
+            </Link>
+            <Link href="/cities/orlando-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Orlando
+            </Link>
+            <Link href="/cities/phoenix-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Phoenix
+            </Link>
+            <Link href="/cities/san-antonio-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              San Antonio
+            </Link>
+            <Link href="/cities/san-diego-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              San Diego
+            </Link>
+            <Link href="/cities/tampa-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Tampa
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Video Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
@@ -73,8 +137,17 @@ export default function CloseUpMagicPage() {
             loop
             muted
             playsInline
-            className="w-full h-full rounded-lg"
-          />
+            controls={false}
+            preload="auto"
+            className="w-full h-full rounded-lg shadow-lg"
+            style={{ 
+              objectFit: 'cover',
+              minHeight: '300px'
+            }}
+          >
+            <source src="/videos/websitie - Made with Clipchamp.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
@@ -233,6 +306,7 @@ export default function CloseUpMagicPage() {
           </div>
         </div>
       </section>
+      <CityFooter city="close-up" />
     </main>
   );
 } 

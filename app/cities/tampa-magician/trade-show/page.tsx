@@ -1,14 +1,25 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import LogoCarousel from '@/app/components/LogoCarousel';
 
-export const metadata: Metadata = {
-  title: 'Hire a Trade Show Magician in Tampa — Perfect for Exhibitions & Conferences',
-  description: 'Looking for a trade show magician in Tampa? James Kenyon delivers engaging performances that attract crowds and boost engagement at your exhibition or conference. Book now for a memorable trade show experience.'
-};
+const siteUrl = SITE_URL;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const url = `${siteUrl}/cities/tampa-magician/trade-show`;
+  return {
+    title: 'Hire a Trade Show Magician in Tampa — Perfect for Exhibitions & Conferences',
+    description: "Tampa Trade Show Magician | Corporate Events & Exhibitions | Crowd-Drawing Entertainment",
+    alternates: {
+      canonical: url,
+    },
+    metadataBase: new URL(siteUrl),
+  };
+}
 
 export default function TampaTradeShowPage() {
   return (
@@ -106,7 +117,7 @@ export default function TampaTradeShowPage() {
       </section>
 
       {/* Trade Show Specific Testimonials */}
-      <section className="py-16 px-4 bg-gray-900">
+      <section id="testimonials" className="py-16 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             What Trade Show Organizers Say
@@ -143,9 +154,13 @@ export default function TampaTradeShowPage() {
           </div>
         </div>
       </section>
-
-      {/* Bottom Contact Section with Full Image Background */}
-      <section className="relative min-h-screen">
+      <section id="clients" className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Clients</h2>
+          <LogoCarousel />
+        </div>
+      </section>
+      <section id="contact" className="relative min-h-screen">
         <div className="absolute inset-0">
           <Image
             src="/images/IMG_5400.JPG"

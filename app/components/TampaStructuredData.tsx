@@ -3,7 +3,7 @@ export default function TampaStructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "James Kenyon | Corporate Magician in Tampa",
-    "image": "https://jameskenyonmagic.com/images/edit.png",
+    "image": "https://www.jameskenyonmagic.com/images/edit.png",
     "description": "Hire James Kenyon, Tampa's premier corporate magician for corporate events, trade shows, and private parties. World-class entertainment that leaves lasting impressions.",
     "address": {
       "@type": "PostalAddress",
@@ -16,7 +16,7 @@ export default function TampaStructuredData() {
       "latitude": "27.9506",
       "longitude": "-82.4572"
     },
-    "url": "https://jameskenyonmagic.com/cities/tampa-magician",
+    "url": "https://www.jameskenyonmagic.com/cities/tampa-magician",
     "telephone": "737-235-4182",
     "priceRange": "$$$",
     "openingHoursSpecification": {

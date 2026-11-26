@@ -40,7 +40,7 @@ export default function FAQSection() {
             <p className="text-gray-300 text-base">After submitting an inquiry, you'll receive a response within 24 hours. We'll schedule a consultation call to discuss your event needs, check availability, and provide a customized proposal. The booking is confirmed with a signed agreement and deposit.</p>
           </div>
         </div>
-        <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mt-8 sm:mt-12">Contact</Link>
+        <Link href="/contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mt-8 sm:mt-12">Contact</Link>
       </div>
     </section>
   );

@@ -1,18 +1,27 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import Navigation from '@/app/components/Navigation';
+
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
-  title: 'Close-Up Magic in Orlando — Perfect for Corporate Events & Private Parties',
-  description: 'Looking for a close-up magician in Orlando? James Kenyon delivers intimate, interactive performances that create unforgettable moments at your corporate event or private party.'
+  title: 'Orlando Close-Up Magician | Corporate Events & Private Parties',
+  description: "Orlando Close-Up Magician | Corporate Events & Private Parties | Interactive Magic Entertainment",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: `${siteUrl}/cities/orlando-magician/close-up`,
+  },
 };
 
 export default function OrlandoCloseUpPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white pt-16">
+      <Navigation />
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center">
         <Image
@@ -30,7 +39,7 @@ export default function OrlandoCloseUpPage() {
       </section>
 
       {/* Bullet Points Section */}
-      <section className="py-16 px-4 bg-black">
+      <section id="clients" className="py-16 px-4 bg-black">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Create Unforgettable Moments in Orlando
@@ -125,7 +134,7 @@ export default function OrlandoCloseUpPage() {
       </section>
 
       {/* Close-Up Magic Specific Testimonials */}
-      <section className="py-16 px-4 bg-gray-900">
+      <section id="testimonials" className="py-16 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             What Our Orlando Clients Say
@@ -226,22 +235,9 @@ export default function OrlandoCloseUpPage() {
         </div>
       </section>
 
-      {/* Bottom Contact Section with Full Image Background */}
-      <section className="relative min-h-screen">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/IMG_5400.JPG"
-            alt="Close-up magic performance in Orlando"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-        <div className="relative z-20 min-h-screen flex items-center justify-center">
-          <div className="max-w-4xl mx-auto px-4 w-full">
-            <BottomContactSection />
-          </div>
-        </div>
+      {/* Bottom Contact Section */}
+      <section id="contact">
+        <BottomContactSection />
       </section>
     </main>
   );

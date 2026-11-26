@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
@@ -5,57 +6,87 @@ import LogoCarousel from '../../components/LogoCarousel';
 import { Metadata } from 'next';
 import CityFooter from '@/app/components/CityFooter';
 import CityHero from '@/app/components/CityHero';
-import PerformancesSection from '@/app/components/PerformancesSection';
+import AustinPerformancesSection from '@/app/components/AustinPerformancesSection';
 import BookingExperienceSection from '@/app/components/BookingExperienceSection';
 import ExperienceCreatorSection from '@/app/components/ExperienceCreatorSection';
-import TestimonialsSection from '@/app/components/TestimonialsSection';
-import FAQSection from '@/app/components/FAQSection';
+import AustinTestimonialsSection from '@/app/components/AustinTestimonialsSection';
+import AustinFAQSection from '@/app/components/AustinFAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import ClientQuoteForm from '../../components/ClientQuoteForm';
 
+const siteUrl = SITE_URL;
+
 export const metadata: Metadata = {
-  title: 'Hire a Magician in Austin — Corporate Events, Private Parties & More',
-  description: 'Looking to hire a magician in Austin? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
+  title: 'Austin Magician Near Me | Corporate Events & Private Parties | James Kenyon Magic',
+  description: "Looking for an Austin magician near me? James Kenyon Magic is your top choice for corporate events, private parties, and trade shows in Austin. Professional magician available for hire.",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: `${siteUrl}/cities/austin-magician`,
+  },
 };
 
 export default function AustinMagicianPage() {
   return (
     <>
-      <main className="min-h-screen bg-black text-white">
+      <main className="min-h-screen text-white">
         <CityHero cityName="Austin" heroImage="/images/hero.webp" />
         <ClientQuoteForm city="Austin" />
-        <PerformancesSection city="Austin" />
-        <BookingExperienceSection />
-        <ExperienceCreatorSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <BottomContactSection />
-        <CityFooter city="Austin" />
-        {/* Close-Up Magic Section */}
-        <section id="close-up-magic" className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Close-Up Magic in Austin</h2>
-            <div className="prose prose-invert max-w-none mb-8">
-              <p className="text-lg text-gray-300 mb-6">
-                Close-up magic is perfect for creating intimate, engaging experiences at your Austin event. Whether you're hosting a corporate gathering, private party, or special occasion, James brings his unique brand of sleight-of-hand magic directly to your guests.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-                In Austin, James adapts his performance to match your event's atmosphere and goals. From cocktail hours to dinner parties, his interactive magic creates natural conversation starters and helps guests connect in a fun, memorable way.
-              </p>
-              <p className="text-lg text-gray-300 mb-6">
-                From elegant card tricks to mind-bending mentalism, each effect is carefully selected to amaze and entertain your Austin audience. The performance flows naturally through your event, creating a sophisticated atmosphere that enhances the overall experience.
-              </p>
-            </div>
-            <div className="text-center">
-              <Link
-                href="/cities/austin-magician/close-up"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition-colors"
-              >
-                Learn More About Close-Up Magic
-              </Link>
-            </div>
+        
+        {/* Video Section */}
+        <section className="py-16 px-4">
+          <div className="max-w-6xl mx-auto">
+            <video
+              src="/videos/websitie - Made with Clipchamp.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls={false}
+              preload="auto"
+              className="w-full h-full rounded-lg shadow-lg"
+              style={{ 
+                objectFit: 'cover',
+                minHeight: '300px'
+              }}
+            >
+              <source src="/videos/websitie - Made with Clipchamp.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </section>
+        
+        {/* Austin-Specific Intro Section */}
+        <section className="w-full bg-black py-8 sm:py-16 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg sm:text-xl text-gray-300 mb-6">
+              James has performed for corporate groups at the Austin Convention Center, 
+              events at ACL Live, and private functions throughout downtown Austin. 
+              From tech startups in the Silicon Hills to Fortune 500 companies, 
+              James brings world-class entertainment to every Austin event. 
+              Need a <Link href="/trade-show" className="text-blue-400 hover:text-blue-300 underline">trade show magician</Link> for your Austin exhibition? 
+              <Link href="/corporate-magician" className="text-blue-400 hover:text-blue-300 underline"> Learn more about our corporate magic services</Link>.
+            </p>
+          </div>
+        </section>
+        
+        <AustinPerformancesSection />
+        <BookingExperienceSection />
+        <ExperienceCreatorSection />
+        <AustinTestimonialsSection />
+        <AustinFAQSection />
+        <BottomContactSection />
+        
+        {/* Nearby Cities Section */}
+        <section className="w-full bg-gray-900 py-8 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-gray-300 text-lg">
+              Also performing in <Link href="/cities/dallas-magician" className="text-blue-400 hover:text-blue-300">Dallas corporate magician</Link> and <Link href="/cities/houston-magician" className="text-blue-400 hover:text-blue-300">Houston trade show entertainer</Link> events. 
+              <Link href="/" className="text-blue-400 hover:text-blue-300"> Return to homepage</Link> or explore our <Link href="/trade-show" className="text-blue-400 hover:text-blue-300">trade show magic services</Link>.
+            </p>
+          </div>
+        </section>
+        
+        <CityFooter city="Austin" />
       </main>
     </>
   );

@@ -1,7 +1,11 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import Navigation from '@/app/components/Navigation';
+import BottomContactSection from '@/app/components/BottomContactSection';
+import CityFooter from '@/app/components/CityFooter';
 
 const slideshowImages = [
   '/images/IMG_0006.PNG',
@@ -25,8 +29,9 @@ export default function AboutPage() {
   }, [current, slideshowImages.length]);
 
   return (
-    <main className="min-h-screen bg-black text-white py-20 px-4 flex flex-col items-center">
-      <div className="max-w-4xl w-full mx-auto text-center">
+    <main className="min-h-screen bg-black text-white pt-16">
+      <Navigation />
+      <div className="max-w-4xl w-full mx-auto text-center px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-10">More Than Magic: Meet James the Person</h1>
         {/* Large Slideshow */}
         <div className="relative flex flex-col items-center mb-12">
@@ -57,10 +62,81 @@ export default function AboutPage() {
             At the end of the day, I don&apos;t see magic as something that sets me apart—it&apos;s something that helps me connect. And that starts with the people I come home to.
           </p>
         </div>
+
+        <div className="w-full flex justify-center mt-8">
+          <a href="/#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg border border-gray-700 text-lg">Contact James</a>
+        </div>
       </div>
-      <div className="w-full flex justify-center mt-8">
-        <a href="/#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg border border-gray-700 text-lg">Contact James</a>
-      </div>
+      {/* Contact Section with background image */}
+      <section
+        id="contact"
+        className="relative w-full py-20 flex items-center justify-center"
+        style={{
+          backgroundImage: "url('/images/IMG_0006.PNG')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black/60 z-0" />
+        <div className="relative z-10 w-full max-w-3xl mx-auto">
+          <BottomContactSection />
+        </div>
+      </section>
+      {/* Available Cities Section */}
+      <section className="py-16 px-4 bg-gray-900 rounded-2xl mt-10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Available in Major Cities Across the US
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <Link href="/cities/atlanta-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Atlanta
+            </Link>
+            <Link href="/cities/austin-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Austin
+            </Link>
+            <Link href="/cities/chicago-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Chicago
+            </Link>
+            <Link href="/cities/dallas-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Dallas
+            </Link>
+            <Link href="/cities/denver-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Denver
+            </Link>
+            <Link href="/cities/houston-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Houston
+            </Link>
+            <Link href="/cities/los-angeles-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Los Angeles
+            </Link>
+            <Link href="/cities/miami-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Miami
+            </Link>
+            <Link href="/cities/new-york-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              New York
+            </Link>
+            <Link href="/cities/orlando-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Orlando
+            </Link>
+            <Link href="/cities/phoenix-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Phoenix
+            </Link>
+            <Link href="/cities/san-antonio-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              San Antonio
+            </Link>
+            <Link href="/cities/san-diego-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              San Diego
+            </Link>
+            <Link href="/cities/tampa-magician/close-up" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Tampa
+            </Link>
+          </div>
+        </div>
+      </section>
+      <CityFooter city="about" />
     </main>
   );
 } 

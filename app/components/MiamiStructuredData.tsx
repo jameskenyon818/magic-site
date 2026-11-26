@@ -7,7 +7,7 @@ export default function MiamiStructuredData() {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "James Kenyon | Corporate Magician in Miami",
-          "image": "https://jameskenyonmagic.com/images/edit.png",
+          "image": "https://www.jameskenyonmagic.com/images/edit.png",
           "description": "Hire James Kenyon, Miami's premier corporate magician, for unforgettable entertainment at your next event. Specializing in close-up magic, stage shows, and trade show performances.",
           "address": {
             "@type": "PostalAddress",
@@ -22,7 +22,7 @@ export default function MiamiStructuredData() {
             "latitude": "25.7617",
             "longitude": "-80.1918"
           },
-          "url": "https://jameskenyonmagic.com/cities/miami-magician",
+          "url": "https://www.jameskenyonmagic.com/cities/miami-magician",
           "telephone": "737-235-4182",
           "priceRange": "$$$",
           "openingHoursSpecification": {

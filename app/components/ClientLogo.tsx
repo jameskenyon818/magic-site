@@ -15,13 +15,13 @@ export default function ClientLogo() {
   const href = city ? `/cities/${city}-magician` : '/';
   
   return (
-    <div className="fixed top-4 right-4 z-50">
+    <div className="fixed top-96 left-2 z-50">
       <Link href={href}>
         <Image
           src="/images/logo.webp"
           alt="James Kenyon Magic Logo"
-          width={96}
-          height={96}
+          width={64}
+          height={64}
           className="hover:scale-105 transition-transform"
           priority
         />

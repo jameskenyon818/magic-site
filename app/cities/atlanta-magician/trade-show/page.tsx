@@ -4,15 +4,21 @@ import { Metadata } from 'next';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import Navigation from '@/app/components/Navigation';
 
 export const metadata: Metadata = {
-  title: 'Hire a Trade Show Magician in Atlanta — Perfect for Exhibitions & Conferences',
-  description: 'Looking for a trade show magician in Atlanta? James Kenyon delivers engaging performances that attract crowds and boost engagement at your exhibition or conference. Book now for a memorable trade show experience.'
+  title: 'Atlanta Trade Show Magic — Boost Engagement at Your Exhibition',
+  description: "Atlanta Trade Show Magician | Corporate Events & Exhibitions | Crowd-Drawing Entertainment",
+  metadataBase: new URL('https://www.jameskenyonmagic.com'),
+  alternates: {
+    canonical: 'https://www.jameskenyonmagic.com/cities/atlanta-magician/trade-show',
+  },
 };
 
 export default function AtlantaTradeShowPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <Navigation />
       {/* Hero Section - fully visible image, no overlay */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center">
         <Image

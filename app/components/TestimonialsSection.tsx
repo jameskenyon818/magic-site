@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
             </div>
           </div>
         </div>
-        <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mt-8 sm:mt-12">Contact / Check Availability</Link>
+        <Link href="/contact" className="inline-block text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-white/30 hover:border-white/50 text-lg mt-8 sm:mt-12">Contact / Check Availability</Link>
       </div>
     </section>
   );

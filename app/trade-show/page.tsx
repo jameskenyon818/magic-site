@@ -4,24 +4,35 @@ import { Metadata } from 'next';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import Navigation from '@/app/components/Navigation';
+import CityFooter from '@/app/components/CityFooter';
 
 export const metadata: Metadata = {
-  title: 'Trade Show Magic — Boost Your Booth Traffic & Engagement',
-  description: 'Looking for a trade show magician? James Kenyon delivers engaging performances that draw crowds, create memorable interactions, and help you stand out at your next trade show. Available in multiple cities across the US.'
+  title: 'Trade Show Magic — Boost Engagement at Your Exhibition',
+  description: "Trade Show Magician | Corporate Events & Exhibitions | Crowd-Drawing Entertainment",
+  metadataBase: new URL('https://www.jameskenyonmagic.com'),
+  alternates: {
+    canonical: 'https://www.jameskenyonmagic.com/trade-show',
+  },
 };
 
 export default function TradeShowPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white pt-16">
+      <Navigation />
       {/* Hero Section */}
-      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center">
+      <section className="relative h-screen bg-black md:h-[80vh] md:min-h-[600px] md:flex md:items-center md:justify-center">
         <Image
           src="/images/image about.jpg"
           alt="Trade show magic performance"
           fill
-          className="object-contain"
+          className="object-cover md:object-contain"
           priority
+          quality={100}
+          style={{ objectPosition: 'center 30%' }}
         />
+        {/* Dark overlay only on mobile */}
+        <div className="absolute inset-0 bg-black/30 md:hidden" />
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-center px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
             Trade Show Magic
@@ -35,6 +46,10 @@ export default function TradeShowPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             Make Your Trade Show Booth Unforgettable
           </h2>
+          <p className="text-lg text-gray-300 text-center mb-8 max-w-2xl mx-auto">
+            Looking for a <Link href="/cities/austin-magician" className="text-blue-400 hover:text-blue-300 underline">corporate magician in Austin</Link> for your trade show? 
+            <Link href="/corporate-magician" className="text-blue-400 hover:text-blue-300 underline"> Learn more about our corporate entertainment services</Link>.
+          </p>
           <div className="space-y-12">
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0 w-8 h-8 mt-1">
@@ -64,6 +79,62 @@ export default function TradeShowPage() {
         </div>
       </section>
 
+      {/* Available Cities Section */}
+      <section className="py-16 px-4 bg-gray-900">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Available in Major Cities Across the US
+          </h2>
+          <p className="text-center text-gray-300 mb-8">
+            <Link href="/" className="text-blue-400 hover:text-blue-300 underline">Back to homepage</Link>
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <Link href="/cities/atlanta-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Atlanta
+            </Link>
+            <Link href="/cities/austin-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Austin
+            </Link>
+            <Link href="/cities/chicago-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Chicago
+            </Link>
+            <Link href="/cities/dallas-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Dallas
+            </Link>
+            <Link href="/cities/denver-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Denver
+            </Link>
+            <Link href="/cities/houston-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Houston
+            </Link>
+            <Link href="/cities/los-angeles-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Los Angeles
+            </Link>
+            <Link href="/cities/miami-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Miami
+            </Link>
+            <Link href="/cities/new-york-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              New York
+            </Link>
+            <Link href="/cities/orlando-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Orlando
+            </Link>
+            <Link href="/cities/phoenix-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Phoenix
+            </Link>
+            <Link href="/cities/san-antonio-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              San Antonio
+            </Link>
+            <Link href="/cities/san-diego-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              San Diego
+            </Link>
+            <Link href="/cities/tampa-magician/trade-show" className="text-center p-4 bg-black rounded-lg hover:bg-gray-800 transition">
+              Tampa
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Video Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
@@ -73,8 +144,17 @@ export default function TradeShowPage() {
             loop
             muted
             playsInline
-            className="w-full h-full rounded-lg"
-          />
+            controls={false}
+            preload="auto"
+            className="w-full h-full rounded-lg shadow-lg"
+            style={{ 
+              objectFit: 'cover',
+              minHeight: '300px'
+            }}
+          >
+            <source src="/videos/websitie - Made with Clipchamp.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
@@ -161,6 +241,7 @@ export default function TradeShowPage() {
           </div>
         </div>
       </section>
+      <CityFooter city="trade-show" />
     </main>
   );
 } 

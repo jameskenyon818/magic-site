@@ -2,53 +2,57 @@ import Link from 'next/link';
 import QuoteForm from './components/QuoteForm';
 import Image from 'next/image';
 import LogoCarousel from './components/LogoCarousel';
+import Navigation from './components/Navigation';
+import { Metadata } from 'next';
+import CityFooter from './components/CityFooter';
+
+export const metadata: Metadata = {
+  title: 'James Kenyon Magic | Corporate Magician & Entertainment',
+  description: 'Professional magician available for corporate events, trade shows, and private parties. Specializing in close-up magic, stage shows, and trade show entertainment.',
+  metadataBase: new URL('https://www.jameskenyonmagic.com/'),
+  alternates: {
+    canonical: 'https://www.jameskenyonmagic.com/',
+  },
+};
 
 export default function Home() {
   return (
     <>
       <main className="min-h-screen">
         {/* Hero Section */}
-        <div className="relative h-screen bg-black" style={{ 
-          backgroundImage: "url('/images/edit.png')",
-          backgroundPosition: "center top",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
-        }}>
+        <div className="relative h-screen bg-black">
+          <Image
+            src="/images/edit.png"
+            alt="Hero background"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+            quality={100}
+            style={{ objectPosition: 'center 30%' }}
+          />
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-black/30" />
 
           {/* Navigation */}
-          <nav className="relative z-10 bg-black/30 backdrop-blur-sm shadow-md text-white py-4">
-            <div className="container mx-auto px-4 flex justify-between items-center">
-              <div className="text-xl font-semibold">
-                James Kenyon | Corporate Illusionist
-              </div>
-              <div className="hidden md:flex space-x-6">
-                <Link href="/about" className="hover:text-gray-300 transition">About</Link>
-                <Link href="#performances" className="hover:text-gray-300 transition">Performances</Link>
-                <Link href="#clients" className="hover:text-gray-300 transition">Clients</Link>
-                <Link href="#testimonials" className="hover:text-gray-300 transition">Testimonials</Link>
-                <Link href="#contact" className="hover:text-gray-300 transition">Contact</Link>
-              </div>
-            </div>
-          </nav>
+          <Navigation />
 
           {/* Hero Content */}
           <div className="relative z-10 h-[calc(100vh-4rem)] flex flex-col items-center justify-start text-white text-center px-4 sm:px-6 pt-12 sm:pt-24">
             <div className="space-y-4 sm:space-y-6 max-w-3xl">
-              <div className="inline-block bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
-                Elite Corporate Entertainment
-              </div>
+              <h2 className="inline-block bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
+                Corporate Magician
+              </h2>
               <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
-                Hire a Corporate Magician for Events & Trade Shows
+                Hire a <Link href="/corporate-magician" className="underline hover:text-white">Corporate Magician</Link> for Events & Trade Shows
               </h1>
               <p className="text-base sm:text-xl md:text-2xl text-gray-200 drop-shadow-md mt-4 sm:mt-12">
-                Elevate your corporate events with world-class entertainment that leaves a lasting impression
+                Elevate your corporate events with world-class entertainment that leaves a lasting impression. Whether you need a <Link href="/cities/austin-magician" className="underline hover:text-white">corporate magician in Austin</Link>, <Link href="/trade-show" className="underline hover:text-white">trade show magician</Link> for your next exhibition, or professional entertainment for your business event, James delivers unforgettable experiences.
               </p>
               <div className="pt-6 sm:pt-8">
                 <Link 
-                  href="#contact"
-                  className="inline-block bg-black hover:bg-gray-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors shadow-lg border border-gray-700"
+                  href="/contact"
+                  className="inline-block text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold transition-colors shadow-lg border border-white/30 hover:border-white/50"
                 >
                   Check Availability
                 </Link>
@@ -82,13 +86,23 @@ export default function Home() {
               Tailored magical experiences for every corporate occasion
             </h2>
             <p className="text-sm sm:text-lg md:text-xl text-gray-400 text-center mb-6 sm:mb-12 max-w-3xl mx-auto">
-              From intimate executive dinners to large-scale conferences, James offers customized performances to suit your specific event needs.
+              From intimate executive dinners to large-scale conferences, James offers customized performances to suit your specific event needs. Looking for a <Link href="/cities/austin-magician" className="text-blue-400 hover:text-blue-300 underline">corporate magician in Austin</Link> or a <Link href="/trade-show" className="text-blue-400 hover:text-blue-300 underline">trade show magician</Link> to boost booth traffic? We've got you covered.
             </p>
             {/* Images Row */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-0 relative">
               {/* Close-Up Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/edit5.png" alt="Close-Up Magic" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/edit5.png"
+                    alt="Close-Up Magic"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-contain"
+                    loading="lazy"
+                    quality={75}
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-4 sm:p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-lg sm:text-2xl font-bold text-white mb-2 mt-4">Close-Up Magic</h3>
@@ -100,7 +114,7 @@ export default function Home() {
                       <div className="text-gray-400 text-xs sm:text-sm pl-7">Small to medium events</div>
                     </li>
                     <li className="flex flex-col">
-                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> 30–2 hour+ minute performances</div>
+                      <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> 30 minutes to 2+ hours</div>
                       <div className="text-gray-400 text-xs sm:text-sm pl-7">Flexible set lengths</div>
                     </li>
                   </ul>
@@ -111,7 +125,17 @@ export default function Home() {
               </div>
               {/* Stage Show Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/thumbtack 2.jpg" alt="Stage Show" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/thumbtack 2.jpg"
+                    alt="Stage Show"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-contain"
+                    loading="lazy"
+                    quality={75}
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-2xl font-bold text-white mb-2 mt-4">Stage Show</h3>
@@ -127,14 +151,24 @@ export default function Home() {
                       <div className="text-gray-400 text-sm pl-7">Full stage production</div>
                     </li>
                   </ul>
-                  <Link href="/stage-show" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
+                  <Link href="/stage-magic" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg">Learn More</Link>
                 </div>
                 {/* Divider overlay right edge */}
                 <div className="hidden md:block absolute top-0 right-0 h-full w-px bg-white/20 z-10" />
               </div>
               {/* Trade Show Magic Image */}
               <div className="flex flex-col relative h-full border-2 border-gray-700 rounded-2xl bg-black/80">
-                <img src="/images/IMG_5401.JPG" alt="Trade Show Magic" className="w-full aspect-square object-cover" />
+                <div className="relative w-full aspect-square">
+                  <Image
+                    src="/images/IMG_5401.JPG"
+                    alt="Trade Show Magic"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-contain"
+                    loading="lazy"
+                    quality={75}
+                  />
+                </div>
                 <div className="flex-1 flex flex-col items-center p-8 text-center h-full">
                   <div className="flex-1 flex flex-col justify-start">
                     <h3 className="text-2xl font-bold text-white mb-2 mt-4">Trade Show Magic</h3>
@@ -160,9 +194,9 @@ export default function Home() {
         {/* Seamless Booking Experience Section */}
         <section className="w-full bg-black py-12 sm:py-20 px-4">
           <div className="max-w-5xl mx-auto text-center">
-            <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-base sm:text-lg mb-6 sm:mb-8">Check Availability</Link>
+            <Link href="/contact" className="inline-block text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-white/30 hover:border-white/50 text-base sm:text-lg mb-6 sm:mb-8">Check Availability</Link>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">A seamless booking experience</h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-16 max-w-2xl mx-auto">From initial inquiry to post-event follow-up, we ensure a professional and straightforward process.</p>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-16 max-w-2xl mx-auto">From initial inquiry to post-event follow-up, we ensure a professional and straightforward process. Whether you're planning a corporate event in <Link href="/cities/austin-magician" className="text-blue-400 hover:text-blue-300 underline">Austin</Link> or need a <Link href="/trade-show" className="text-blue-400 hover:text-blue-300 underline">trade show magician</Link> for your next exhibition, we make booking simple.</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {/* Step 1: Consultation */}
               <div className="flex flex-col items-center bg-[#181818] rounded-2xl p-8 shadow-lg">
@@ -222,12 +256,12 @@ export default function Home() {
         </section>
 
         {/* Trusted by Industry Leaders Section */}
-        <section className="w-full bg-black py-12 sm:py-20 px-4">
+        <section id="clients" className="w-full bg-black py-12 sm:py-20 px-4">
           <div className="max-w-6xl mx-auto flex flex-col items-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-3 sm:mb-4">Trusted by industry leaders</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 text-center mb-6 sm:mb-10 max-w-2xl">James has performed for some of the world&apos;s most recognizable brands and at exclusive corporate events.</p>
             <div className="flex flex-col items-center space-y-4 mb-6 sm:mb-10 w-full">
-              <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-base sm:text-lg">Contact / Check Availability</Link>
+              <Link href="/contact" className="inline-block text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-md transition-colors shadow-lg border border-white/30 hover:border-white/50 text-base sm:text-lg">Contact / Check Availability</Link>
             </div>
             {/* Past Clients Logo Grid */}
             <div className="bg-black p-4 sm:p-6 rounded-xl max-w-5xl mx-auto">
@@ -248,7 +282,16 @@ export default function Home() {
         </section>
 
         {/* About James Section */}
-        <section id="about" className="relative w-full min-h-[480px] bg-black py-20 flex items-center justify-center" style={{ backgroundImage: "url('/images/image about.jpg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+        <section id="about" className="relative w-full min-h-[480px] bg-black py-20 flex items-center justify-center">
+          <Image
+            src="/images/image about.jpg"
+            alt="About James background"
+            fill
+            sizes="100vw"
+            className="object-contain sm:object-cover"
+            loading="lazy"
+            quality={75}
+          />
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/70" />
           {/* Content */}
@@ -299,7 +342,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="w-full bg-black py-20 px-4">
+        <section id="testimonials" className="w-full bg-black py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
               Don't take our word for it — hear what <span className="text-[#b0c4de]">event planners and executives</span> say about James's performances
@@ -354,7 +397,7 @@ export default function Home() {
         {/* FAQ Section */}
         <section className="w-full bg-black py-20 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <Link href="#contact" className="inline-block bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-gray-700 text-lg mb-8">Contact / Check Availability</Link>
+                              <Link href="/contact" className="inline-block text-white font-semibold px-6 py-3 rounded-md transition-colors shadow-lg border border-white/30 hover:border-white/50 text-lg mb-8">Contact / Check Availability</Link>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Common questions about booking</h2>
             <p className="text-lg md:text-xl text-gray-300 mb-12">Find answers to frequently asked questions about James's performances and booking process.</p>
             <div className="space-y-6">
@@ -411,6 +454,7 @@ export default function Home() {
             {/* Right: Contact Form */}
             <div className="backdrop-blur-sm rounded-2xl p-8 md:p-12 flex flex-col justify-center">
               <form action="https://formspree.io/f/xvgagbja" method="POST" className="space-y-6 border border-white/10 rounded-2xl p-10 w-full max-w-lg mx-auto">
+                <input type="hidden" name="_redirect" value="https://www.jameskenyonmagic.com/thank-you" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input type="text" name="name" placeholder="Name *" required className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
                   <input type="text" name="company" placeholder="Company" className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
@@ -448,32 +492,36 @@ export default function Home() {
                   </select>
                 </div>
                 <textarea name="message" placeholder="Additional Details" rows={4} className="bg-zinc-900 text-white rounded-lg p-3 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"></textarea>
-                <button type="submit" className="w-full bg-black hover:bg-gray-900 text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg border border-gray-700 text-lg">Check Availability</button>
+                <button type="submit" className="w-full text-white font-semibold px-6 py-3 rounded-lg transition-colors shadow-lg border border-white/30 hover:border-white/50 text-lg">Check Availability</button>
               </form>
             </div>
           </div>
         </section>
 
-        {/* Cities We Serve Footnote */}
-        <footer className="w-full py-8 bg-black text-center">
-          <div className="text-gray-400 text-sm">
-            <span className="font-semibold text-white">Now performing in:</span>{' '}
-            <Link href="/austin-magician" className="hover:underline hover:text-white transition">Austin</Link>{', '}
-            <Link href="/dallas-magician" className="hover:underline hover:text-white transition">Dallas</Link>{', '}
-            <Link href="/houston-magician" className="hover:underline hover:text-white transition">Houston</Link>{', '}
-            <Link href="/san-antonio-magician" className="hover:underline hover:text-white transition">San Antonio</Link>{', '}
-            <Link href="/cities/orlando-magician" className="hover:underline hover:text-white transition">Orlando</Link>{', '}
-            <Link href="/cities/miami-magician" className="hover:underline hover:text-white transition">Miami</Link>{', '}
-            <Link href="/cities/tampa-magician" className="hover:underline hover:text-white transition">Tampa</Link>{', '}
-            <Link href="/cities/los-angeles-magician" className="hover:underline hover:text-white transition">Los Angeles</Link>{', '}
-            <Link href="/cities/san-diego-magician" className="hover:underline hover:text-white transition">San Diego</Link>{', '}
-            <Link href="/cities/chicago-magician" className="hover:underline hover:text-white transition">Chicago</Link>{', '}
-            <Link href="/cities/new-york-magician" className="hover:underline hover:text-white transition">New York</Link>{', '}
-            <Link href="/cities/phoenix-magician" className="hover:underline hover:text-white transition">Phoenix</Link>{', '}
-            <Link href="/cities/atlanta-magician" className="hover:underline hover:text-white transition">Atlanta</Link>{', '}
-            <Link href="/cities/denver-magician" className="hover:underline hover:text-white transition">Denver</Link>
+        {/* Video Section */}
+        <section className="py-16 px-4">
+          <div className="max-w-6xl mx-auto">
+            <video
+              src="/videos/websitie - Made with Clipchamp.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls={false}
+              preload="auto"
+              className="w-full h-full rounded-lg shadow-lg"
+              style={{ 
+                objectFit: 'cover',
+                minHeight: '300px'
+              }}
+            >
+              <source src="/videos/websitie - Made with Clipchamp.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
-        </footer>
+        </section>
+
+        <CityFooter city="home" />
       </main>
     </>
   );

@@ -1,18 +1,30 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import Navigation from '@/app/components/Navigation';
 
-export const metadata: Metadata = {
-  title: 'Hire a Trade Show Magician in Phoenix — Perfect for Exhibitions & Conferences',
-  description: 'Looking for a trade show magician in Phoenix? James Kenyon delivers engaging performances that attract crowds and boost engagement at your exhibition or conference. Book now for a memorable trade show experience.'
-};
+const siteUrl = SITE_URL;
+
+export async function generateMetadata(): Promise<Metadata> {
+  const url = `${siteUrl}/cities/phoenix-magician/trade-show`;
+  return {
+    title: 'Hire a Trade Show Magician in Phoenix — Perfect for Exhibitions & Conferences',
+    description: "Phoenix Trade Show Magician | Corporate Events & Exhibitions | Crowd-Drawing Entertainment",
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: url,
+    },
+  };
+}
 
 export default function PhoenixTradeShowPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <Navigation />
       {/* Hero Section - fully visible image, no overlay */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center">
         <Image

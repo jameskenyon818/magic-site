@@ -1,18 +1,28 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
+import Navigation from '@/app/components/Navigation';
+import LogoCarousel from '@/app/components/LogoCarousel';
+
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
-  title: 'Hire a Trade Show Magician in Miami — Perfect for Exhibitions & Conferences',
-  description: 'Looking for a trade show magician in Miami? James Kenyon delivers engaging performances that attract crowds and boost engagement at your exhibition or conference. Book now for a memorable trade show experience.'
+  title: 'Miami Trade Show Magician | Corporate Events & Exhibitions',
+  description: "Miami Trade Show Magician | Corporate Events & Exhibitions | Crowd-Drawing Entertainment",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: `${siteUrl}/cities/miami-magician/trade-show`,
+  },
 };
 
 export default function MiamiTradeShowPage() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <Navigation />
       {/* Hero Section - fully visible image, no overlay */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center">
         <Image
@@ -106,7 +116,7 @@ export default function MiamiTradeShowPage() {
       </section>
 
       {/* Trade Show Specific Testimonials */}
-      <section className="py-16 px-4 bg-gray-900">
+      <section id="testimonials" className="py-16 px-4 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
             What Trade Show Organizers Say
@@ -144,24 +154,6 @@ export default function MiamiTradeShowPage() {
         </div>
       </section>
 
-      {/* Bottom Contact Section with Full Image Background */}
-      <section className="relative min-h-screen">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/IMG_5400.JPG"
-            alt="Trade show magic performance"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-        <div className="relative z-20 min-h-screen flex items-center justify-center">
-          <div className="max-w-4xl mx-auto px-4 w-full">
-            <BottomContactSection />
-          </div>
-        </div>
-      </section>
-
       {/* Other Magic Types */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -179,6 +171,32 @@ export default function MiamiTradeShowPage() {
               <p className="text-gray-300 mb-4">Intimate magic for smaller gatherings in Miami</p>
               <Link href="/cities/miami-magician/close-up" className="text-blue-400 hover:text-blue-300">Learn More →</Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Clients Section */}
+      <section id="clients" className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Clients</h2>
+          <LogoCarousel />
+        </div>
+      </section>
+
+      {/* Bottom Contact Section with Full Image Background */}
+      <section id="contact" className="relative min-h-screen">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/IMG_5400.JPG"
+            alt="Trade show magic performance"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="relative z-20 min-h-screen flex items-center justify-center">
+          <div className="max-w-4xl mx-auto px-4 w-full">
+            <BottomContactSection />
           </div>
         </div>
       </section>

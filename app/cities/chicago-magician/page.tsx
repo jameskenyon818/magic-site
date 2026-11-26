@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import QuoteForm from '../../components/QuoteForm';
 import Image from 'next/image';
@@ -13,23 +14,54 @@ import FAQSection from '@/app/components/FAQSection';
 import BottomContactSection from '@/app/components/BottomContactSection';
 import ClientQuoteForm from '../../components/ClientQuoteForm';
 
+const siteUrl = SITE_URL;
+
 export const metadata: Metadata = {
-  title: 'Hire a Magician in Chicago — Corporate Events, Private Parties & More',
-  description: 'Looking to hire a magician in Chicago? James Kenyon performs at corporate events, private parties, weddings, and more. Book top entertainment now.'
+  title: 'Chicago Magician | Corporate Events & Private Parties',
+  description: "Chicago Magician | Corporate Events & Private Parties | Available Nationwide",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: `${siteUrl}/cities/chicago-magician`,
+  },
 };
 
 export default function ChicagoMagicianPage() {
   return (
     <>
-      <main className="min-h-screen bg-black text-white">
+      <main className="min-h-screen text-white">
         <CityHero cityName="Chicago" heroImage="/images/hero.webp" />
         <ClientQuoteForm city="Chicago" />
+        
+        {/* Video Section */}
+        <section className="py-16 px-4">
+          <div className="max-w-6xl mx-auto">
+            <video
+              src="/videos/websitie - Made with Clipchamp.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls={false}
+              preload="auto"
+              className="w-full h-full rounded-lg shadow-lg"
+              style={{ 
+                objectFit: 'cover',
+                minHeight: '300px'
+              }}
+            >
+              <source src="/videos/websitie - Made with Clipchamp.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
+        
         <PerformancesSection city="Chicago" />
         <BookingExperienceSection />
         <ExperienceCreatorSection />
         <TestimonialsSection />
         <FAQSection />
         <BottomContactSection />
+        
         <CityFooter city="Chicago" />
         {/* Close-Up Magic Section */}
         <section id="close-up-magic" className="py-16 px-4">

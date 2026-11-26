@@ -1,3 +1,4 @@
+import { SITE_URL } from '@/lib/site';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -5,9 +6,15 @@ import BottomContactSection from '@/app/components/BottomContactSection';
 import FAQSection from '@/app/components/FAQSection';
 import TestimonialsSection from '@/app/components/TestimonialsSection';
 
+const siteUrl = SITE_URL;
+
 export const metadata: Metadata = {
   title: 'Hire a Trade Show Magician in Denver — Perfect for Exhibitions & Conferences',
-  description: 'Looking for a trade show magician in Denver? James Kenyon delivers engaging performances that attract crowds and boost engagement at your exhibition or conference. Book now for a memorable trade show experience.'
+  description: 'Looking for a trade show magician in Denver? James Kenyon delivers engaging performances that attract crowds and boost engagement at your exhibition or conference. Book now for a memorable trade show experience.',
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: `${siteUrl}/cities/denver-magician/trade-show`,
+  },
 };
 
 export default function DenverTradeShowPage() {
