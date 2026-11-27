@@ -10,8 +10,8 @@ import Navigation from '@/app/components/Navigation';
 const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
-  title: 'Close-Up Magic in Austin — Perfect for Corporate Events & Private Parties',
-  description: "Austin Close-Up Magician | Corporate Events & Private Parties | Interactive Magic Entertainment",
+  title: 'Austin Close-Up Magician for Corporate Events | James Kenyon',
+  description: "Hire an Austin close-up magician for company parties, cocktail hours, networking events and private celebrations. Interactive strolling magic in Austin and Round Rock.",
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: `${siteUrl}/cities/austin-magician/close-up`,
@@ -33,7 +33,7 @@ export default function AustinCloseUpPage() {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-center px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
-            Close-Up Magic in Austin
+            Austin Close-Up Magician
           </h1>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function AustinCloseUpPage() {
       <section id="clients" className="py-16 px-4 bg-black">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Create Unforgettable Moments in Austin
+            Walk-Around Magic for Austin Events
           </h2>
           <div className="space-y-12">
             <div className="flex items-start space-x-6">
@@ -51,7 +51,7 @@ export default function AustinCloseUpPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-xl text-gray-200">Experience magic up close and personal in Austin, where every trick happens right in front of your eyes. Perfect for cocktail hours, dinner parties, and corporate networking events in Austin, creating natural conversation starters and memorable interactions.</p>
+              <p className="text-xl text-gray-200">James Kenyon performs interactive close-up magic for corporate receptions, cocktail hours, dinners and networking events in Austin. He moves between small groups so guests can enjoy the magic without pausing the event for a stage show.</p>
             </div>
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0 w-8 h-8 mt-1">
@@ -59,7 +59,7 @@ export default function AustinCloseUpPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-xl text-gray-200">Each performance in Austin is tailored to your event's atmosphere and audience, whether it's sophisticated corporate entertainment or engaging party magic. The intimate nature of close-up magic creates a unique connection with your guests.</p>
+              <p className="text-xl text-gray-200">Whether you're hosting a company celebration, client reception or private party, the performance can be adapted to your guest count, event schedule and venue. James also serves Round Rock, Cedar Park and nearby Austin-area communities.</p>
             </div>
             <div className="flex items-start space-x-6">
               <div className="flex-shrink-0 w-8 h-8 mt-1">
@@ -67,7 +67,7 @@ export default function AustinCloseUpPage() {
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
               </div>
-              <p className="text-xl text-gray-200">From elegant card tricks to mind-bending mentalism, each effect is carefully selected to amaze and entertain your Austin audience. The performance flows naturally through your event, creating a sophisticated atmosphere that enhances the overall experience.</p>
+              <p className="text-xl text-gray-200">From card magic to mind-reading effects, James performs for guests at close range and invites them to participate. For events that need one shared audience experience, consider a stage show instead of strolling close-up magic.</p>
             </div>
           </div>
         </div>
