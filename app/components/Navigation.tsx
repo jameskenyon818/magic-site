@@ -58,9 +58,9 @@ const Navigation: FC = () => {
           href={cityPath || "/"} 
           className="hover:text-gray-300 transition"
         >
-          <h1 className="text-lg sm:text-xl font-semibold">
+          <div className="text-lg sm:text-xl font-semibold">
             James Kenyon | Corporate Magician
-          </h1>
+          </div>
         </Link>
         
         {/* Desktop Navigation */}
