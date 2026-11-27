@@ -27,7 +27,7 @@ const AustinPerformancesSection: React.FC = () => {
                   <div className="text-gray-400 text-xs sm:text-sm pl-7">Small to medium events</div>
                 </li>
                 <li className="flex flex-col">
-                  <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> 30–2 hour+ minute performances</div>
+                  <div className="flex items-center text-gray-100"><span className="mr-2 text-base sm:text-lg">⏱️</span> 30 minutes to 2+ hours</div>
                   <div className="text-gray-400 text-xs sm:text-sm pl-7">Flexible set lengths</div>
                 </li>
               </ul>
@@ -69,7 +69,7 @@ const AustinPerformancesSection: React.FC = () => {
               </div>
               <ul className="text-left space-y-6 w-full max-w-xs mx-auto mt-auto mb-6">
                 <li className="flex flex-col">
-                  <div className="flex items-center text-gray-100"><span className="mr-2 text-lg">📈</span> Increases booth traffic by 30–50%</div>
+                  <div className="flex items-center text-gray-100"><span className="mr-2 text-lg">📈</span> Designed to attract booth visitors</div>
                   <div className="text-gray-400 text-sm pl-7">Boosts engagement</div>
                 </li>
                 <li className="flex flex-col">

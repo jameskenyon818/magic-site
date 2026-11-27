@@ -17,8 +17,8 @@ import ClientQuoteForm from '../../components/ClientQuoteForm';
 const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
-  title: 'Austin Magician Near Me | Corporate Events & Private Parties | James Kenyon Magic',
-  description: "Looking for an Austin magician near me? James Kenyon Magic is your top choice for corporate events, private parties, and trade shows in Austin. Professional magician available for hire.",
+  title: 'Austin Corporate Magician & Trade Show Entertainment | James Kenyon',
+  description: "Book James Kenyon, an Austin corporate magician for conferences, trade shows, company parties and private events. Interactive close-up magic and stage shows in Austin and Round Rock.",
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: `${siteUrl}/cities/austin-magician`,
@@ -59,10 +59,9 @@ export default function AustinMagicianPage() {
         <section className="w-full bg-black py-8 sm:py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg sm:text-xl text-gray-300 mb-6">
-              James has performed for corporate groups at the Austin Convention Center, 
-              events at ACL Live, and private functions throughout downtown Austin. 
-              From tech startups in the Silicon Hills to Fortune 500 companies, 
-              James brings world-class entertainment to every Austin event. 
+              Planning a corporate dinner, conference, trade show or client reception in Austin? 
+              James Kenyon performs close-up magic for guests in small groups, stage shows for seated audiences, 
+              and engaging booth presentations for exhibitors. He also serves Round Rock, Cedar Park and nearby communities. 
               Need a <Link href="/trade-show" className="text-blue-400 hover:text-blue-300 underline">trade show magician</Link> for your Austin exhibition? 
               <Link href="/corporate-magician" className="text-blue-400 hover:text-blue-300 underline"> Learn more about our corporate magic services</Link>.
             </p>
