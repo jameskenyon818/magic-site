@@ -3,6 +3,7 @@ import Navigation from '@/app/components/Navigation';
 import BottomContactSection from '@/app/components/BottomContactSection';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.jameskenyonmagic.com/contact' },
   title: 'Contact James Kenyon | Request a Magic Entertainment Quote',
   description: 'Contact James Kenyon to check availability and request a quote for corporate magic, trade shows, or private events.',
 };

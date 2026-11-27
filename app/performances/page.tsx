@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.jameskenyonmagic.com/performances' },
   title: 'Magic Performances — Stage Magic, Close-Up Magic, and Trade Show Magic',
   description: 'Experience captivating magic performances by James Kenyon, including stage magic, close-up magic, and trade show magic for corporate events and private parties.'
 };

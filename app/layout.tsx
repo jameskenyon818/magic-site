@@ -16,9 +16,6 @@ export const metadata: Metadata = {
   title: "James Kenyon Magic | Magician Near Me | Corporate Magician & Entertainment",
   description: "Looking for a magician near me? James Kenyon Magic is your top choice for corporate events, trade shows, and private parties. Professional magician available for hire specializing in close-up magic, stage shows, and trade show entertainment.",
   metadataBase: new URL(SITE_URL),
-  alternates: {
-    canonical: './',
-  },
   openGraph: {
     title: 'James Kenyon Magic | Magician Near Me | Corporate Magician & Entertainment',
     description: 'Looking for a magician near me? James Kenyon Magic is your top choice for corporate events, trade shows, and private parties. Professional magician available for hire specializing in close-up magic, stage shows, and trade show entertainment.',

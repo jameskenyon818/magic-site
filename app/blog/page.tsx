@@ -4,6 +4,7 @@ import CityFooter from "../components/CityFooter";
 import { blogPosts } from "./_manifest";
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.jameskenyonmagic.com/blog' },
   title: "Blog | James Kenyon Magic",
   description: "Insights on trade shows, corporate events, and using magic to create engagement.",
   openGraph: {

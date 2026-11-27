@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.jameskenyonmagic.com/clients' },
   title: 'Our Clients — Corporate Events and Private Parties',
   description: 'James Kenyon has performed for leading companies and organizations at corporate events, trade shows, and private parties.'
 };
